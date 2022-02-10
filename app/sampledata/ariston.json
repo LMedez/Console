@@ -1,0 +1,4563 @@
+{
+  "Egis":[
+    {
+      "EGIS 24 CF/FF": "Placa Electronica",
+      "codigo": "65109313-05",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996
+    },
+    {
+      "EGIS 24 CF/FF": "Placa Display",
+      "codigo": 65105084,
+      "precioService": 59.77017446,
+      "precioPublico": 103.31701585920003
+    },
+    {
+      "EGIS 24 CF/FF": "Bomba Circuladora",
+      "codigo": 60001584,
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "EGIS 24 CF/FF": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "EGIS 24 CF/FF": "Grupo envio (block izquierdo)",
+      "codigo": "65105091-01",
+      "precioService": 96.3946984,
+      "precioPublico": 166.62512152
+    },
+    {
+      "EGIS 24 CF/FF": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5
+    },
+    {
+      "EGIS 24 CF/FF": "Presostato De Minima",
+      "codigo": 65105090,
+      "precioService": 48.16,
+      "precioPublico": 83.24799999999999
+    },
+    {
+      "EGIS 24 CF/FF": "Sonda NTC",
+      "codigo": 65105079,
+      "precioService": 18.18664848,
+      "precioPublico": 31.436920944000004
+    },
+    {
+      "EGIS 24 CF/FF": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216
+    },
+    {
+      "EGIS 24 CF/FF": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.67788326,
+      "precioPublico": 101.42891249920001
+    },
+    {
+      "EGIS 24 CF/FF": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      "EGIS 24 CF/FF": "Intercambiador Primario CF/FF",
+      "codigo": 65105094,
+      "precioService": 297.5,
+      "precioPublico": 514.25
+    },
+    {
+      "EGIS 24 CF/FF": "Intercambiador Primario FF",
+      "codigo": 65106300,
+      "precioService": 297.5,
+      "precioPublico": 514.25
+    },
+    {
+      "EGIS 24 CF/FF": "Juego de fibras ceramicas",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001
+    },
+    {
+      "EGIS 24 CF/FF": "Termostato De Humos (CF)",
+      "codigo": 999539,
+      "precioService": 17.58588832,
+      "precioPublico": 30.398464096000005
+    },
+    {
+      "EGIS 24 CF/FF": "Ventilador",
+      "codigo": 65104357,
+      "precioService": 124.6,
+      "precioPublico": 215.38
+    },
+    {
+      "EGIS 24 CF/FF": "Presostato De Aire",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "EGIS 24 CF/FF": "Venturi",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "EGIS 24 CF/FF": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004
+    },
+    {
+      "EGIS 24 CF/FF": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "EGIS 24 CF/FF": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007
+    },
+    {
+      "EGIS 24 CF/FF": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016
+    },
+    {
+      "EGIS 24 CF/FF": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216
+    },
+    {
+      "EGIS 24 CF/FF": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014
+    },
+    {
+      "EGIS 24 CF/FF": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "EGIS 24 CF/FF": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "EGIS 24 CF/FF": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002
+    },
+    {
+      "EGIS 24 CF/FF": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005
+    },
+    {
+      "EGIS 24 CF/FF": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004
+    },
+    {
+      "EGIS 24 CF/FF": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002
+    },
+    {
+      "EGIS 24 CF/FF": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224
+    }
+  ],
+  "BS y BS II":[
+    {
+      "BS 24 CF/FF BS II": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021",
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl",
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Placa Electronica BS",
+      "codigo": "65109313-05",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Placa Display",
+      "codigo": 65105084,
+      "precioService": 59.77017446,
+      "precioPublico": 103.31701585920003,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Placa Electronica BS II",
+      "codigo": "60001605-06",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Placa Display BS II",
+      "codigo": 60001579,
+      "precioService": 41.95490499,
+      "precioPublico": 72.52205005760001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Bomba Circuladora",
+      "codigo": 60001584,
+      "precioService": 182,
+      "precioPublico": 314.59999999999997,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.3043252,
+      "precioPublico": 226.96890490560003,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.67788326,
+      "precioPublico": 101.42891249920001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08,
+      "Column6": "El valor 2017 era USD 48 + IVA"
+    },
+    {
+      "BS 24 CF/FF BS II": "Intercambiador Primario(CF)",
+      "codigo": 65104247,
+      "precioService": 234.4821519,
+      "precioPublico": 405.31914829119995,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Intercambiador Primario(FF)",
+      "codigo": 65106297,
+      "precioService": 229.5122269,
+      "precioPublico": 396.7282780032,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Juego de fibras ceramicas",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Termostato De Humos (CF)",
+      "codigo": 999539,
+      "precioService": 17.58588832,
+      "precioPublico": 30.398464096000005,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Ventilador",
+      "codigo": 65104357,
+      "precioService": 124.6,
+      "precioPublico": 215.38,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Presostato De Aire",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Venturi",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Turbina sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Picos GLP 24 KW",
+      "codigo": 3318264,
+      "precioService": 0,
+      "precioPublico": 0,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Tubo retorno (cobre)",
+      "codigo": 60001276,
+      "precioService": 26.55359907,
+      "precioPublico": 45.89979268160001,
+      "Column6": null
+    },
+    {
+      "BS 24 CF/FF BS II": "Tubo ida (cobre)",
+      "codigo": 65106309,
+      "precioService": 40.25093072,
+      "precioPublico": 69.57660881600002,
+      "Column6": null
+    }
+  ],
+  "Clas 24,28,32":[
+    {
+      "Clas-Clas System 24-28-32 CF-FF": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Placa Electronica",
+      "codigo": "65109313-05",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Placa Display",
+      "codigo": 65104448,
+      "precioService": 73.47842902,
+      "precioPublico": 127.01271302720001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Bomba Circuladora",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Capacitor+cable Bomba 65104319",
+      "codigo": 65104520,
+      "precioService": 31.7638281,
+      "precioPublico": 54.90604570880001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Bomba Circuladora 36",
+      "codigo": "60000591-01",
+      "precioService": 196,
+      "precioPublico": 338.8
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Capacitor+cable Bomba 60000591",
+      "codigo": 65109585,
+      "precioService": 22.06428224,
+      "precioPublico": 38.13968787200001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.3043252,
+      "precioPublico": 226.96890490560003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grupo envio System",
+      "codigo": "65105091-01",
+      "precioService": 96.3946984,
+      "precioPublico": 166.62512152
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Presostato De Minima",
+      "codigo": 65105090,
+      "precioService": 48.16,
+      "precioPublico": 83.24799999999999
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Sonda NTC Sanitaria (sumergible)",
+      "codigo": "65104338-01",
+      "precioService": 26.313,
+      "precioPublico": 45.483900000000006
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Sonda Sanitaria System",
+      "codigo": 995346,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.67788326,
+      "precioPublico": 101.42891249920001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 24 CF",
+      "codigo": 65104247,
+      "precioService": 234.4821519,
+      "precioPublico": 405.31914829119995
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 24 FF (26 cm)",
+      "codigo": 65104246,
+      "precioService": 252.7998753,
+      "precioPublico": 436.9826416384001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 24 FF (22,5 cm)",
+      "codigo": 65106297,
+      "precioService": 229.5122269,
+      "precioPublico": 396.7282780032
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 28 CF",
+      "codigo": 65105030,
+      "precioService": 235.4542911,
+      "precioPublico": 406.9995602816
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 28 FF",
+      "codigo": 65104246,
+      "precioService": 252.7998753,
+      "precioPublico": 436.9826416384001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Primario 32 FF",
+      "codigo": 65105041,
+      "precioService": 279.7139305,
+      "precioPublico": 483.5055084288001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Juego de fibras ceramicas (24/28)",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Termostato De Humos (CF)",
+      "codigo": 999539,
+      "precioService": 17.58588832,
+      "precioPublico": 30.398464096000005
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Ventilador 24 FF",
+      "codigo": 65104357,
+      "precioService": 124.6,
+      "precioPublico": 215.38
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Ventilador 28 FF",
+      "codigo": 65104452,
+      "precioService": 173.2592301,
+      "precioPublico": 299.49095496320007
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Ventilador 32 FF",
+      "codigo": 65105155,
+      "precioService": 134.4610467,
+      "precioPublico": 232.425523616
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Presostato De Aire 24 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Presostato De Aire 28/32 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Venturi 24 FF",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Venturi 28 FF",
+      "codigo": 65106515,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Venturi 32 FF",
+      "codigo": 65106517,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Turbina sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Picos GLP 0,80 24 KW",
+      "codigo": 3318264,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    },
+    {
+      "Clas-Clas System 24-28-32 CF-FF": "Picos GLP 0,78 32 KW",
+      "codigo": 3318328,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    }
+  ],
+  "Genus 24,28,36":[
+    {
+      "GENUS 24-28-36": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021",
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl",
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Placa Electronica",
+      "codigo": "65109313-05",
+      "precioService": 209.29999999999998,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Placa Display",
+      "codigo": "65105149-02",
+      "precioService": 158.46960729600002,
+      "precioPublico": 273.9260354688001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Bomba Circuladora 24-28",
+      "codigo": "65104319-01",
+      "precioService": 181.99999999999997,
+      "precioPublico": 314.59999999999997,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Capacitor+cable Bomba 65104319",
+      "codigo": 65104520,
+      "precioService": 31.763828096,
+      "precioPublico": 54.90604570880001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Bomba Circuladora 36",
+      "codigo": "60000591-01",
+      "precioService": 196,
+      "precioPublico": 338.8,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Capacitor+cable Bomba 60000591",
+      "codigo": 65109585,
+      "precioService": 22.064282240000004,
+      "precioPublico": 38.13968787200001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.30432515200002,
+      "precioPublico": 226.96890490560003,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Grupo retorno (block derecho)",
+      "codigo": 65105322,
+      "precioService": 132.27646432000003,
+      "precioPublico": 228.64931689600004,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sensor de presion",
+      "codigo": 65104321,
+      "precioService": 61.6,
+      "precioPublico": 106.47999999999999,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.706040352000006,
+      "precioPublico": 30.606155465600008,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sonda NTC Sanitaria (sumergible)",
+      "codigo": "65104338-01",
+      "precioService": 26.313295008000004,
+      "precioPublico": 45.483900000000006,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.86441872,
+      "precioPublico": 286.708495216,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.677883264,
+      "precioPublico": 101.42891249920001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08,
+      "Column6": " "
+    },
+    {
+      "GENUS 24-28-36": "Intercambiador Primario 24 CF/FF-28 FF",
+      "codigo": 65104246,
+      "precioService": 252.79987532800004,
+      "precioPublico": 436.9826416384001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Intercambiador Primario 28 CF",
+      "codigo": 65105030,
+      "precioService": 235.454291072,
+      "precioPublico": 406.9995602816,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Intercambiador Primario 36 FF",
+      "codigo": 65105041,
+      "precioService": 279.71393049600005,
+      "precioPublico": 483.5055084288001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Juego de fibras ceramicas (24/28)",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 159.05399999999997,
+      "precioPublico": 270.77290285760006,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Termostato De Humos (CF)",
+      "codigo": 999539,
+      "precioService": 17.585888320000002,
+      "precioPublico": 30.398464096000005,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Ventilador 24 FF",
+      "codigo": 65104255,
+      "precioService": 177.49732000000003,
+      "precioPublico": 306.81679600000007,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Ventilador 28 FF",
+      "codigo": 65104231,
+      "precioService": 177.49732000000003,
+      "precioPublico": 306.81679600000007,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Ventilador 36 FF",
+      "codigo": 65105042,
+      "precioService": 173.25923014400004,
+      "precioPublico": 299.49095496320007,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sensor Hall 24 FF",
+      "codigo": 65108301,
+      "precioService": 42.31536108800001,
+      "precioPublico": 73.14512416640002,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sensor Hall 32/35/36 FF",
+      "codigo": 65108255,
+      "precioService": 42.31536108800001,
+      "precioPublico": 73.14512416640002,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Presostato De Aire 24 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062860800001,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Presostato De Aire 28-32-35-36 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062860800001,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Venturi 24 FF",
+      "codigo": 65106516,
+      "precioService": 10.791837056,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Venturi 28 FF",
+      "codigo": 65106515,
+      "precioService": 10.791837056,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Venturi 36 FF",
+      "codigo": 65106517,
+      "precioService": 10.791837056,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.334661344,
+      "precioPublico": 29.964200323200004,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.300000000000004,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.096571488000004,
+      "precioPublico": 22.638359286400007,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Valvula de carga electrica",
+      "codigo": 65104669,
+      "precioService": 95.30240719999999,
+      "precioPublico": 164.73701816,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Iman de carga",
+      "codigo": 65104670,
+      "precioService": 23.888408544000008,
+      "precioPublico": 41.29282048320002,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.920549664000006,
+      "precioPublico": 60.362664419200016,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.257277088,
+      "precioPublico": 117.98757896640001,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 93,
+      "precioPublico": 160.75312007040003,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.098637568000008,
+      "precioPublico": 50.299073510400014,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.49999999999999,
+      "precioPublico": 127.05,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.300000000000004,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539200001,
+      "precioPublico": 57.41722317760002,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.242370144000002,
+      "precioPublico": 28.076096963200005,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.816528925619835,
+      "precioPublico": 15.293637216000002,
+      "Column6": null
+    },
+    {
+      "GENUS 24-28-36": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 15.816528925619833,
+      "precioPublico": 27.660714224,
+      "Column6": null
+    }
+  ],
+  "Genus Premium":[
+    {
+      "GENUS PREMIUM SYSTEM 30": "GENUS PREMIUM 35",
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Placa Electronica",
+      "codigo": "65109138-03",
+      "precioService": 240.8,
+      "precioPublico": 416.24
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Placa Display",
+      "codigo": "65105149-02",
+      "precioService": 158.4696073,
+      "precioPublico": 273.9260354688001
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Bomba Circuladora",
+      "codigo": "60000591-01",
+      "precioService": 196,
+      "precioPublico": 338.8
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Capacitor+cable Bomba 60000591",
+      "codigo": 65109585,
+      "precioService": 22.06428224,
+      "precioPublico": 38.13968787200001
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.3043252,
+      "precioPublico": 226.96890490560003
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grupo envio System",
+      "codigo": "65105091-01",
+      "precioService": 96.3946984,
+      "precioPublico": 166.62512152
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grupo retorno (block derecho)",
+      "codigo": 65105322,
+      "precioService": 132.2764643,
+      "precioPublico": 228.64931689600004
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Sensor de presion",
+      "codigo": 65104321,
+      "precioService": 61.6,
+      "precioPublico": 106.47999999999999
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Sonda NTC Sanitaria (sumergible)",
+      "codigo": "65104338-01",
+      "precioService": 26.313,
+      "precioPublico": 45.483900000000006
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Valvula De Gas",
+      "codigo": 60000537,
+      "precioService": 204.0509191,
+      "precioPublico": 352.71658868160006
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "NAC De Encendido",
+      "codigo": "61002105-20",
+      "precioService": 56.50422378,
+      "precioPublico": 97.6715868128
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Electrodo de Ignicion",
+      "codigo": "60000868-01",
+      "precioService": 32.73596726,
+      "precioPublico": 56.58645769920001
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Electrodo de ionizacion",
+      "codigo": "60000867-01",
+      "precioService": 34.30886659,
+      "precioPublico": 59.30532653760001
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Junta Electrodo",
+      "codigo": "60000286-01",
+      "precioService": 4.2,
+      "precioPublico": 7.26
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Intercambiador Primario 30  KW",
+      "codigo": 60000293,
+      "precioService": 489.4214876,
+      "precioPublico": 846
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Intercambiador Primario 35  KW",
+      "codigo": 65111607,
+      "precioService": 489.4214876,
+      "precioPublico": 846
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Ventilador",
+      "codigo": 60000622,
+      "precioService": 184.2913713,
+      "precioPublico": 318.56079889920005
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grifo de carga automatico",
+      "codigo": 65104669,
+      "precioService": 95.3024072,
+      "precioPublico": 164.73701816
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Iman de carga",
+      "codigo": 65104670,
+      "precioService": 23.88840854,
+      "precioPublico": 41.29282048320002
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Diafragma GLP 30KW",
+      "codigo": 60000633,
+      "precioService": 14.42916675,
+      "precioPublico": 24.941845385600004
+    },
+    {
+      "GENUS PREMIUM SYSTEM 30": "Diafragma GLP 35KW",
+      "codigo": 60000733,
+      "precioService": 16.12221811,
+      "precioPublico": 27.868405593600006
+    }
+  ],
+  "Clas EVO":[
+    {
+      "Clas EVO 24 FF-32 FF": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021",
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl",
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Placa Electronica",
+      "codigo": "60001897-04",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Placa Display",
+      "codigo": "65111883-02",
+      "precioService": 106.3345483,
+      "precioPublico": 183.80686209600003,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Bomba Circuladora",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Capacitor+cable Bomba 65104319",
+      "codigo": 65104520,
+      "precioService": 31.7638281,
+      "precioPublico": 54.90604570880001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Bomba Circuladora 36",
+      "codigo": "60000591-01",
+      "precioService": 196,
+      "precioPublico": 338.8,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Capacitor+cable Bomba 60000591",
+      "codigo": 65109585,
+      "precioService": 22.06428224,
+      "precioPublico": 38.13968787200001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.3043252,
+      "precioPublico": 226.96890490560003,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grupo envio System",
+      "codigo": "65105091-01",
+      "precioService": 96.3946984,
+      "precioPublico": 166.62512152,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Presostato De Minima",
+      "codigo": 65105090,
+      "precioService": 48.16,
+      "precioPublico": 83.24799999999999,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "NAC De Encendido",
+      "codigo": 65115791,
+      "precioService": 23.88785548,
+      "precioPublico": 41.29186447114046,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08,
+      "Column6": "El valor 2017 era USD 48 + IVA"
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Intercambiador Primario 24 FF",
+      "codigo": 65106297,
+      "precioService": 229.509,
+      "precioPublico": 396.7227,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Intercambiador Primario 32 FF",
+      "codigo": 65105041,
+      "precioService": 279.7139305,
+      "precioPublico": 483.5055084288001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Juego de fibras ceramicas (24/28)",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Ventilador 24 FF",
+      "codigo": 65104357,
+      "precioService": 124.6,
+      "precioPublico": 215.38,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Ventilador 32 FF",
+      "codigo": 65105155,
+      "precioService": 134.4610467,
+      "precioPublico": 232.425523616,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Presostato De Aire 24 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Presostato De Aire 28/32 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Venturi 24 FF",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Venturi 32 FF",
+      "codigo": 65106517,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Picos GLP 0,80 24 KW",
+      "codigo": 3318264,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03,
+      "Column6": null
+    },
+    {
+      "Clas EVO 24 FF-32 FF": "Picos GLP 0,78 32 KW",
+      "codigo": 3318328,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03,
+      "Column6": null
+    }
+  ],
+  "Genus Premium EVO":[
+    {
+      "GENUS PREMIUM 35 EVO": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021",
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl",
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Placa Electronica",
+      "codigo": "60001898-04",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Placa Display",
+      "codigo": "65111882-02",
+      "precioService": 106.2580879,
+      "precioPublico": 183.67469486080006,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Bomba Circuladora",
+      "codigo": "60001947-02",
+      "precioService": 196,
+      "precioPublico": 338.8,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grupo envio (block izquierdo)",
+      "codigo": 60002320,
+      "precioService": 131.3043252,
+      "precioPublico": 226.96890490560003,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grupo envio System",
+      "codigo": "65105091-01",
+      "precioService": 96.3946984,
+      "precioPublico": 166.62512152,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Sensor de presion",
+      "codigo": 65104321,
+      "precioService": 61.6,
+      "precioPublico": 106.47999999999999,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Sonda NTC Sanitaria (sumergible)",
+      "codigo": 65104338,
+      "precioService": 26.313,
+      "precioPublico": 45.483900000000006,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Valvula De Gas",
+      "codigo": 60001612,
+      "precioService": 132.7679954,
+      "precioPublico": 229.49896340800004,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "NAC de encendido",
+      "codigo": 60001871,
+      "precioService": 18.30680051,
+      "precioPublico": 31.6446123136,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Electrodo de Ignicion",
+      "codigo": "60000868-01",
+      "precioService": 32.73596726,
+      "precioPublico": 56.58645769920001,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Electrodo de ionizacion",
+      "codigo": "60000867-01",
+      "precioService": 34.30886659,
+      "precioPublico": 59.30532653760001,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Junta Electrodo",
+      "codigo": "60000286-01",
+      "precioService": 4.2,
+      "precioPublico": 7.26,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Intercambiador Primario 35  KW",
+      "codigo": 65111607,
+      "precioService": 489.4214876,
+      "precioPublico": 846,
+      "Column6": " "
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Ventilador",
+      "codigo": 60001869,
+      "precioService": 154.4608986,
+      "precioPublico": 266.99669613760005,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Tapon Chico",
+      "codigo": 65104377,
+      "precioService": 8.84755872,
+      "precioPublico": 15.293637216000002,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Tapon Grande",
+      "codigo": 65104445,
+      "precioService": 16.00206608,
+      "precioPublico": 27.660714224,
+      "Column6": null
+    },
+    {
+      "GENUS PREMIUM 35 EVO": "Diafragma GLP 35KW",
+      "codigo": 3318846,
+      "precioService": 29.40578512,
+      "precioPublico": 50.83,
+      "Column6": null
+    }
+  ],
+  "HSX":[
+    {
+      "HSX 24 FF": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "HSX 24 FF": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "HSX 24 FF": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "HSX 24 FF": "Placa Electronica",
+      "codigo": "65115782-04",
+      "precioService": 124.1935094,
+      "precioPublico": 214.67735203200004
+    },
+    {
+      "HSX 24 FF": "Bomba Circuladora",
+      "codigo": 60001584,
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "HSX 24 FF": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "HSX 24 FF": "Presostato De Minima",
+      "codigo": 65115792,
+      "precioService": 16.0424532,
+      "precioPublico": 27.730526241278593
+    },
+    {
+      "HSX 24 FF": "Grupo envio (block izquierdo)",
+      "codigo": 65120138,
+      "precioService": 108.5260439,
+      "precioPublico": 187.59501879020667
+    },
+    {
+      "HSX 24 FF": "Grupo retorno (block derecho)",
+      "codigo": 65116615,
+      "precioService": 108.5260439,
+      "precioPublico": 187.59501879020667
+    },
+    {
+      "HSX 24 FF": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "HSX 24 FF": "Valvula De Gas",
+      "codigo": 65115771,
+      "precioService": 69.68817856,
+      "precioPublico": 120.46099436800002
+    },
+    {
+      "HSX 24 FF": "NAC De Encendido",
+      "codigo": "65115791-01",
+      "precioService": 23.88785548,
+      "precioPublico": 41.29186447114046
+    },
+    {
+      "HSX 24 FF": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      "HSX 24 FF": "Intercambiador Primario (cobre)",
+      "codigo": 65106297,
+      "precioService": 229.5122269,
+      "precioPublico": 396.7282780032
+    },
+    {
+      "HSX 24 FF": "Kit Placas Ceramicas 24 FF",
+      "codigo": 65106298,
+      "precioService": 42.43551312,
+      "precioPublico": 73.35281553600001
+    },
+    {
+      "HSX 24 FF": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "HSX 24 FF": "Ventilador 24 FF",
+      "codigo": 65115813,
+      "precioService": 55.4337784,
+      "precioPublico": 95.82124552000003
+    },
+    {
+      "HSX 24 FF": "Presostato De Aire 24 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "HSX 24 FF": "Trampa De Condensado",
+      "codigo": 65105349,
+      "precioService": 7.886342464,
+      "precioPublico": 13.6321062592
+    },
+    {
+      "HSX 24 FF": "Cabeza Motorizada",
+      "codigo": 65114936,
+      "precioService": 35.92878974,
+      "precioPublico": 62.10547940507065
+    },
+    {
+      "HSX 24 FF": "V3V + Motor",
+      "codigo": 65114924,
+      "precioService": 84.85645312,
+      "precioPublico": 146.6804403903761
+    },
+    {
+      "HSX 24 FF": "Sensor de flujo sanitario",
+      "codigo": 65114919,
+      "precioService": 10.19781038,
+      "precioPublico": 17.62764366509093
+    },
+    {
+      "HSX 24 FF": "Sensor Reed",
+      "codigo": "65114921-01",
+      "precioService": 15.8382224,
+      "precioPublico": 27.377498720000002
+    },
+    {
+      "HSX 24 FF": "Grifo de llenado  ",
+      "codigo": 65119771,
+      "precioService": 29.32801872,
+      "precioPublico": 50.695575216000016
+    },
+    {
+      "HSX 24 FF": "Valvula de retencion",
+      "codigo": "65114918-01",
+      "precioService": 11.45813469,
+      "precioPublico": 19.806204246400004
+    },
+    {
+      "HSX 24 FF": "Manometro",
+      "codigo": 65114200,
+      "precioService": 29.71032064,
+      "precioPublico": 51.356411392000005
+    },
+    {
+      "HSX 24 FF": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "HSX 24 FF": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "HSX 24 FF": "Grupo By Pass",
+      "codigo": 65114917,
+      "precioService": 21.17167293,
+      "precioPublico": 36.59674891706155
+    },
+    {
+      "HSX 24 FF": "Grifo de vaciado",
+      "codigo": 65114922,
+      "precioService": 17.83707381,
+      "precioPublico": 30.832656160937876
+    },
+    {
+      "HSX 24 FF": "Filtro de Calefacción",
+      "codigo": 65114923,
+      "precioService": 15.83631434,
+      "precioPublico": 27.374200507263676
+    },
+    {
+      "HSX 24 FF": "Picos GLP 0,80 24 KW",
+      "codigo": 3318264,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    },
+    {
+      "HSX 24 FF": "Tubo retorno (cobre)",
+      "codigo": 65115915,
+      "precioService": 26.22813777,
+      "precioPublico": 45.33720956907452
+    },
+    {
+      "HSX 24 FF": "Tubo ida (cobre)",
+      "codigo": 65115928,
+      "precioService": 29.29596895,
+      "precioPublico": 50.640174904708296
+    }
+  ],
+  "Clas X":[
+    {
+      "CLAS X 24/28/32 FF System": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "CLAS X 24/28/32 FF System": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "CLAS X 24/28/32 FF System": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Placa Electronica",
+      "codigo": "65115783-04",
+      "precioService": 142.5440016,
+      "precioPublico": 246.39748848000002
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Placa Display",
+      "codigo": "65115776-02",
+      "precioService": 45.84770638,
+      "precioPublico": 79.2510353123767
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Bomba Circuladora 24/28/32",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Presostato De Minima",
+      "codigo": 65115792,
+      "precioService": 16.0424532,
+      "precioPublico": 27.730526241278593
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grupo envio (block izquierdo dual)",
+      "codigo": 65117952,
+      "precioService": 38.56009159,
+      "precioPublico": 66.65387259808459
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grupo envio System",
+      "codigo": 65115933,
+      "precioService": 39.71204401,
+      "precioPublico": 68.64510464110916
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grupo retorno (block derecho dual)",
+      "codigo": "65119770-01",
+      "precioService": 72.25506288,
+      "precioPublico": 124.89803726400002
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grupo retorno System",
+      "codigo": "65119772-01",
+      "precioService": 79.7372576,
+      "precioPublico": 137.83154528000003
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Valvula De Gas",
+      "codigo": 65115771,
+      "precioService": 69.68817856,
+      "precioPublico": 120.46099436800002
+    },
+    {
+      "CLAS X 24/28/32 FF System": "NAC De Encendido",
+      "codigo": "65115791-01",
+      "precioService": 23.88785548,
+      "precioPublico": 41.29186447114046
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Intercambiador Primario 24 (cobre)",
+      "codigo": 65106297,
+      "precioService": 229.5122269,
+      "precioPublico": 396.7282780032
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Kit Placas Ceramicas 24 FF",
+      "codigo": 65106298,
+      "precioService": 42.43551312,
+      "precioPublico": 73.35281553600001
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Intercambiador Primario 28 (cobre)",
+      "codigo": 65111932,
+      "precioService": 222.7290986,
+      "precioPublico": 385.00315613760006
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Intercambiador Primario 32 FF",
+      "codigo": 65105041,
+      "precioService": 279.7139305,
+      "precioPublico": 483.5055084288001
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Ventilador 24 FF",
+      "codigo": 65115813,
+      "precioService": 55.4337784,
+      "precioPublico": 95.82124552000003
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Ventilador 28-32 FF",
+      "codigo": 65115814,
+      "precioService": 61.33215088,
+      "precioPublico": 106.01700366400001
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Presostato De Aire 24 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Presostato De Aire 28/32 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Trampa De Condensado",
+      "codigo": 65105349,
+      "precioService": 7.886342464,
+      "precioPublico": 13.6321062592
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Cabeza Motorizada",
+      "codigo": 65114936,
+      "precioService": 35.92878974,
+      "precioPublico": 62.10547940507065
+    },
+    {
+      "CLAS X 24/28/32 FF System": "V3V + Motor",
+      "codigo": 65114924,
+      "precioService": 84.85645312,
+      "precioPublico": 146.6804403903761
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Sensor de flujo sanitario",
+      "codigo": 65114919,
+      "precioService": 10.19781038,
+      "precioPublico": 17.62764366509093
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Sensor Reed",
+      "codigo": "65114921-01",
+      "precioService": 15.8382224,
+      "precioPublico": 27.377498720000002
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grifo de llenado  ",
+      "codigo": 65119771,
+      "precioService": 29.32801872,
+      "precioPublico": 50.695575216000016
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Valvula de retencion",
+      "codigo": "65114918-01",
+      "precioService": 11.45813469,
+      "precioPublico": 19.806204246400004
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Manometro",
+      "codigo": 65114200,
+      "precioService": 29.71032064,
+      "precioPublico": 51.356411392000005
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grupo By Pass",
+      "codigo": 65114917,
+      "precioService": 21.17167293,
+      "precioPublico": 36.59674891706155
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Grifo de vaciado",
+      "codigo": 65114922,
+      "precioService": 17.83707381,
+      "precioPublico": 30.832656160937876
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Filtro de Calefacción",
+      "codigo": 65114923,
+      "precioService": 15.83631434,
+      "precioPublico": 27.374200507263676
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Picos GLP 0,80 24 KW",
+      "codigo": 3318264,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Picos GLP 0,78 32 KW",
+      "codigo": 3318328,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Tubo retorno 24 KW (cobre)",
+      "codigo": 65115915,
+      "precioService": 26.22813777,
+      "precioPublico": 45.33720956907452
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Tubo ida 24 KW (cobre)",
+      "codigo": 65115928,
+      "precioService": 29.29596895,
+      "precioPublico": 50.640174904708296
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Tubo retorno 28 KW (cobre)",
+      "codigo": 65115916,
+      "precioService": 30.3024116,
+      "precioPublico": 52.37988290019288
+    },
+    {
+      "CLAS X 24/28/32 FF System": "Tubo ida 28 KW (cobre)",
+      "codigo": 65115763,
+      "precioService": 22.22812592,
+      "precioPublico": 38.42290337600001
+    }
+  ],
+  "Cares":[
+    {
+      "CARES PREMIUM 24": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "CARES PREMIUM 24": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "CARES PREMIUM 24": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "CARES PREMIUM 24": "Placa Electronica",
+      "codigo": "60002508-01",
+      "precioService": 171.2712602,
+      "precioPublico": 296.05460684800005
+    },
+    {
+      "CARES PREMIUM 24": "Placa Display",
+      "codigo": 65114213,
+      "precioService": 44.62009552,
+      "precioPublico": 77.12902225600003
+    },
+    {
+      "CARES PREMIUM 24": "Bomba Circuladora",
+      "codigo": "60001947-02",
+      "precioService": 196,
+      "precioPublico": 338.8
+    },
+    {
+      "CARES PREMIUM 24": "Purgador Bomba",
+      "codigo": 65112086,
+      "precioService": 20.13092682,
+      "precioPublico": 34.79774492480001
+    },
+    {
+      "CARES PREMIUM 24": "Grupo envio (block izquierdo)",
+      "codigo": 60001953,
+      "precioService": 99.90095315,
+      "precioPublico": 172.68593330560003
+    },
+    {
+      "CARES PREMIUM 24": "Grupo retorno (block derecho)",
+      "codigo": 65104335,
+      "precioService": 175,
+      "precioPublico": 302.5
+    },
+    {
+      "CARES PREMIUM 24": "Presostato De Minima",
+      "codigo": 65105090,
+      "precioService": 48.16,
+      "precioPublico": 83.24799999999999
+    },
+    {
+      "CARES PREMIUM 24": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "CARES PREMIUM 24": "Valvula De Gas",
+      "codigo": 65114223,
+      "precioService": 135.3130339,
+      "precioPublico": 233.89824423680002
+    },
+    {
+      "CARES PREMIUM 24": "Electrodo",
+      "codigo": 65114235,
+      "precioService": 24.60932074,
+      "precioPublico": 42.53896870080001
+    },
+    {
+      "CARES PREMIUM 24": "Intercambiador Primario 24Kw",
+      "codigo": 65114230,
+      "precioService": 285.1644636,
+      "precioPublico": 492.9271441952
+    },
+    {
+      "CARES PREMIUM 24": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "CARES PREMIUM 24": "Ventilador 24Kw",
+      "codigo": 65114234,
+      "precioService": 151.435252,
+      "precioPublico": 261.76664983040007
+    },
+    {
+      "CARES PREMIUM 24": "Silenciador",
+      "codigo": 65114224,
+      "precioService": 21.82397818,
+      "precioPublico": 37.72430513280001
+    },
+    {
+      "CARES PREMIUM 24": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001
+    },
+    {
+      "CARES PREMIUM 24": "V3V + Motor",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003
+    },
+    {
+      "CARES PREMIUM 24": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "CARES PREMIUM 24": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007
+    },
+    {
+      "CARES PREMIUM 24": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216
+    },
+    {
+      "CARES PREMIUM 24": "Valvula de retencion",
+      "codigo": 65105323,
+      "precioService": 34.92054966,
+      "precioPublico": 60.362664419200016
+    },
+    {
+      "CARES PREMIUM 24": "Manometro",
+      "codigo": 65114200,
+      "precioService": 29.71032064,
+      "precioPublico": 51.356411392000005
+    },
+    {
+      "CARES PREMIUM 24": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "CARES PREMIUM 24": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "CARES PREMIUM 24": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002
+    },
+    {
+      "CARES PREMIUM 24": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005
+    },
+    {
+      "CARES PREMIUM 24": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004
+    }
+  ],
+  "Clas ONE":[
+    {
+      "Clas ONE 24": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "Clas ONE 24": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "Clas ONE 24": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "Clas ONE 24": "Placa Electronica",
+      "codigo": "65116585-04",
+      "precioService": 153.5734465,
+      "precioPublico": 265.46267184111366
+    },
+    {
+      "Clas ONE 24": "Placa Display",
+      "codigo": "65115776-01",
+      "precioService": 45.84770638,
+      "precioPublico": 79.2510353123767
+    },
+    {
+      "Clas ONE 24": "Bomba Circuladora",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "Clas ONE 24": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "Clas ONE 24": "Presostato De Minima",
+      "codigo": 65115792,
+      "precioService": 16.0424532,
+      "precioPublico": 27.730526241278593
+    },
+    {
+      "Clas ONE 24": "Grupo envio",
+      "codigo": 65117952,
+      "precioService": 38.56009159,
+      "precioPublico": 66.65387259808459
+    },
+    {
+      "Clas ONE 24": "Grupo retorno",
+      "codigo": 65120137,
+      "precioService": 76.04098564,
+      "precioPublico": 131.44227517691465
+    },
+    {
+      "Clas ONE 24": "Valvula de Gas",
+      "codigo": "60002799-01",
+      "precioService": 68.3895964,
+      "precioPublico": 118.21630234377268
+    },
+    {
+      "Clas ONE 24": "Electrodo de encendido y deteccion",
+      "codigo": 65116556,
+      "precioService": 30.43579556,
+      "precioPublico": 52.61044661043784
+    },
+    {
+      "Clas ONE 24": "Aislante tapa frontal",
+      "codigo": 65116512,
+      "precioService": 26.46,
+      "precioPublico": 45.73799999999999
+    },
+    {
+      "Clas ONE 24": "Intercambiador Primario 30  KW",
+      "codigo": "65116696-01",
+      "precioService": 297.5,
+      "precioPublico": 514.25
+    },
+    {
+      "Clas ONE 24": "Intercambiador Primario 24  KW",
+      "codigo": "65116695-01",
+      "precioService": 252,
+      "precioPublico": 435.59999999999997
+    },
+    {
+      "Clas ONE 24": "Intercambiador Secundario",
+      "codigo": 65116314,
+      "precioService": 110.3449162,
+      "precioPublico": 190.73906938445592
+    },
+    {
+      "Clas ONE 24": "Ventilador",
+      "codigo": "65116558-01",
+      "precioService": 91.70876915,
+      "precioPublico": 158.52515810560004
+    },
+    {
+      "Clas ONE 24": "Cabeza Motorizada",
+      "codigo": 65114936,
+      "precioService": 35.92878974,
+      "precioPublico": 62.10547940507065
+    },
+    {
+      "Clas ONE 24": "V3V + Motor",
+      "codigo": 65114924,
+      "precioService": 84.85645312,
+      "precioPublico": 146.6804403903761
+    },
+    {
+      "Clas ONE 24": "Sensor de flujo sanitario",
+      "codigo": 65114919,
+      "precioService": 10.19781038,
+      "precioPublico": 17.62764366509093
+    },
+    {
+      "Clas ONE 24": "Sensor Reed",
+      "codigo": "65114921-01",
+      "precioService": 15.8382224,
+      "precioPublico": 27.377498720000002
+    },
+    {
+      "Clas ONE 24": "Grifo de llenado  ",
+      "codigo": 65119771,
+      "precioService": 29.32801872,
+      "precioPublico": 50.695575216000016
+    },
+    {
+      "Clas ONE 24": "Valvula de retencion",
+      "codigo": "65114918-01",
+      "precioService": 11.45889514,
+      "precioPublico": 19.807518743770423
+    },
+    {
+      "Clas ONE 24": "Manometro",
+      "codigo": 65114200,
+      "precioService": 29.71032064,
+      "precioPublico": 51.356411392000005
+    },
+    {
+      "Clas ONE 24": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "Clas ONE 24": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "Clas ONE 24": "Grupo By Pass",
+      "codigo": 65114917,
+      "precioService": 21.17167293,
+      "precioPublico": 36.59674891706155
+    },
+    {
+      "Clas ONE 24": "Grifo de vaciado",
+      "codigo": 65114922,
+      "precioService": 17.83707381,
+      "precioPublico": 30.832656160937876
+    },
+    {
+      "Clas ONE 24": "Filtro de Calefacción",
+      "codigo": 65114923,
+      "precioService": 15.83631434,
+      "precioPublico": 27.374200507263676
+    },
+    {
+      "Clas ONE 24": "KIT GLP (gas envasado) 24/30",
+      "codigo": 3319188,
+      "precioService": 19.10826446,
+      "precioPublico": 33.03
+    }
+  ],
+  "Genus/Alteas ONE":[
+    {
+      "Genus/Alteas ONE": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "Genus/Alteas ONE": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "Genus/Alteas ONE": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "Genus/Alteas ONE": "Placa Electronica",
+      "codigo": "65116545-04",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996
+    },
+    {
+      "Genus/Alteas ONE": "Placa Display Genus ONE",
+      "codigo": "65116788-03",
+      "precioService": 121.485,
+      "precioPublico": 209.99550000000002
+    },
+    {
+      "Genus/Alteas ONE": "Placa Display Alteas ONE",
+      "codigo": "65116789-03",
+      "precioService": 121.485,
+      "precioPublico": 209.99550000000002
+    },
+    {
+      "Genus/Alteas ONE": "Bomba Circuladora",
+      "codigo": "60001947-02",
+      "precioService": 196,
+      "precioPublico": 338.8
+    },
+    {
+      "Genus/Alteas ONE": "Purgador (bomba negra cuadrada)",
+      "codigo": 65112086,
+      "precioService": 20.13092682,
+      "precioPublico": 34.79774492480001
+    },
+    {
+      "Genus/Alteas ONE": "Purgador (bomba blanca redonda)",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "Genus/Alteas ONE": "Sensor de presion",
+      "codigo": 65115793,
+      "precioService": 28.98069776,
+      "precioPublico": 50.09520613503843
+    },
+    {
+      "Genus/Alteas ONE": "Grupo envio",
+      "codigo": 65115933,
+      "precioService": 39.71204401,
+      "precioPublico": 68.64510464110916
+    },
+    {
+      "Genus/Alteas ONE": "Grupo retorno Alteas ONE",
+      "codigo": 65120137,
+      "precioService": 76.04098564,
+      "precioPublico": 131.44227517691465
+    },
+    {
+      "Genus/Alteas ONE": "Grupo retorno Genus ONE",
+      "codigo": "65119772-01",
+      "precioService": 79.7372576,
+      "precioPublico": 137.83154528000003
+    },
+    {
+      "Genus/Alteas ONE": "Valvula de Gas",
+      "codigo": 65116557,
+      "precioService": 67.6620475,
+      "precioPublico": 116.95868210607296
+    },
+    {
+      "Genus/Alteas ONE": "Electrodo de encendido y deteccion",
+      "codigo": 65116556,
+      "precioService": 30.43579556,
+      "precioPublico": 52.61044661043784
+    },
+    {
+      "Genus/Alteas ONE": "Intercambiador Primario 35  KW",
+      "codigo": "65116697-01",
+      "precioService": 349.3,
+      "precioPublico": 603.79
+    },
+    {
+      "Genus/Alteas ONE": "Aislante tapa frontal",
+      "codigo": 65116512,
+      "precioService": 26.46,
+      "precioPublico": 45.73799999999999
+    },
+    {
+      "Genus/Alteas ONE": "Intercambiador Secundario",
+      "codigo": 65116537,
+      "precioService": 52.62603694,
+      "precioPublico": 90.96786386027897
+    },
+    {
+      "Genus/Alteas ONE": "Ventilador",
+      "codigo": "65116558-01",
+      "precioService": 91.70876915,
+      "precioPublico": 158.52515810560004
+    },
+    {
+      "Genus/Alteas ONE": "Cabeza Motorizada",
+      "codigo": 65114936,
+      "precioService": 35.92878974,
+      "precioPublico": 62.10547940507065
+    },
+    {
+      "Genus/Alteas ONE": "V3V + Motor",
+      "codigo": 65114924,
+      "precioService": 84.85645312,
+      "precioPublico": 146.6804403903761
+    },
+    {
+      "Genus/Alteas ONE": "Sensor de flujo sanitario",
+      "codigo": 65114919,
+      "precioService": 10.19781038,
+      "precioPublico": 17.62764366509093
+    },
+    {
+      "Genus/Alteas ONE": "Sensor Reed",
+      "codigo": "65114921-01",
+      "precioService": 15.8382224,
+      "precioPublico": 27.377498720000002
+    },
+    {
+      "Genus/Alteas ONE": "Grifo de llenado  ",
+      "codigo": 65119771,
+      "precioService": 29.32801872,
+      "precioPublico": 50.695575216000016
+    },
+    {
+      "Genus/Alteas ONE": "Valvula de retencion",
+      "codigo": "65114918-01",
+      "precioService": 11.45813469,
+      "precioPublico": 19.806204246400004
+    },
+    {
+      "Genus/Alteas ONE": "Manometro",
+      "codigo": 65114200,
+      "precioService": 29.71032064,
+      "precioPublico": 51.356411392000005
+    },
+    {
+      "Genus/Alteas ONE": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "Genus/Alteas ONE": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "Genus/Alteas ONE": "Grupo By Pass",
+      "codigo": 65114917,
+      "precioService": 21.17167293,
+      "precioPublico": 36.59674891706155
+    },
+    {
+      "Genus/Alteas ONE": "Grifo de vaciado",
+      "codigo": 65114922,
+      "precioService": 17.83707381,
+      "precioPublico": 30.832656160937876
+    },
+    {
+      "Genus/Alteas ONE": "Filtro de Calefacción",
+      "codigo": 65114923,
+      "precioService": 15.83631434,
+      "precioPublico": 27.374200507263676
+    }
+  ],
+  "HP":[
+    {
+      " HP 100 - HP 100 EVO": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      " HP 100 - HP 100 EVO": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      " HP 100 - HP 100 EVO": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      " HP 100 - HP 100 EVO": "Placa Electronica HP",
+      "codigo": 65107391,
+      "precioService": 253.6409396,
+      "precioPublico": 438.4364812256001
+    },
+    {
+      " HP 100 - HP 100 EVO": "Placa Display",
+      "codigo": "65105149-02",
+      "precioService": 158.4696073,
+      "precioPublico": 273.9260354688001
+    },
+    {
+      " HP 100 - HP 100 EVO": "Placa Electronica HP EVO",
+      "codigo": 65113369,
+      "precioService": 174.9522815,
+      "precioPublico": 302.4175151712
+    },
+    {
+      " HP 100 - HP 100 EVO": "Placa Display HP EVO",
+      "codigo": "65111882-02",
+      "precioService": 106.2580879,
+      "precioPublico": 183.67469486080006
+    },
+    {
+      " HP 100 - HP 100 EVO": "Purgador intercambiador",
+      "codigo": "64200953-01",
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      " HP 100 - HP 100 EVO": "Presostato De Minima",
+      "codigo": 995903,
+      "precioService": 28.49787741,
+      "precioPublico": 49.260616662400004
+    },
+    {
+      " HP 100 - HP 100 EVO": "Sonda NTC",
+      "codigo": 64201656,
+      "precioService": 91.90538157,
+      "precioPublico": 158.86501671040003
+    },
+    {
+      " HP 100 - HP 100 EVO": "Valvula De Gas",
+      "codigo": 65000261,
+      "precioService": 228.4199357,
+      "precioPublico": 394.84017464320016
+    },
+    {
+      " HP 100 - HP 100 EVO": "NAC de encendido",
+      "codigo": 64201912,
+      "precioService": 111.0641692,
+      "precioPublico": 191.98234964480002
+    },
+    {
+      " HP 100 - HP 100 EVO": "Electrodo de Ignicion",
+      "codigo": 64201338,
+      "precioService": 38.3175753,
+      "precioPublico": 66.23466586880001
+    },
+    {
+      " HP 100 - HP 100 EVO": "Electrodo de ionizacion",
+      "codigo": 64201339,
+      "precioService": 39.15863952,
+      "precioPublico": 67.68850545600003
+    },
+    {
+      " HP 100 - HP 100 EVO": "Junta Electrodo",
+      "codigo": "60000286-01",
+      "precioService": 4.2,
+      "precioPublico": 7.26
+    },
+    {
+      " HP 100 - HP 100 EVO": "Junta Puerta",
+      "codigo": "60000672-01",
+      "precioService": 29.33894163,
+      "precioPublico": 50.714456249600005
+    },
+    {
+      " HP 100 - HP 100 EVO": "Intercambiador Primario 100 KW",
+      "codigo": 64201311,
+      "precioService": 2314.2,
+      "precioPublico": 4000.2599999999998
+    },
+    {
+      " HP 100 - HP 100 EVO": "Ventilador",
+      "codigo": 64280528,
+      "precioService": 481.5802672,
+      "precioPublico": 832.4458903904001
+    },
+    {
+      " HP 100 - HP 100 EVO": "Manometro",
+      "codigo": 65104234,
+      "precioService": 29.09863757,
+      "precioPublico": 50.299073510400014
+    },
+    {
+      " HP 100 - HP 100 EVO": "Valvula De Seguridad",
+      "codigo": 3590431,
+      "precioService": 49.99504132,
+      "precioPublico": 86.42
+    }
+  ],
+  "Alixia/Pigma":[
+    {
+      "ALIXIA-PIGMA 25/30 FF": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021"
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl"
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Placa Electronica",
+      "codigo": "65109313-05",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Placa Display Alixia",
+      "codigo": 60001125,
+      "precioService": 76.50407565,
+      "precioPublico": 132.24275933440003
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Placa Display Pigma",
+      "codigo": "60000817-01",
+      "precioService": 106.3345483,
+      "precioPublico": 183.80686209600003
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Bomba Circuladora Alixia",
+      "codigo": 60001584,
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Bomba Circuladora Pigma",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Capacitor+cable Bomba 65104319",
+      "codigo": 65104520,
+      "precioService": 31.7638281,
+      "precioPublico": 54.90604570880001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Grupo envio (block izquierdo)",
+      "codigo": 60002319,
+      "precioService": 67.77666896,
+      "precioPublico": 117.15681348800001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Grupo retorno (block derecho)",
+      "codigo": 60000845,
+      "precioService": 44.86039958,
+      "precioPublico": 77.5444049952
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.67788326,
+      "precioPublico": 101.42891249920001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Intercambiador Primario 25/30 kw FF",
+      "codigo": 65104246,
+      "precioService": 252.7998753,
+      "precioPublico": 436.9826416384001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Intercambiador Primario 25 kw CF",
+      "codigo": 65104247,
+      "precioService": 234.4821519,
+      "precioPublico": 405.31914829119995
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Intercambiador Primario 25 kw FF",
+      "codigo": 65106297,
+      "precioService": 229.5122269,
+      "precioPublico": 396.7282780032
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Juego de fibras ceramicas",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Termostato De Humos",
+      "codigo": 999539,
+      "precioService": 17.58588832,
+      "precioPublico": 30.398464096000005
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Ventilador 25 FF",
+      "codigo": 65104357,
+      "precioService": 124.6,
+      "precioPublico": 215.38
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Ventilador 30 FF",
+      "codigo": 65104452,
+      "precioService": 173.2592301,
+      "precioPublico": 299.49095496320007
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Presostato De Aire 25 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Presostato De Aire 30 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Venturi  25 kw FF",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Venturi  30 kw FF",
+      "codigo": 65106515,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "V3V+cabezal ",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Manometro",
+      "codigo": 60000725,
+      "precioService": 32.61581523,
+      "precioPublico": 56.378766329600005
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    },
+    {
+      "ALIXIA-PIGMA 25/30 FF": " ",
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null
+    }
+  ],
+  "Talia/Talia System":[
+    {
+      "TALIA 25/30/35": null,
+      "codigo": null,
+      "precioService": "Service Oficial",
+      "precioPublico": "Publico 2021",
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "DESCRIPCION",
+      "codigo": "CODIGO",
+      "precioService": "U$S sin IVA",
+      "precioPublico": "U$S IVA incl",
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Placa Electronica",
+      "codigo": "65109313-05",
+      "precioService": 209.3,
+      "precioPublico": 361.78999999999996,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Placa Display",
+      "codigo": "60000760-03",
+      "precioService": 182.7184719,
+      "precioPublico": 315.84193006080005,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Bomba Circuladora 25/30 FF",
+      "codigo": "65104319-01",
+      "precioService": 182,
+      "precioPublico": 314.59999999999997,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Capacitor+cable Bomba 65104319",
+      "codigo": 65104520,
+      "precioService": 31.7638281,
+      "precioPublico": 54.90604570880001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Bomba Circuladora 35 FF",
+      "codigo": "60000591-01",
+      "precioService": 196,
+      "precioPublico": 338.8,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Capacitor+cable Bomba 60000591",
+      "codigo": 65109585,
+      "precioService": 22.06428224,
+      "precioPublico": 38.13968787200001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Purgador Bomba",
+      "codigo": 65104703,
+      "precioService": 32.9,
+      "precioPublico": 56.87,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Grupo envio (block izquierdo)",
+      "codigo": 60002319,
+      "precioService": 67.77666896,
+      "precioPublico": 117.15681348800001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Grupo retorno (block derecho)",
+      "codigo": 60000845,
+      "precioService": 44.86039958,
+      "precioPublico": 77.5444049952,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Presostato de Minima",
+      "codigo": 65105090,
+      "precioService": 48.16,
+      "precioPublico": 83.24799999999999,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Sonda NTC",
+      "codigo": "990686-01",
+      "precioService": 17.70604035,
+      "precioPublico": 30.606155465600008,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Sonda Sanitaria",
+      "codigo": "65104338-01",
+      "precioService": 26.313,
+      "precioPublico": 45.483900000000006,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Valvula De Gas",
+      "codigo": 65104254,
+      "precioService": 165.8644187,
+      "precioPublico": 286.708495216,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "NAC De Encendido",
+      "codigo": 65104653,
+      "precioService": 58.67788326,
+      "precioPublico": 101.42891249920001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Electrodos",
+      "codigo": 65115802,
+      "precioService": 33.6,
+      "precioPublico": 58.08,
+      "Column6": " "
+    },
+    {
+      "TALIA 25/30/35": "Intercambiador Primario 25 kw CF",
+      "codigo": 65104247,
+      "precioService": 234.4821519,
+      "precioPublico": 405.31914829119995,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Intercambiador Primario 25/30 kw FF",
+      "codigo": 65104246,
+      "precioService": 252.7998753,
+      "precioPublico": 436.9826416384001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Intercambiador Primario 30 kw CF",
+      "codigo": 65105030,
+      "precioService": 235.4542911,
+      "precioPublico": 406.9995602816,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Intercambiador Primario 35 kw FF",
+      "codigo": 65105041,
+      "precioService": 279.7139305,
+      "precioPublico": 483.5055084288001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Juego de fibras ceramicas (24/28)",
+      "codigo": 65104695,
+      "precioService": 33.09642336,
+      "precioPublico": 57.20953180800001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Intercambiador Secundario",
+      "codigo": 65104333,
+      "precioService": 156.645481,
+      "precioPublico": 270.77290285760006,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Termostato De Humos (CF)",
+      "codigo": 999539,
+      "precioService": 17.58588832,
+      "precioPublico": 30.398464096000005,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Ventilador 25 kw FF",
+      "codigo": 65104255,
+      "precioService": 177.49732,
+      "precioPublico": 306.81679600000007,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Ventilador 30 kw FF",
+      "codigo": 65104231,
+      "precioService": 177.49732,
+      "precioPublico": 306.81679600000007,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Ventilador 35 kw FF",
+      "codigo": 65105042,
+      "precioService": 173.2592301,
+      "precioPublico": 299.49095496320007,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Sensor Hall 25 kw FF",
+      "codigo": 65108301,
+      "precioService": 42.31536109,
+      "precioPublico": 73.14512416640002,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Sensor Hall 30/35 kw FF",
+      "codigo": 65108255,
+      "precioService": 42.31536109,
+      "precioPublico": 73.14512416640002,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Presostato De Aire 25 FF",
+      "codigo": "65104671-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Presostato De Aire 30/35 FF",
+      "codigo": "65104672-01",
+      "precioService": 50.07062861,
+      "precioPublico": 86.55065802240001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Venturi  25 kw FF",
+      "codigo": 65106516,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Venturi  30 kw FF",
+      "codigo": 65106515,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Venturi  35 kw FF",
+      "codigo": 65106517,
+      "precioService": 10.79183706,
+      "precioPublico": 18.654461196800003,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Trampa De Condensado",
+      "codigo": 65104623,
+      "precioService": 17.33466134,
+      "precioPublico": 29.964200323200004,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Grifo De Llenado",
+      "codigo": 65114261,
+      "precioService": 30.92276387,
+      "precioPublico": 53.4522061216,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Turbina Sanitaria",
+      "codigo": 65104317,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Sensor Reed",
+      "codigo": 65104323,
+      "precioService": 13.09657149,
+      "precioPublico": 22.638359286400007,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Cabeza Motorizada",
+      "codigo": "61302483-01",
+      "precioService": 68.25727709,
+      "precioPublico": 117.98757896640001,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "V3V+cabezal ",
+      "codigo": "60001583-01",
+      "precioService": 92.99767277,
+      "precioPublico": 160.75312007040003,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Manometro",
+      "codigo": 60000725,
+      "precioService": 32.61581523,
+      "precioPublico": 56.378766329600005,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Vaso De Expansion",
+      "codigo": 65104261,
+      "precioService": 73.5,
+      "precioPublico": 127.05,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Valvula De Seguridad",
+      "codigo": 61312668,
+      "precioService": 34.3,
+      "precioPublico": 59.29,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Grupo By Pass",
+      "codigo": 65104336,
+      "precioService": 33.21657539,
+      "precioPublico": 57.41722317760002,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Grifo de vaciado",
+      "codigo": 60001385,
+      "precioService": 16.24237014,
+      "precioPublico": 28.076096963200005,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": "Filtro de Calefacción",
+      "codigo": 60001372,
+      "precioService": 14.90977488,
+      "precioPublico": 25.772610864000004,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": null,
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null,
+      "Column6": null
+    },
+    {
+      "TALIA 25/30/35": " ",
+      "codigo": null,
+      "precioService": null,
+      "precioPublico": null,
+      "Column6": null
+    }
+  ],
+  "Accesorios Ariston":[
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Codigo",
+      "codigo": "Descripcion",
+      "precioService": "Publico $ con IVA"
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de termoregulacion",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318229,
+      "codigo": "Interfaz E-Bus (solo Clas y Genus)",
+      "precioService": 1800
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 65109109,
+      "codigo": "Control Remoto Clima Manager (Clas/Genus/Genus Premium)",
+      "precioService": 27600
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318242,
+      "codigo": "Clip In 2 zonas",
+      "precioService": 5000
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "3319089-SP",
+      "codigo": "Gateway Sensys",
+      "precioService": 12275.86
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318299,
+      "codigo": "Sensor de Temperatura Interior (Clas/Genus/Genus Premium)",
+      "precioService": 7000
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318586,
+      "codigo": "Sensor de Temperatura Interior (EVO)",
+      "precioService": 8500
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 65109110,
+      "codigo": "Sonda Externa Galileo",
+      "precioService": 3500
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3319116,
+      "codigo": "Cube Room Sensor Wired",
+      "precioService": 11592
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318991,
+      "codigo": "Control Remoto + Wi Fi Sensys Net ",
+      "precioService": 27142
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318585,
+      "codigo": "Control Remoto Sensys (EVO)",
+      "precioService": 14283
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318588,
+      "codigo": "Sonda Externa (EVO)",
+      "precioService": 1849
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318636,
+      "codigo": "Kit Multifuncion",
+      "precioService": 11578
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3319130,
+      "codigo": "KIT 2 zonas",
+      "precioService": 10587
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318983,
+      "codigo": "Sonda NTC caldera EVO (3318317)",
+      "precioService": 1662
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3319171,
+      "codigo": "kit desacoplador BUS (Alteas One Net y Genus One System)",
+      "precioService": 6525
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": null,
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de ventilacion 60/100",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318000,
+      "codigo": "Kit de ventilacion 1000 mm",
+      "precioService": 5989
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318003,
+      "codigo": "Curva coaxial a 90º",
+      "precioService": 2934
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318004,
+      "codigo": "Curva coaxial a 45º (2 unidades)",
+      "precioService": 5215
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318005,
+      "codigo": "Extension coaxial de 1 m",
+      "precioService": 3306
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318006,
+      "codigo": "Extension coaxial de 0,5 m",
+      "precioService": 2301
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 65104249,
+      "codigo": "Tapa auxiliar aire Galileo",
+      "precioService": "USD 7,3"
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 60000923,
+      "codigo": "Abrazadera tubo ",
+      "precioService": "USD 12"
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 60000924,
+      "codigo": "Abrazadera codo",
+      "precioService": "USD 12"
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318855,
+      "codigo": "Ventilacion vertical 60/100",
+      "precioService": 9676
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318008,
+      "codigo": "Salida vertical con trampa de condensado",
+      "precioService": 3635
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de ventilacion 80/125",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318035,
+      "codigo": "Kit Coaxial 80/125 + Adaptador",
+      "precioService": 13997
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318036,
+      "codigo": "Codo a 90 coaxial 80/125",
+      "precioService": 3698
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318037,
+      "codigo": "Codo a 45 coaxial 80/125 (2 unidades)",
+      "precioService": 8009
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318038,
+      "codigo": "Extension coaxial 80/125 1000 mm",
+      "precioService": 6491
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318039,
+      "codigo": "Extension coaxial 80/125 500 mm",
+      "precioService": 3698
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318013,
+      "codigo": "Ventiacion vertical 80/125",
+      "precioService": 11455
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318040,
+      "codigo": "Kit salida vertical con trampa de condensado y adaptador",
+      "precioService": 3915
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de ventilacion por tubos separados",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318034,
+      "codigo": "Separador de tubos",
+      "precioService": 4196
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318368,
+      "codigo": "Kit horizontal desdoblado",
+      "precioService": 10601
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318019,
+      "codigo": "Codo a 90° 80 mm (2 unidades)",
+      "precioService": 3306
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318020,
+      "codigo": "Codo a 45° 80 mm (2 unidades)",
+      "precioService": 3185
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318022,
+      "codigo": "Extension 80 mm x 2000 mm",
+      "precioService": 5215
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318023,
+      "codigo": "Extension 80 mm x 1000 mm",
+      "precioService": 2552
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318025,
+      "codigo": "Extension 80 mm x 500 mm (10 unidades)",
+      "precioService": 13354
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318028,
+      "codigo": "Terminal de aspiracion 80 mm",
+      "precioService": 523
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de ventilacion 60/100 para calderas de condensacion",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318073,
+      "codigo": "Kit de ventilacion 1000 mm",
+      "precioService": 8068
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318075,
+      "codigo": "Curva coaxial a 90º",
+      "precioService": 3982
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318076,
+      "codigo": "Curva coaxial a 45º (2 unidades)",
+      "precioService": 7012
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318077,
+      "codigo": "Extension coaxial de 1 m",
+      "precioService": 4629
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318078,
+      "codigo": "Extension coaxial de 0,5 m",
+      "precioService": 3177
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318847,
+      "codigo": "Ventilacion vertical",
+      "precioService": 8892
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318079,
+      "codigo": "Kit salida vertical",
+      "precioService": 2573
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": "Accesorios de ventilacion 80/125 para calderas de condensacion",
+      "codigo": null,
+      "precioService": null
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318090,
+      "codigo": "Kit de ventilacion 1000 mm",
+      "precioService": 18518
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318091,
+      "codigo": "Curva coaxial a 90º",
+      "precioService": 4912
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318092,
+      "codigo": "Curva coaxial a 45º (1 unidad)",
+      "precioService": 5298
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318093,
+      "codigo": "Extension coaxial de 1 m",
+      "precioService": 8736
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318094,
+      "codigo": "Extension coaxial de 0,5 m",
+      "precioService": 5027
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318080,
+      "codigo": "Ventilacion vertical",
+      "precioService": 15341
+    },
+    {
+      "ACCESORIOS PARA CALDERAS MURALES": 3318095,
+      "codigo": "Kit de salida vertical con adaptacion",
+      "precioService": 2796
+    }
+  ],
+  "GEL":[
+    {
+      "Codigo": 12501000,
+      "Articulo": "ANTIKAL MINI ",
+      "Distr u$s s/IVA": 35,
+      "Un x caja": 12,
+      "Publ u$s c/IVA": 61.4075
+    },
+    {
+      "Codigo": 11101120,
+      "Articulo": "Dosaphos Dima 1/2",
+      "Distr u$s s/IVA": 45,
+      "Un x caja": 6,
+      "Publ u$s c/IVA": 78.9525
+    },
+    {
+      "Codigo": 10701160,
+      "Articulo": "GELPHOS RAPID (8 recargas)",
+      "Distr u$s s/IVA": 15,
+      "Un x caja": 6,
+      "Publ u$s c/IVA": 26.3175
+    },
+    {
+      "Codigo": 10507010,
+      "Articulo": "Dosaphos 600 Plant 3/4",
+      "Distr u$s s/IVA": 96,
+      "Un x caja": 1,
+      "Publ u$s c/IVA": 168.432
+    },
+    {
+      "Codigo": 10701050,
+      "Articulo": "Gelphos P 1 kg",
+      "Distr u$s s/IVA": 20,
+      "Un x caja": 12,
+      "Publ u$s c/IVA": 35.09
+    },
+    {
+      "Codigo": 12103100,
+      "Articulo": "BOY C15 Super",
+      "Distr u$s s/IVA": 700,
+      "Un x caja": 1,
+      "Publ u$s c\/IVA": 1228.15
+    },
+    {
+      "Codigo": 11307070,
+      "Articulo": "Boiler cleaner PZ 1,5 kg",
+      "Distr u$s s\/IVA": 25,
+      "Un x caja": 6,
+      "Publ u$s c\/IVA": 43.8625
+    },
+    {
+      "Codigo": 11316030,
+      "Articulo": "LONG LIFE 100 POCKET 100- gr",
+      "Distr u$s s\/IVA": 20,
+      "Un x caja": 5,
+      "Publ u$s c\/IVA": 35.09
+    },
+    {
+      "Codigo": 11316812,
+      "Articulo": "LONG LIFE 100 COMBI 100- gr",
+      "Distr u$s s\/IVA": 30,
+      "Un x caja": 5,
+      "Publ u$s c\/IVA": 52.635
+    },
+    {
+      "Codigo": 11316740,
+      "Articulo": "LONG LIFE 710 POCKET 100- gr",
+      "Distr u$s s\/IVA": 20,
+      "Un x caja": 5,
+      "Publ u$s c\/IVA": 35.09
+    },
+    {
+      "Codigo": 11316561,
+      "Articulo": "LONG LIFE 800",
+      "Distr u$s s\/IVA": 30,
+      "Un x caja": 6,
+      "Publ u$s c\/IVA": 52.635
+    },
+    {
+      "Codigo": 13305040,
+      "Articulo": "LONG LIFE SEALER",
+      "Distr u$s s\/IVA": 45,
+      "Un x caja": 6,
+      "Publ u$s c\/IVA": 78.9525
+    },
+    {
+      "Codigo": 11316422,
+      "Articulo": "LONG LIFE 500 (Bidon 5 lts)",
+      "Distr u$s s\/IVA": 50,
+      "Un x caja": 1,
+      "Publ u$s c\/IVA": 87.725
+    },
+    {
+      "Codigo": 10129900,
+      "Articulo": "MINIMAG",
+      "Distr u$s s\/IVA": 95,
+      "Un x caja": 6,
+      "Publ u$s c\/IVA": 166.6775
+    },
+    {
+      "Codigo": 10615100,
+      "Articulo": "Bomba de carga\/Pulverizador",
+      "Distr u$s s\/IVA": 50,
+      "Un x caja": 1,
+      "Publ u$s c\/IVA": 87.725
+    },
+    {
+      "Codigo": 13106130,
+      "Articulo": "Boiler Cleaner Economix",
+      "Distr u$s s\/IVA": 10,
+      "Un x caja": 6,
+      "Publ u$s c\/IVA": 17.545
+    },
+    {
+      "Codigo": 12902045,
+      "Articulo": "Boiler Cleaner Fumi Plus",
+      "Distr u$s s\/IVA": 40,
+      "Un x caja": 12,
+      "Publ u$s c\/IVA": 70.18
+    },
+    {
+      "Codigo": 10109195,
+      "Articulo": "Neutralizador de PH",
+      "Distr u$s s\/IVA": 40,
+      "Un x caja": 4,
+      "Publ u$s c\/IVA": 70.18
+    },
+    {
+      "Codigo": 18030010,
+      "Articulo": "Sellaroscas Gelock x 100 ml",
+      "Distr u$s s\/IVA": 15,
+      "Un x caja": 24,
+      "Publ u$s c\/IVA": 26.3175
+    },
+    {
+      "Codigo": null,
+      "Articulo": null,
+      "Distr u$s s\/IVA": null,
+      "Un x caja": null,
+      "Publ u$s c\/IVA": null
+    },
+    {
+      "Codigo": "Precios por unidad",
+      "Articulo": null,
+      "Distr u$s s\/IVA": null,
+      "Un x caja": null,
+      "Publ u$s c\/IVA": null
+    },
+    {
+      "Codigo": "Comprando caja cerrada 10% de descuento adicional (salvo los que son 1 unidad x caja)",
+      "Articulo": null,
+      "Distr u$s s\/IVA": null,
+      "Un x caja": null,
+      "Publ u$s c\/IVA": null
+    }
+  ],
+  "Servicios":[
+    {
+      "Codigo": "RECL",
+      "Servicio": "Reclamo",
+      "Descripcion": "Visita sin cargo",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "VIS",
+      "Servicio": "Visita",
+      "Descripcion": "Dentro del radio de 30 km ",
+      "Precio $": 2000
+    },
+    {
+      "Codigo": "REPB",
+      "Servicio": "Reparacion basica\/presupuesto",
+      "Descripcion": "Incluido el costo de visita",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "MANT",
+      "Servicio": "Mantenimiento (fuera de temporada)",
+      "Descripcion": "Revision completa del equipo sin falla declarada",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "KMADD",
+      "Servicio": "Km Adicional",
+      "Descripcion": " Despues de los 30 km (solo ida)",
+      "Precio $": 60
+    },
+    {
+      "Codigo": "REPLAQ",
+      "Servicio": "Reparacion plaqueta",
+      "Descripcion": "En domicilio, VDR y relays (sumar visita)",
+      "Precio $": 5000
+    },
+    {
+      "Codigo": "RECINT",
+      "Servicio": "Recambio intercambiador",
+      "Descripcion": "Cambio de intercambiador sucio (%)",
+      "Precio $": 2000
+    },
+    {
+      "Codigo": "CAMVAS",
+      "Servicio": "Cambio de vaso",
+      "Descripcion": "Colgar y descolgar caldera",
+      "Precio $": 6000
+    },
+    {
+      "Codigo": "RETCOL",
+      "Servicio": "Retiro\/Colocacion",
+      "Descripcion": "De caldera por cada visita",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "RESTALL",
+      "Servicio": "Restauracion en taller",
+      "Descripcion": "(no incluye retiro y colocacion) repuestos 30 %",
+      "Precio $": 7200
+    },
+    {
+      "Codigo": 260110119,
+      "Servicio": "Kit flexibles ",
+      "Descripcion": "Kit completo de flexibles para caldera",
+      "Precio $": "u$s 60"
+    },
+    {
+      "Codigo": " 26010120",
+      "Servicio": "Flexible 1\/2",
+      "Descripcion": "Flexible extensible acero inoxidable 1\/2",
+      "Precio $": "u$s 15"
+    },
+    {
+      "Codigo": 26010121,
+      "Servicio": "Flexible 3\/4",
+      "Descripcion": "Flexible extensible acero inoxidable 3\/4",
+      "Precio $": "u$s 20"
+    },
+    {
+      "Codigo": 26010122,
+      "Servicio": "Flexible Gas",
+      "Descripcion": "Flexible extensible acero inoxidable 3\/4",
+      "Precio $": "u$s 25"
+    },
+    {
+      "Codigo": "CH110",
+      "Servicio": "Termostato de ambiente",
+      "Descripcion": "On\/Off Digital Fantini Cosmi",
+      "Precio $": "u$s 70"
+    },
+    {
+      "Codigo": "FLUSH",
+      "Servicio": "Lavado quimico de la instalacion",
+      "Descripcion": "Costo fijo por instalacion (sin quimicos)",
+      "Precio $": 8000
+    },
+    {
+      "Codigo": "ADDI",
+      "Servicio": "Adicional lavado de instalacion",
+      "Descripcion": "Costo por lavado de cada radiador o circuito",
+      "Precio $": 800
+    },
+    {
+      "Codigo": "LAVPRI",
+      "Servicio": "Lavado con bomba BOY",
+      "Descripcion": "Lavado intercambiador primario en domicilio",
+      "Precio $": 8000
+    },
+    {
+      "Codigo": "UPA",
+      "Servicio": "Bomba UPA 15-90",
+      "Descripcion": "Bomba presurizadora sin colocacion",
+      "Precio $": 11800
+    },
+    {
+      "Codigo": "PRESS",
+      "Servicio": "Presurizacion individual",
+      "Descripcion": "Colocacion de bomba UPA",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "PMS",
+      "Servicio": "Puesta en marcha simple",
+      "Descripcion": "Condensacion y convencionales",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "PMC",
+      "Servicio": "Puesta en marcha condensacion",
+      "Descripcion": "Con analisis de combustion incluido",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SENSIN",
+      "Servicio": "Seteo Sensys Net sin visita",
+      "Descripcion": "Configuracion durante PM",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SENCON",
+      "Servicio": "Seteo Sensys Net con visita",
+      "Descripcion": "Configuracion despues de PM",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SERGTIA",
+      "Servicio": "Intervencion en garantia",
+      "Descripcion": "Para cualquier reparacion",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "CAMCAL",
+      "Servicio": "Cambio de caldera en garantia",
+      "Descripcion": "Descolgar y colgar el reemplazo",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "GLPCONV",
+      "Servicio": "Cambio GLP Taller Convencional",
+      "Descripcion": "no incluye el costo de los picos",
+      "Precio $": 2000
+    },
+    {
+      "Codigo": "GLPCOND",
+      "Servicio": "Cambio GLP Taller Condensacion",
+      "Descripcion": "no incluye el costo de los picos",
+      "Precio $": 4000
+    }
+  ],
+  "MDQ":[
+    {
+      "Codigo": "RECL",
+      "Servicio": "Reclamo",
+      "Descripcion": "Visita sin cargo",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "VIS",
+      "Servicio": "Visita",
+      "Descripcion": "Dentro del radio de 30 km ",
+      "Precio $": 600
+    },
+    {
+      "Codigo": "REPB",
+      "Servicio": "Reparacion basica\/Presupuesto",
+      "Descripcion": "Incluido el costo de visita",
+      "Precio $": 2000
+    },
+    {
+      "Codigo": "REPC",
+      "Servicio": "Reparacion completa",
+      "Descripcion": "Incluye revision completa",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "MANT",
+      "Servicio": "Mantenimiento",
+      "Descripcion": "Revision completa del equipo sin falla declarada",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "ADD",
+      "Servicio": "Adicional Sabado",
+      "Descripcion": "Para todos los servicios",
+      "Precio $": 600
+    },
+    {
+      "Codigo": "KMADD",
+      "Servicio": "Km Adicional",
+      "Descripcion": " Despues de los 30 km (solo ida)",
+      "Precio $": 50
+    },
+    {
+      "Codigo": "REPLAQ",
+      "Servicio": "Reparacion plaqueta",
+      "Descripcion": "En domicilio, VDR y relays (sumar visita)",
+      "Precio $": 5000
+    },
+    {
+      "Codigo": "RECINT",
+      "Servicio": "Recambio intercambiador",
+      "Descripcion": "Cambio de intercambiador sucio (%)",
+      "Precio $": 2000
+    },
+    {
+      "Codigo": "CAMVAS",
+      "Servicio": "Cambio de vaso",
+      "Descripcion": "Colgar y descolgar caldera",
+      "Precio $": 6000
+    },
+    {
+      "Codigo": "RETCOL",
+      "Servicio": "Retiro\/Colocacion",
+      "Descripcion": "De caldera por cada visita",
+      "Precio $": 4000
+    },
+    {
+      "Codigo": "RESTALL",
+      "Servicio": "Restauracion en taller",
+      "Descripcion": "(no incluye retiro y colocacion)",
+      "Precio $": 8000
+    },
+    {
+      "Codigo": 26010119,
+      "Servicio": "Kit flexibles ",
+      "Descripcion": "Kit completo de flexibles para caldera",
+      "Precio $": "u$s 60"
+    },
+    {
+      "Codigo": " 26010120",
+      "Servicio": "Flexible 1\/2",
+      "Descripcion": "Flexible extensible acero inoxidable 1\/2",
+      "Precio $": "u$s 15"
+    },
+    {
+      "Codigo": 26010121,
+      "Servicio": "Flexible 3\/4",
+      "Descripcion": "Flexible extensible acero inoxidable 3\/4",
+      "Precio $": "u$s 20"
+    },
+    {
+      "Codigo": 26010122,
+      "Servicio": "Flexible Gas",
+      "Descripcion": "Flexible extensible acero inoxidable 3\/4",
+      "Precio $": "u$s 25"
+    },
+    {
+      "Codigo": "CH110",
+      "Servicio": "Termostato de ambiente",
+      "Descripcion": "On\/Off Digital Fantini Cosmi",
+      "Precio $": "u$s 60"
+    },
+    {
+      "Codigo": "FLUSH",
+      "Servicio": "Lavado quimico de la instalacion",
+      "Descripcion": "Costo fijo por instalacion",
+      "Precio $": 8000
+    },
+    {
+      "Codigo": "ADDI",
+      "Servicio": "Adicional lavado de instalacion",
+      "Descripcion": "Costo por lavado de cada radiador o circuito",
+      "Precio $": 800
+    },
+    {
+      "Codigo": "LAVPRI",
+      "Servicio": "Lavado con bomba BOY",
+      "Descripcion": "Lavado intercambiador primario en domicilio",
+      "Precio $": 8000
+    },
+    {
+      "Codigo": "UPA",
+      "Servicio": "Bomba UPA 15-90",
+      "Descripcion": "Bomba presurizadora sin colocacion",
+      "Precio $": 9800
+    },
+    {
+      "Codigo": "PRESS",
+      "Servicio": "Presurizacion individual",
+      "Descripcion": "Colocacion de bomba UPA",
+      "Precio $": 5000
+    },
+    {
+      "Codigo": "PMS",
+      "Servicio": "Puesta en marcha simple",
+      "Descripcion": "Condensacion y convencionales",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "PMC",
+      "Servicio": "Puesta en marcha condensacion",
+      "Descripcion": "Con analisis de combustion incluido",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SENSIN",
+      "Servicio": "Seteo Sensys Net sin visita",
+      "Descripcion": "Configuracion durante PM",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SENCON",
+      "Servicio": "Seteo Sensys Net con visita",
+      "Descripcion": "Configuracion despues de PM",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "SERGTIA",
+      "Servicio": "Intervencion en garantia",
+      "Descripcion": "Para cualquier reparacion",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "CAMCAL",
+      "Servicio": "Cambio de caldera",
+      "Descripcion": "Descolgar y colgar el reemplazo",
+      "Precio $": 0
+    },
+    {
+      "Codigo": "VIAT",
+      "Servicio": "Viaticos en garantia ARISTON",
+      "Descripcion": "Desde el km 20 al 50 (km recorrido)",
+      "Precio $": 0
+    }
+  ],
+  "Precios Garantias":[
+    {
+      "CODIGO": "PMS",
+      "Servicio": "Puesta en marcha simple",
+      "Descripcion": "Condensacion y convencionales",
+      "Precio $": 1000
+    },
+    {
+      "CODIGO": "PMC",
+      "Servicio": "Puesta en marcha condensacion",
+      "Descripcion": "Con analisis de combustion incluido",
+      "Precio $": 1630
+    },
+    {
+      "CODIGO": "SENSIN",
+      "Servicio": "Seteo Sensys Net sin visita",
+      "Descripcion": "Configuracion durante PM",
+      "Precio $": 870
+    },
+    {
+      "CODIGO": "SENCON",
+      "Servicio": "Seteo Sensys Net con visita",
+      "Descripcion": "Configuracion despues de PM",
+      "Precio $": 1000
+    },
+    {
+      "CODIGO": "SERGTIA",
+      "Servicio": "Intervencion en garantia",
+      "Descripcion": "Para cualquier reparacion",
+      "Precio $": 1000
+    },
+    {
+      "CODIGO": "CAMCAL",
+      "Servicio": "Cambio de caldera",
+      "Descripcion": "Descolgar y colgar el reemplazo",
+      "Precio $": 2500
+    },
+    {
+      "CODIGO": "VIAT",
+      "Servicio": "Viaticos (precio por km recorrido)",
+      "Descripcion": "Desde el km 20 al 50",
+      "Precio $": 27
+    },
+    {
+      "CODIGO": "ALUM",
+      "Servicio": "Cambio de tubos e intercambiador",
+      "Descripcion": "De aluminio a cobre",
+      "Precio $": 1000
+    },
+    {
+      "CODIGO": "FLUSH",
+      "Servicio": "Barrido de instalacion",
+      "Descripcion": "Se suma al ALUM",
+      "Precio $": 1000
+    },
+    {
+      "CODIGO": null,
+      "Servicio": null,
+      "Descripcion": null,
+      "Precio $": null
+    },
+    {
+      "CODIGO": null,
+      "Servicio": "Precio en pesos sin IVA",
+      "Descripcion": null,
+      "Precio $": null
+    },
+    {
+      "CODIGO": null,
+      "Servicio": null,
+      "Descripcion": null,
+      "Precio $": null
+    },
+    {
+      "CODIGO": "NOTA",
+      "Servicio": "Para valores a cobrar al cliente ver solapa \"Servicios\"",
+      "Descripcion": null,
+      "Precio $": null
+    }
+  ]
+}
