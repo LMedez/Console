@@ -1,4 +1,4 @@
-package com.luc.basicstartmodularappandroid
+package com.luc.artistonprice
 
 import org.junit.Test
 

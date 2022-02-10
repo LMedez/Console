@@ -9,8 +9,8 @@ object Deps {
         }
 
         object Navigation {
-            private const val VERSION = "2.3.5"
-            const val FRAGMENT = "androidx.navigation:navigation-fragment:$VERSION"
+            private const val VERSION = "2.4.1"
+            const val FRAGMENT_KTX = "androidx.navigation:navigation-fragment-ktx:$VERSION"
             const val UI = "androidx.navigation:navigation-ui:$VERSION"
             const val UI_KTX = "androidx.navigation:navigation-ui-ktx:$VERSION"
             const val RUNTIME = "androidx.navigation:navigation-runtime:$VERSION"

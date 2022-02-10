@@ -1,6 +1,6 @@
 object BuildPlugins {
     const val ANDROID = "com.android.tools.build:gradle:7.0.4"
-    const val SAFE_ARGS = "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+    const val SAFE_ARGS = "androidx.navigation:navigation-safe-args-gradle-plugin:2.4.0"
     const val GMS = "com.google.gms:google-services:4.3.10"
 
     interface BuildPlugin {
@@ -16,8 +16,8 @@ object BuildPlugins {
     }
 
     object SafeArgs : BuildPlugin {
-        override val ID = "gradle-plugin"
-        override val VERSION = "1.6.10"
+        override val ID = "androidx.navigation.safeargs"
+        override val VERSION = "2.4.0"
     }
 
     private object Detekt : BuildPlugin {

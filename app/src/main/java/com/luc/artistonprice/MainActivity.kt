@@ -1,4 +1,4 @@
-package com.luc.basicstartmodularappandroid
+package com.luc.artistonprice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
