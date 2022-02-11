@@ -2,18 +2,19 @@ package com.luc.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.luc.common.entities.FooEntity
-import com.luc.common.entities.UserEntity
-import com.luc.data.local.dao.FooDao
-import com.luc.data.local.dao.UserDao
+import com.luc.common.entities.RepuestoEntity
+import com.luc.common.entities.CalderaEntity
+import com.luc.data.local.dao.RepuestoDao
+import com.luc.data.local.dao.CalderaDao
+import java.util.concurrent.Executors
 
 @Database(
     entities = [
-        UserEntity::class, FooEntity::class],
+        CalderaEntity::class, RepuestoEntity::class],
     version = 1,
     exportSchema = true
 )
 abstract class LocalDatabase : RoomDatabase() {
-    abstract fun userDao(): UserDao
-    abstract fun fooDao(): FooDao
+    abstract fun calderaDao(): CalderaDao
+    abstract fun repuestoDao(): RepuestoDao
 }

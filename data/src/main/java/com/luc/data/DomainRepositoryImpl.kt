@@ -1,15 +1,16 @@
 package com.luc.data
 
-import com.luc.common.model.User
+import com.luc.common.model.Caldera
 import com.luc.data.local.LocalDataSource
-import com.luc.data.remote.firebase.firestore.FirestoreData
 import com.luc.domain.DomainRepository
+import kotlinx.coroutines.flow.Flow
 
 class DomainRepositoryImpl(
-    private val firestoreData: FirestoreData,
+//    private val firestoreData: FirestoreData,
     private val localDataSource: LocalDataSource
 ) : DomainRepository {
-    override suspend fun getUser(id: String): User {
-        return localDataSource.getUser(id)
+
+    override suspend fun getCalderas(): List<Caldera> {
+        return localDataSource.getCalderas()
     }
 }

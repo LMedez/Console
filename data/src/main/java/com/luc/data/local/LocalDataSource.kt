@@ -1,14 +1,18 @@
 package com.luc.data.local
 
-import com.luc.common.entities.asUser
-import com.luc.data.local.dao.UserDao
+import com.luc.common.entities.asRepuesto
+import com.luc.common.model.Caldera
+import com.luc.data.local.dao.CalderaDao
+import com.luc.data.local.dao.RepuestoDao
 
-class LocalDataSource(private val userDao: UserDao) {
+class LocalDataSource(private val calderaDao: CalderaDao, private val repuestoDao: RepuestoDao) {
 
-    /**
-     * Declare all methods with internal modifier
-     */
-
-    internal suspend fun getUser(id: String) = userDao.getUser(id).asUser()
+    internal suspend fun getCalderas() = calderaDao.getCalderaWithRepuestos()
+        .map { calderaWithRepuestos ->
+            Caldera(
+                calderaWithRepuestos.caldera.id,
+                calderaWithRepuestos.caldera.caldera,
+                calderaWithRepuestos.repuestos.map { it.asRepuesto() })
+        }
 
 }

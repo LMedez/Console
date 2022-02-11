@@ -20,6 +20,7 @@ dependencies {
     implementation(Deps.Firebase.FIRESTORE)
     implementation(Deps.Firebase.COROUTINES)
     implementation(Deps.Koin.ANDROID)
+    implementation(Deps.Google.Gson.GSON)
     implementation(Deps.AndroidX.Room.ROOM_KTX)
     kapt(Deps.AndroidX.Room.COMPILER)
 }

@@ -56,6 +56,11 @@ object Deps {
             private const val VERSION = "1.4.0-beta01"
             const val MATERIAL = "com.google.android.material:material:$VERSION"
         }
+
+        object Gson {
+            private const val VERSION = "2.8.5"
+            const val GSON = "com.google.code.gson:gson:$VERSION"
+        }
     }
 
     object Kotlinx {
