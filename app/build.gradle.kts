@@ -31,5 +31,6 @@ dependencies {
     implementation(Deps.AndroidX.Lifecycle.LIVEDATA_KTX)
     implementation(Deps.AndroidX.Navigation.FRAGMENT_KTX)
     implementation(Deps.AndroidX.Navigation.UI_KTX)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
 }

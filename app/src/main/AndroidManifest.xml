@@ -18,5 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Preload custom fonts-->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+        <meta-data
+            android:name="fontProviderRequests"
+            android:value="Rubik"/>
     </application>
 </manifest>
