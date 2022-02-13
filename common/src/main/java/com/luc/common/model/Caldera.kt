@@ -17,8 +17,8 @@ data class Repuesto(
     val id: String = UUID.randomUUID().toString(),
     val descripcion: String,
     val codigo: String,
-    val precioService: String,
-    val precioPublico: String,
+    var precioService: String,
+    var precioPublico: String,
 ) : Parcelable
 
 fun Caldera.asCalderaEntity(): CalderaEntity = CalderaEntity(this.id, this.caldera)

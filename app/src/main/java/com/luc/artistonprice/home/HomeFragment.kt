@@ -15,7 +15,6 @@ import com.luc.presentation.viewmodel.HomeViewModel
 import org.koin.android.ext.android.bind
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::inflate) {
     private val homeViewModel: HomeViewModel by viewModel()
     private lateinit var viewPagerAdapter: ViewPagerAdapter
@@ -23,7 +22,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        homeViewModel.getCalderas().observe(viewLifecycleOwner) {
+        homeViewModel.calderaList.observe(viewLifecycleOwner) {
             viewPagerAdapter = ViewPagerAdapter(requireActivity(), it)
             binding.viewPager.adapter = viewPagerAdapter
             TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
@@ -31,5 +30,4 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
             }.attach()
         }
     }
-
 }

@@ -9,6 +9,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.Gson
 import com.luc.common.entities.CalderaEntity
 import com.luc.common.entities.RepuestoEntity
+import com.luc.common.entities.SettingsEntity
 import com.luc.common.model.Caldera
 import com.luc.common.model.Repuesto
 import com.luc.common.model.asCalderaEntity
@@ -18,6 +19,7 @@ import com.luc.data.local.LocalDataSource
 import com.luc.data.local.LocalDatabase
 import com.luc.data.local.dao.RepuestoDao
 import com.luc.data.local.dao.CalderaDao
+import com.luc.data.local.dao.SettingsDao
 import com.luc.data.remote.firebase.firestore.FirestoreData
 import com.luc.data.remote.firebase.firestore.FirestoreDataImpl
 import com.luc.domain.DomainRepository
@@ -50,6 +52,7 @@ class DataModule {
                     override fun onCreate(db: SupportSQLiteDatabase) {
                         super.onCreate(db)
                         applicationScope.launch(Dispatchers.IO) {
+                            getInstance(application).settingsDao().insert(SettingsEntity())
                             val gson = Gson()
                             val jsonString =
                                 application.assets.open("ariston.json").bufferedReader()
@@ -101,9 +104,14 @@ val roomModule = module {
         return database.repuestoDao()
     }
 
+    fun provideSettingsDao(database: LocalDatabase): SettingsDao {
+        return database.settingsDao()
+    }
+
     single { provideDatabase(androidApplication()) }
     single { provideCalderaDao(get()) }
     single { provideRepuestoDao(get()) }
+    single { provideSettingsDao(get()) }
 }
 
 val repositoryModule = module {
@@ -112,7 +120,7 @@ val repositoryModule = module {
             firestore = get(),
         )
     }
-    factory { LocalDataSource(get(), get()) }
+    factory { LocalDataSource(get(), get(), get()) }
     factory<DomainRepository> { DomainRepositoryImpl(get()) }
 }
 
