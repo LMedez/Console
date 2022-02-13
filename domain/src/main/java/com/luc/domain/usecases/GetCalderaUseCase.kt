@@ -19,7 +19,6 @@ class GetCalderaUseCase(private val domainRepository: DomainRepository) {
                 )
             }
         }
-
         return calderaList
     }
 }
