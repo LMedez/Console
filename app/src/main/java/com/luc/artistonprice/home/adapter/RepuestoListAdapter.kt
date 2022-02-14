@@ -44,8 +44,8 @@ class RepuestoListAdapter :
         fun bind(repuesto: Repuesto) = with(binding) {
             descripcion.text = repuesto.descripcion
             codigo.text = repuesto.codigo
-            precioService.text = repuesto.precioService
-            precioPublico.text = repuesto.precioPublico
+            precioService.text = "$${repuesto.precioService}"
+            precioPublico.text = "$${repuesto.precioPublico}"
         }
     }
 

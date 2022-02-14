@@ -1,6 +1,7 @@
 package com.luc.artistonprice.home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +24,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
         super.onViewCreated(view, savedInstanceState)
 
         homeViewModel.calderaList.observe(viewLifecycleOwner) {
+            Log.d("tests", it.toString())
             viewPagerAdapter = ViewPagerAdapter(requireActivity(), it)
             binding.viewPager.adapter = viewPagerAdapter
             TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->

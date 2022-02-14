@@ -1,8 +1,8 @@
 package com.luc.presentation.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.luc.common.model.Caldera
+import com.luc.common.model.Settings
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
 import kotlinx.coroutines.flow.collect
@@ -13,29 +13,31 @@ class HomeViewModel(
     private val getSettingsUseCase: GetSettingsUseCase
 ) : ViewModel() {
 
-    private val _calderaList = MutableLiveData<List<Caldera>>()
-    val calderaList: LiveData<List<Caldera>> = _calderaList
+    private val _settings = MediatorLiveData<Settings>()
+    val settings: LiveData<Settings> = _settings
+
+    val calderaList: LiveData<List<Caldera>> = Transformations.switchMap(settings) {
+        getCalderas(it.applyIva)
+    }
+
+    private fun getCalderas(applyIva: Boolean) = liveData {
+        val listCalderas = getCalderaUseCase.getCalderas()
+
+        if (applyIva) {
+            listCalderas.map { caldera ->
+                caldera.repuestos.map { repuesto ->
+                    val precioService = repuesto.precioService.toDouble()
+                    val precioServiceIva = precioService + (precioService * 21) / 100
+                    repuesto.precioService = String.format("%.2f", precioServiceIva)
+                }
+            }
+        }
+        emit(listCalderas)
+    }
 
     init {
         viewModelScope.launch {
-            val calderaList = getCalderaUseCase.getCalderas()
-
-            getSettingsUseCase.getSettings().collect {
-                if (it.applyIva) {
-                    calderaList.map { caldera ->
-                        caldera.repuestos.map { repuesto ->
-                            val precioService = repuesto.precioService.toDouble()
-                            val precioServiceIva = precioService + (precioService * 21) / 100
-                            repuesto.precioService = String.format("%.2f", precioServiceIva)
-                        }
-                    }
-                    _calderaList.postValue(calderaList)
-                } else _calderaList.postValue(calderaList)
-            }
+            getSettingsUseCase.getSettings().collect { _settings.postValue(it) }
         }
-    }
-
-    fun getCalderas() = liveData {
-        emit(getCalderaUseCase.getCalderas())
     }
 }
