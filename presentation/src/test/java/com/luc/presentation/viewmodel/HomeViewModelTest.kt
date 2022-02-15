@@ -40,18 +40,6 @@ class HomeViewModelTest {
         getSettingsUseCase = GetSettingsUseCase(fakeDomainRepository)
         homeViewModel = HomeViewModel(getCalderaUseCase, getSettingsUseCase)
     }
-
-    @OptIn(ExperimentalCoroutinesApi::class)
-    @Test
-    fun `every Repuesto of calderaList should have the precioService variable incremented by 21percent`() {}
-//        coroutineRule.runBlockingTest {
-//            val originalCaldera = fakeDomainRepository.list
-//            homeViewModel.calderaList.observeForever(observer)
-//            val calderaList = homeViewModel.calderaList.getOrAwaitValue()
-//            assertThat(calderaList).isEqualTo(originalCaldera)
-//            homeViewModel.calderaList.removeObserver(observer)
-//
-//        }
 }
 
 private const val TAG = "HomeViewModelTest"
