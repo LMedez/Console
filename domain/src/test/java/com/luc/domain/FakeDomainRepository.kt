@@ -7,48 +7,56 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class FakeDomainRepository : DomainRepository {
-    private val list = mutableListOf(Caldera(caldera = "caldera", repuestos = listOf(
+    val list = mutableListOf(Caldera(caldera = "caldera", repuestos = listOf(
         Repuesto(
+            calderaId = "wherever",
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "1543.88644546",
-            precioPublico = "12.588888"
+            precioService = 153.88644546,
+            precioPublico = 12.588888
         ),
         Repuesto(
+            calderaId = "wherever",
+
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "53.8864444546",
-            precioPublico = "329.854446"
+            precioService = 53.8864444546,
+            precioPublico = 329.854446
         ),
         Repuesto(
+            calderaId = "wherever",
+
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "15.884546",
-            precioPublico = "125.56666"
+            precioService = 15.884546,
+            precioPublico = 125.56666
         ),
         Repuesto(
+            calderaId = "wherever",
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "534.8644546",
-            precioPublico = "999.02"
+            precioService = 534.8644546,
+            precioPublico = 999.02
         ),
         Repuesto(
+            calderaId = "wherever",
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "153.88644546",
-            precioPublico = "588.56545"
+            precioService = 153.88644546,
+            precioPublico = 588.56545
         ),
         Repuesto(
+            calderaId = "wherever",
             descripcion = "descripcion",
             codigo = "453215",
-            precioService = "153.88644546",
-            precioPublico = "255.51"
+            precioService = 153.88644546,
+            precioPublico = 255.51
         ),
     )))
 
     override suspend fun getCalderas(): List<Caldera> = list
 
     override fun getSettings(): Flow<Settings> {
-       return flow { Settings() }
+        return flow { Settings(applyIva = true) }
     }
 }

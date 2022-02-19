@@ -5,24 +5,42 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import androidx.activity.addCallback
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.doOnLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.luc.artistonprice.R
 import com.luc.artistonprice.databinding.FragmentProductDetailBottomSheetBinding
+import com.luc.artistonprice.home.adapter.RepuestosInListAdapter
 import com.luc.artistonprice.utils.lerp
+import com.luc.common.model.Repuesto
+import com.luc.presentation.viewmodel.DomainViewModel
+import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 
 class ProductDetailBottomSheet : Fragment() {
 
+    private val domainViewModel: DomainViewModel by sharedViewModel()
+    private val repuestosInListAdapter: RepuestosInListAdapter by lazy { RepuestosInListAdapter() }
+
+    private lateinit var behavior: BottomSheetBehavior<LinearLayout>
+
+    private var _binding: FragmentProductDetailBottomSheetBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        val binding =
+        _binding =
             FragmentProductDetailBottomSheetBinding.inflate(inflater, container, false).apply {
-                val behavior = BottomSheetBehavior.from(sheetContainer)
+                behavior = BottomSheetBehavior.from(sheetContainer)
+                behavior.isHideable = true
                 val backCallback =
                     requireActivity().onBackPressedDispatcher.addCallback(
                         viewLifecycleOwner,
@@ -38,14 +56,40 @@ class ProductDetailBottomSheet : Fragment() {
                         }
 
                         override fun onSlide(bottomSheet: View, slideOffset: Float) {
-                            recyclerView.alpha = lerp(1f, 0f, 0f, 0.15f, slideOffset)
+                            recyclerView.alpha = lerp(0f, 1f, 0.2f, 0.8f, slideOffset)
                         }
                     })
                 }
-
+                behavior.state = BottomSheetBehavior.STATE_HIDDEN
             }
 
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        domainViewModel.repuestoList.observe(viewLifecycleOwner) {
+            binding.recyclerView.adapter = repuestosInListAdapter
+            repuestosInListAdapter.submitList(it)
+            if (it.isEmpty())
+                behavior.state = BottomSheetBehavior.STATE_HIDDEN
+            else {
+                setUpView(it)
+                behavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            }
+
+        }
+    }
+
+    fun setUpView(repuesto: List<Repuesto>) {
+        binding.totalPriceService.text = "ARS$${repuesto.sumOf { it.precioServiceInARS }}"
+        binding.totalPricePublico.text = "ARS$${repuesto.sumOf { it.precioPublicoInARS }}"
+        binding.description.text = repuesto.last().descripcion
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 

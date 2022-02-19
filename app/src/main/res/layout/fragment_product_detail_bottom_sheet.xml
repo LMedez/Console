@@ -30,20 +30,20 @@
                 android:layout_marginStart="@dimen/grid_2"
                 android:background="?attr/selectableItemBackground"
                 android:src="@drawable/ic_arrow_up"
-                app:backgroundTint="?attr/colorOnSecondary"
+                app:tint="?attr/colorOnSecondary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/description"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/grid_1_5"
                 android:layout_marginEnd="@dimen/grid_1"
                 android:maxLines="2"
                 android:text="Placa electronica"
-                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textAppearance="?attr/textAppearanceSubtitle2"
                 android:textColor="?attr/colorOnSecondary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
@@ -64,11 +64,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Precio + Iva"
+                    android:text="Service + Iva"
                     android:textAppearance="?attr/textAppearanceCaption"
                     android:textColor="?attr/colorOnSecondary" />
 
                 <TextView
+                    android:id="@+id/totalPriceService"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ARS$12.500"
@@ -95,6 +96,7 @@
                     android:textColor="?attr/colorOnSecondary" />
 
                 <TextView
+                    android:id="@+id/totalPricePublico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="ARS$12.500"

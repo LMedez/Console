@@ -9,13 +9,15 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.checkbox.MaterialCheckBox
 import com.luc.artistonprice.R
+import com.luc.artistonprice.databinding.ProductItemBinding
 import com.luc.artistonprice.databinding.RepuestoItemBinding
+import com.luc.artistonprice.utils.capitalizeFirstChar
 import com.luc.common.model.Repuesto
+import com.luc.presentation.viewmodel.RepuestoConverted
 
-class RepuestoListAdapter :
-    ListAdapter<Repuesto, RepuestoListAdapter.ViewHolder>(CalderaDiffCallback) {
+class RepuestosInListAdapter :
+    ListAdapter<Repuesto, RepuestosInListAdapter.ViewHolder>(CalderaDiffCallback) {
 
-    val itemStateArray = SparseBooleanArray()
 
     private var onCheckBoxClick: ((Repuesto, Boolean) -> Unit)? = null
 
@@ -24,30 +26,15 @@ class RepuestoListAdapter :
     }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        private val binding = RepuestoItemBinding.bind(view)
-        private val checkBox = binding.checkBox
+        private val binding = ProductItemBinding.bind(view)
 
         fun bind(repuesto: Repuesto) = with(binding) {
-            descripcion.text = repuesto.descripcion
-            codigo.text = repuesto.codigo
-            precioService.text = "$${repuesto.precioService}"
-            precioPublico.text = "$${repuesto.precioPublico}"
-
-            checkBox.setOnClickListener {
-                onCheckBoxClick?.let { click ->
-                    if (!itemStateArray.get(adapterPosition, false)) {//checkbox checked
-                        checkBox.isChecked = true
-                        click(repuesto, true)
-                        //stores checkbox states and position
-                        itemStateArray.put(adapterPosition, true)
-                    } else {//checkbox unchecked
-                        checkBox.isChecked = false
-                        click(repuesto, false)
-                        //stores checkbox states and position.
-                        itemStateArray.put(adapterPosition, false)
-                    }
-                }
-            }
+            calderaName.text = repuesto.calderaName
+            productName.text = repuesto.descripcion.capitalizeFirstChar()
+            servicePriceAndUsd.text = "USD$${repuesto.precioService} x ${repuesto.dolarValue}"
+            publicoAndUsd.text = "USD$${repuesto.precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
+            servicePriceArs.text = "ARS$${repuesto.precioServiceInARS}"
+            publicoPriceArs.text = "ARS$${repuesto.precioPublicoInARS}"
         }
     }
 
@@ -55,20 +42,18 @@ class RepuestoListAdapter :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.repuesto_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.product_item, parent, false)
         return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val repuesto = currentList[position]
         holder.bind(repuesto)
-        holder.itemView.findViewById<MaterialCheckBox>(R.id.checkBox).isChecked =
-            itemStateArray.get(position, false)
     }
 
     object CalderaDiffCallback : DiffUtil.ItemCallback<Repuesto>() {
         override fun areItemsTheSame(oldItem: Repuesto, newItem: Repuesto): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem == newItem
         }
 
         override fun areContentsTheSame(oldItem: Repuesto, newItem: Repuesto): Boolean {

@@ -1,5 +1,6 @@
 package com.luc.artistonprice.home.adapter
 
+import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
 import android.view.View
@@ -17,35 +18,36 @@ class RepuestoListAdapter :
 
     val itemStateArray = SparseBooleanArray()
 
-    private var onCheckBoxClick: ((Repuesto) -> Unit)? = null
+    private var onCheckBoxClick: ((Repuesto, Boolean) -> Unit)? = null
 
-    fun setOnCheckBoxClick(listener: (Repuesto) -> Unit) {
+    fun setOnCheckBoxClick(listener: (Repuesto, Boolean) -> Unit) {
         onCheckBoxClick = listener
     }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = RepuestoItemBinding.bind(view)
-        private val checkBox = binding.checkBox
-
-        init {
-            checkBox.setOnClickListener {
-                if (!itemStateArray.get(adapterPosition, false)) {//checkbox checked
-                    checkBox.isChecked = true
-                    //stores checkbox states and position
-                    itemStateArray.put(adapterPosition, true)
-                } else {//checkbox unchecked
-                    checkBox.isChecked = false
-                    //stores checkbox states and position.
-                    itemStateArray.put(adapterPosition, false)
-                }
-            }
-        }
 
         fun bind(repuesto: Repuesto) = with(binding) {
             descripcion.text = repuesto.descripcion
             codigo.text = repuesto.codigo
-            precioService.text = "$${repuesto.precioService}"
+            precioService.text = "$${repuesto._precioService}"
             precioPublico.text = "$${repuesto.precioPublico}"
+
+            checkBox.setOnClickListener {
+                onCheckBoxClick?.let { click ->
+                    if (!itemStateArray.get(adapterPosition, false)) {//checkbox checked
+                        checkBox.isChecked = true
+                        click(repuesto, true)
+                        //stores checkbox states and position
+                        itemStateArray.put(adapterPosition, true)
+                    } else {//checkbox unchecked
+                        checkBox.isChecked = false
+                        click(repuesto, false)
+                        //stores checkbox states and position.
+                        itemStateArray.put(adapterPosition, false)
+                    }
+                }
+            }
         }
     }
 

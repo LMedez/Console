@@ -11,6 +11,11 @@ dependencies {
     implementation(Deps.AndroidX.Room.COMMON)
     implementation(Deps.Koin.ANDROID)
 
-    api(TestDeps.JUnit.JUNIT)
-    api(TestDeps.Truth.TRUTH)
+    testImplementation(TestDeps.JUnit.JUNIT)
+    testImplementation(TestDeps.Truth.TRUTH)
+    testImplementation(TestDeps.Mockito.CORE)
+    testImplementation(TestDeps.Mockito.MOCKK)
+    testImplementation(TestDeps.Mockito.KOTLIN)
+    testImplementation(TestDeps.AndroidX.Arch.CORE_TESTING)
+    testImplementation(TestDeps.Kotlinx.COROUTINES_TEST)
 }

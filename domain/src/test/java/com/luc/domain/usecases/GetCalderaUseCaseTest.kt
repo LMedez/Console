@@ -24,7 +24,7 @@ class GetCalderaUseCaseTest {
         runBlockingTest {
             getCalderaUseCase.getCalderas().forEach { caldera ->
                 caldera.repuestos.forEach {
-                    assertThat(it.precioService.substringAfter(",")).hasLength(2)
+                    assertThat(it.precioService.toString().indexOf(".") - 1).isLessThan(3)
                 }
             }
         }

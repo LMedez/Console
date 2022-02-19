@@ -1,25 +1,15 @@
 package com.luc.presentation.viewmodel
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
-import com.google.common.truth.Truth.assertThat
-import com.luc.common.model.Caldera
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
 import com.luc.presentation.FakeDomainRepository
 import com.luc.presentation.MainCoroutineRule
-import com.luc.presentation.getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Rule
-import org.junit.Test
-import org.mockito.Mock
-import org.mockito.Mockito.mock
-import java.io.Closeable
 
-class HomeViewModelTest {
+class DomainViewModelTest {
 
     @get:Rule
     var instantTaskExecutorRule = InstantTaskExecutorRule()
@@ -28,7 +18,7 @@ class HomeViewModelTest {
     @get:Rule
     val coroutineRule = MainCoroutineRule()
 
-    lateinit var homeViewModel: HomeViewModel
+    lateinit var domainViewModel: DomainViewModel
     lateinit var getCalderaUseCase: GetCalderaUseCase
     lateinit var getSettingsUseCase: GetSettingsUseCase
     lateinit var fakeDomainRepository: FakeDomainRepository
@@ -38,7 +28,7 @@ class HomeViewModelTest {
         fakeDomainRepository = FakeDomainRepository()
         getCalderaUseCase = GetCalderaUseCase(fakeDomainRepository)
         getSettingsUseCase = GetSettingsUseCase(fakeDomainRepository)
-        homeViewModel = HomeViewModel(getCalderaUseCase, getSettingsUseCase)
+        domainViewModel = DomainViewModel(getCalderaUseCase, getSettingsUseCase)
     }
 }
 

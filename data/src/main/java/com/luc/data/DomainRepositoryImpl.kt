@@ -16,7 +16,6 @@ class DomainRepositoryImpl(
     }
 
     override fun getSettings(): Flow<Settings> {
-
         return localDataSource.getSettings()
     }
 }

@@ -23,4 +23,12 @@ dependencies {
     implementation(Deps.Google.Gson.GSON)
     implementation(Deps.AndroidX.Room.ROOM_KTX)
     kapt(Deps.AndroidX.Room.COMPILER)
+
+    testImplementation(TestDeps.JUnit.JUNIT)
+    testImplementation(TestDeps.Truth.TRUTH)
+    testImplementation(TestDeps.Mockito.CORE)
+    testImplementation(TestDeps.Mockito.MOCKK)
+    testImplementation(TestDeps.Mockito.KOTLIN)
+    testImplementation(TestDeps.AndroidX.Arch.CORE_TESTING)
+    testImplementation(TestDeps.Kotlinx.COROUTINES_TEST)
 }

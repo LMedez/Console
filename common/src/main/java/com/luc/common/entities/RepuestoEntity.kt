@@ -10,9 +10,16 @@ data class RepuestoEntity(
     val calderaId: String,
     val descripcion: String,
     val codigo: String,
-    val precioService: String,
-    val precioPublico: String,
+    val precioService: Double,
+    val precioPublico: Double,
 )
 
-fun RepuestoEntity.asRepuesto() = Repuesto(this.id, this.descripcion, this.codigo, this.precioService, this.precioPublico)
+fun RepuestoEntity.asRepuesto() = Repuesto(
+    this.id,
+    this.calderaId,
+    this.descripcion,
+    this.codigo,
+    this.precioService,
+    this.precioPublico
+)
 

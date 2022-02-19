@@ -94,9 +94,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/grid_0_5"
-            android:text="USD$250 x 112.50"
+            android:text="USD$250 x 112.50 + 35%"
             android:textAppearance="?attr/textAppearanceBody2" />
-
 
         <TextView
             android:id="@+id/publicoPriceArs"
@@ -110,7 +109,7 @@
 
     <View
         android:background="@drawable/divider"
-        android:layout_margin="@dimen/grid_2"
+        android:layout_marginStart="@dimen/grid_2"
         android:id="@+id/view"
         android:layout_width="2dp"
         android:layout_height="50dp"
@@ -119,10 +118,10 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout4" />
 
     <View
-        android:background="@drawable/divider"
-        android:layout_margin="@dimen/grid_2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+        android:layout_margin="@dimen/grid_2"
+        android:background="@drawable/divider"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
