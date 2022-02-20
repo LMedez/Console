@@ -13,7 +13,6 @@ import java.util.*
 data class Caldera(
     val id: String = UUID.randomUUID().toString(),
     val caldera: String,
-    val repuestos: List<Repuesto>
 ) : Parcelable
 
 @Parcelize
@@ -25,7 +24,6 @@ data class Repuesto(
     var precioService: Double,
     var precioPublico: Double,
 ) : Parcelable {
-
 
     @IgnoredOnParcel
     var settings: Settings? = null

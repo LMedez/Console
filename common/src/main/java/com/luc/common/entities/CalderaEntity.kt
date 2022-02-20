@@ -7,3 +7,5 @@ import com.luc.common.model.Repuesto
 
 @Entity
 data class CalderaEntity(@PrimaryKey(autoGenerate = false) val id: String, val caldera: String)
+
+fun CalderaEntity.asCaldera() = Caldera(this.id, this.caldera)

@@ -21,10 +21,15 @@ class ProductListFragment :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var caldera: Caldera? = null
+
         arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
-            val caldera = (getParcelable(ARG_OBJECT) as? Caldera)
+            caldera = (getParcelable(ARG_OBJECT) as? Caldera)
             binding.recyclerView.adapter = repuestoListAdapter
-            repuestoListAdapter.submitList(caldera?.repuestos)
+        }
+
+        domainViewModel.repuestoList(caldera?.id ?: return).observe(viewLifecycleOwner) {
+            repuestoListAdapter.submitList(it)
         }
 
         repuestoListAdapter.setOnCheckBoxClick { repuesto, checked ->

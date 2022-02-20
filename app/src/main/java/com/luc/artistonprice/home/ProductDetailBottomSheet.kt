@@ -68,7 +68,7 @@ class ProductDetailBottomSheet : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        domainViewModel.repuestoList.observe(viewLifecycleOwner) {
+        domainViewModel.selectedRepuestoList.observe(viewLifecycleOwner) {
             binding.recyclerView.adapter = repuestosInListAdapter
             repuestosInListAdapter.submitList(it)
             if (it.isEmpty())

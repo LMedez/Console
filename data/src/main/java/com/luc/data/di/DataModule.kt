@@ -26,6 +26,7 @@ import com.luc.domain.DomainRepository
 import kotlinx.coroutines.*
 import org.koin.android.ext.koin.androidApplication
 import org.koin.dsl.module
+import java.util.*
 
 val firebaseModule = module {
     single { FirebaseFirestore.getInstance() }
@@ -54,8 +55,8 @@ class DataModule {
                             application.assets.open("ariston.json").bufferedReader()
                                 .use { it.readText() }
 
-                        val jsonData: Array<Caldera> =
-                            gson.fromJson(jsonString, Array<Caldera>::class.java)
+                        val jsonData: Array<SimuledCaldera> =
+                            gson.fromJson(jsonString, Array<SimuledCaldera>::class.java)
 
                         applicationScope.launch(Dispatchers.IO) {
                             // add default Settings
@@ -63,7 +64,7 @@ class DataModule {
 
                             jsonData.forEach {
                                 val caldera =
-                                    Caldera(caldera = it.caldera, repuestos = it.repuestos)
+                                    Caldera(caldera = it.caldera)
                                 getInstance(application).calderaDao()
                                     .insert(caldera.asCalderaEntity())
 
@@ -95,6 +96,12 @@ class DataModule {
         }
     }
 }
+
+data class SimuledCaldera(
+    val id: String = UUID.randomUUID().toString(),
+    val caldera: String,
+    val repuestos: List<Repuesto>
+)
 
 val roomModule = module {
 

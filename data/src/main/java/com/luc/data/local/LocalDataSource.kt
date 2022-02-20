@@ -1,6 +1,7 @@
 package com.luc.data.local
 
 import android.util.Log
+import com.luc.common.entities.asCaldera
 import com.luc.common.entities.asRepuesto
 import com.luc.common.entities.asSettings
 import com.luc.common.model.Caldera
@@ -18,18 +19,14 @@ class LocalDataSource(
     private val settingsDao: SettingsDao
 ) {
 
-    internal suspend fun getCalderas() = calderaDao.getCalderaWithRepuestos()
-        .map { calderaWithRepuestos ->
-            Caldera(
-                calderaWithRepuestos.caldera.id,
-                calderaWithRepuestos.caldera.caldera,
-                calderaWithRepuestos.repuestos.map { it.asRepuesto() })
-        }
+    internal suspend fun getCalderas() = calderaDao.getCalderas().map { it.asCaldera() }
 
     internal fun getSettings() = settingsDao.getSettings().map {
         if (it != null) {
             it.asSettings()
         } else Settings()
     }
+
+    internal suspend fun getRepuestos() = repuestoDao.getRepuestos().map { it.asRepuesto() }
 
 }

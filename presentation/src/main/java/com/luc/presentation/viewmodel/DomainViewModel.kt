@@ -1,10 +1,8 @@
 package com.luc.presentation.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.luc.common.model.Caldera
 import com.luc.common.model.Repuesto
-import com.luc.common.model.Settings
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
 import kotlinx.coroutines.flow.collect
@@ -15,74 +13,52 @@ class DomainViewModel(
     private val getSettingsUseCase: GetSettingsUseCase
 ) : ViewModel() {
 
-    private var _calderaList: List<Caldera>? = null
+    val _repuestoList = MutableLiveData<List<Repuesto>>()
+    private var _calderaList = listOf<Caldera>()
 
     private val _currentRepuestoList: MutableList<Repuesto> = mutableListOf()
 
-    private val currentRepuestoList = MutableLiveData<List<Repuesto>>()
-
-    private val _settings = MutableLiveData<Settings>()
-
-    val calderaList: LiveData<List<Caldera>> = Transformations.switchMap(_settings) {
-        getCalderas(it)
-    }
-
-    val repuestoList: MediatorLiveData<List<Repuesto>> =
-        MediatorLiveData<List<Repuesto>>().apply {
-            addSource(_settings) {
-                applySettings(it)
+    private val _selectedRepuestoList = MutableLiveData<List<Repuesto>>()
+    val selectedRepuestoList: LiveData<List<Repuesto>> =
+        Transformations.map(_selectedRepuestoList) { list ->
+            list.map { repuesto ->
+                repuesto.calderaName =
+                    _calderaList.find { it.id == repuesto.calderaId }?.caldera ?: ""
             }
+            list
         }
 
-    private fun getCalderas(settings: Settings) = liveData {
-        if (_calderaList.isNullOrEmpty())
-            _calderaList = getCalderaUseCase.getCalderas()
-
-        _calderaList!!.map { caldera ->
-            caldera.repuestos.map {
-                it.settings = settings
-            }
+    fun repuestoList(calderaId: String): LiveData<List<Repuesto>> =
+        Transformations.map(_repuestoList) { list ->
+            list.filter { it.calderaId == calderaId }
         }
+
+    val getCalderas = liveData {
+        _calderaList = getCalderaUseCase.getCalderas()
         emit(_calderaList)
-    }
-
-    fun applySettings(settings: Settings) {
-        _currentRepuestoList.map {
-            it.settings = settings
-        }
-        currentRepuestoList.postValue(_currentRepuestoList)
     }
 
     init {
         viewModelScope.launch {
-            getSettingsUseCase.getSettings().collect { _settings.postValue(it) }
-        }
+            _repuestoList.postValue(getCalderaUseCase.getRepuestos())
 
-        repuestoList.addSource(currentRepuestoList) { list ->
-            val listMapped = list.map { repuesto ->
-                val calderaName = _calderaList?.find { it.id == repuesto.calderaId}?.caldera?:""
-                repuesto.calderaName = calderaName
-                repuesto
+            getSettingsUseCase.getSettings().collect { settings ->
+                _repuestoList.postValue(_repuestoList.value?.map {
+                    it.settings = settings
+                    it
+                })
+                _selectedRepuestoList.value?.map { it.settings = settings }
             }
-            repuestoList.postValue(listMapped)
         }
     }
 
     fun removeRepuesto(repuesto: Repuesto) {
         _currentRepuestoList.remove(repuesto)
-        currentRepuestoList.postValue(_currentRepuestoList)
+        _selectedRepuestoList.postValue(_currentRepuestoList)
     }
 
     fun addRepuesto(repuesto: Repuesto) {
         _currentRepuestoList.add(repuesto)
-        currentRepuestoList.postValue(_currentRepuestoList)
+        _selectedRepuestoList.postValue(_currentRepuestoList)
     }
 }
-
-data class RepuestoConverted(
-    val name: String,
-    val servicePriceAndUsd: String,
-    val publicoAndUsd: String,
-    val servicePriceArs: String,
-    val publicoPriceArs: String
-)

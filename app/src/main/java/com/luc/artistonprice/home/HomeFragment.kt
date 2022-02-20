@@ -18,8 +18,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        domainViewModel.calderaList.observe(viewLifecycleOwner) {
-            Log.d("tests", it[0].id)
+        domainViewModel.getCalderas.observe(viewLifecycleOwner) {
             viewPagerAdapter = ViewPagerAdapter(requireActivity(), it)
             binding.viewPager.adapter = viewPagerAdapter
             TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->

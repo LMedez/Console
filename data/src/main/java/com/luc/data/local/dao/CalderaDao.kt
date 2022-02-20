@@ -9,11 +9,12 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 
 @Dao
 abstract class CalderaDao : BaseDao<CalderaEntity> {
+
     @Query("SELECT * FROM CalderaEntity WHERE id = :id")
     abstract suspend fun getCalderaById(id: Long): CalderaEntity
 
     @Query("SELECT * FROM CalderaEntity")
-    abstract fun getCalderas(): Flow<List<CalderaEntity>>
+    abstract suspend fun getCalderas(): List<CalderaEntity>
 
     @Query("SELECT * FROM CalderaEntity")
     abstract suspend fun getCalderaWithRepuestos(): List<CalderaWithRepuestos>

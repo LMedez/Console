@@ -7,13 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.checkbox.MaterialCheckBox
 import com.luc.artistonprice.R
 import com.luc.artistonprice.databinding.ProductItemBinding
-import com.luc.artistonprice.databinding.RepuestoItemBinding
 import com.luc.artistonprice.utils.capitalizeFirstChar
 import com.luc.common.model.Repuesto
-import com.luc.presentation.viewmodel.RepuestoConverted
 
 class RepuestosInListAdapter :
     ListAdapter<Repuesto, RepuestosInListAdapter.ViewHolder>(CalderaDiffCallback) {
