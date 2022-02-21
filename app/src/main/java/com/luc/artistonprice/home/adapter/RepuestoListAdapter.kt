@@ -24,6 +24,12 @@ class RepuestoListAdapter :
         onCheckBoxClick = listener
     }
 
+    var repuestoList: List<Repuesto> = listOf()
+    set(value) {
+        submitList(value)
+        notifyDataSetChanged()
+    }
+
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = RepuestoItemBinding.bind(view)
 
@@ -72,7 +78,7 @@ class RepuestoListAdapter :
         }
 
         override fun areContentsTheSame(oldItem: Repuesto, newItem: Repuesto): Boolean {
-            return oldItem == newItem
+            return oldItem.settings == newItem.settings
         }
     }
 }

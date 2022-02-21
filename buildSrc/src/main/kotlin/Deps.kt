@@ -51,6 +51,12 @@ object Deps {
         }
     }
 
+    object Glide {
+        private const val VERSION = "4.13.0"
+        const val GLIDE = "com.github.bumptech.glide:glide:$VERSION"
+        const val PROCESSOR = "com.github.bumptech.glide:compiler:$VERSION"
+    }
+
     object Google {
         object Material {
             private const val VERSION = "1.4.0-beta01"

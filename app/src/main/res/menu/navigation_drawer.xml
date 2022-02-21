@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"/>
+
+        <item
+            android:id="@+id/iva"
+            android:icon="@drawable/ic_taxes"
+            android:title="@string/iva"
+            app:actionViewClass="com.google.android.material.switchmaterial.SwitchMaterial" />
+
+        <item
+            android:id="@+id/gainValue"
+            android:icon="@drawable/ic_currency"
+            android:title="@string/gain_value"
+            app:actionViewClass="com.google.android.material.switchmaterial.SwitchMaterial" />
+
+        <item
+            android:id="@+id/dolarValue"
+            android:icon="@drawable/ic_dolar_value"
+            android:title="@string/dolar_value"
+            app:actionViewClass="androidx.appcompat.widget.AppCompatEditText" />
+    </group>
+
+</menu>

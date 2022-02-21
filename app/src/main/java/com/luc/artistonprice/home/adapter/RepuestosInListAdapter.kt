@@ -22,13 +22,20 @@ class RepuestosInListAdapter :
         onCheckBoxClick = listener
     }
 
+    var repuestoList: List<Repuesto> = listOf()
+        set(value) {
+            submitList(value)
+            notifyDataSetChanged()
+        }
+
+
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = ProductItemBinding.bind(view)
 
         fun bind(repuesto: Repuesto) = with(binding) {
             calderaName.text = repuesto.calderaName
             productName.text = repuesto.descripcion.capitalizeFirstChar()
-            servicePriceAndUsd.text = "USD$${repuesto.precioService} x ${repuesto.dolarValue}"
+            servicePriceAndUsd.text = "USD$${repuesto._precioService} x ${repuesto.dolarValue}"
             publicoAndUsd.text = "USD$${repuesto.precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
             servicePriceArs.text = "ARS$${repuesto.precioServiceInARS}"
             publicoPriceArs.text = "ARS$${repuesto.precioPublicoInARS}"

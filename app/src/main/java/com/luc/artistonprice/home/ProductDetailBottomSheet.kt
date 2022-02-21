@@ -1,6 +1,7 @@
 package com.luc.artistonprice.home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ import com.luc.artistonprice.databinding.FragmentProductDetailBottomSheetBinding
 import com.luc.artistonprice.home.adapter.RepuestosInListAdapter
 import com.luc.artistonprice.utils.lerp
 import com.luc.common.model.Repuesto
+import com.luc.common.model.Settings
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
@@ -30,7 +32,6 @@ class ProductDetailBottomSheet : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,15 +71,23 @@ class ProductDetailBottomSheet : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         domainViewModel.selectedRepuestoList.observe(viewLifecycleOwner) {
             binding.recyclerView.adapter = repuestosInListAdapter
-            repuestosInListAdapter.submitList(it)
+            repuestosInListAdapter.repuestoList = it
             if (it.isEmpty())
                 behavior.state = BottomSheetBehavior.STATE_HIDDEN
             else {
                 setUpView(it)
                 behavior.state = BottomSheetBehavior.STATE_COLLAPSED
             }
-
         }
+
+        domainViewModel.settings.observe(viewLifecycleOwner) {
+            setDescriptionText(it)
+        }
+    }
+
+    fun setDescriptionText(settings: Settings) {
+        binding.serviceDescripcion.text = if(settings.applyIva) "Service + IVA" else "Service"
+        binding.publicoDescripcion.text = if(settings.applyGain) "Publico + IVA + %${settings.gainValue}" else "Publico + IVA"
     }
 
     fun setUpView(repuesto: List<Repuesto>) {
@@ -91,6 +100,4 @@ class ProductDetailBottomSheet : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-
 }

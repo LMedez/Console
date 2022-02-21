@@ -29,7 +29,7 @@ class ProductListFragment :
         }
 
         domainViewModel.repuestoList(caldera?.id ?: return).observe(viewLifecycleOwner) {
-            repuestoListAdapter.submitList(it)
+            repuestoListAdapter.repuestoList = it
         }
 
         repuestoListAdapter.setOnCheckBoxClick { repuesto, checked ->
@@ -37,4 +37,5 @@ class ProductListFragment :
             else domainViewModel.removeRepuesto(repuesto)
         }
     }
+
 }

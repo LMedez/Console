@@ -21,4 +21,8 @@ class DomainRepositoryImpl(
     override fun getSettings(): Flow<Settings> {
         return localDataSource.getSettings()
     }
+
+    override suspend fun updateSettings(settings: Settings) {
+        localDataSource.updateSettings(settings)
+    }
 }

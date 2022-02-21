@@ -1,8 +1,10 @@
 package com.luc.presentation.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.*
 import com.luc.common.model.Caldera
 import com.luc.common.model.Repuesto
+import com.luc.common.model.Settings
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
 import kotlinx.coroutines.flow.collect
@@ -12,6 +14,9 @@ class DomainViewModel(
     private val getCalderaUseCase: GetCalderaUseCase,
     private val getSettingsUseCase: GetSettingsUseCase
 ) : ViewModel() {
+
+    private val _settings = MutableLiveData<Settings>()
+    val settings: LiveData<Settings> = _settings
 
     val _repuestoList = MutableLiveData<List<Repuesto>>()
     private var _calderaList = listOf<Caldera>()
@@ -41,13 +46,15 @@ class DomainViewModel(
     init {
         viewModelScope.launch {
             _repuestoList.postValue(getCalderaUseCase.getRepuestos())
-
             getSettingsUseCase.getSettings().collect { settings ->
+                _settings.postValue(settings)
                 _repuestoList.postValue(_repuestoList.value?.map {
                     it.settings = settings
                     it
                 })
-                _selectedRepuestoList.value?.map { it.settings = settings }
+                _selectedRepuestoList.postValue(_selectedRepuestoList.value?.map {
+                    it.settings = settings; it
+                }?: listOf())
             }
         }
     }
@@ -61,4 +68,11 @@ class DomainViewModel(
         _currentRepuestoList.add(repuesto)
         _selectedRepuestoList.postValue(_currentRepuestoList)
     }
+
+    fun updateSettings(settings: Settings) {
+        viewModelScope.launch {
+            getSettingsUseCase.updateSettings(settings)
+        }
+    }
+
 }

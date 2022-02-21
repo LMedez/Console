@@ -62,6 +62,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
+                    android:id="@+id/serviceDescripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Service + Iva"
@@ -89,6 +90,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
+                    android:id="@+id/publicoDescripcion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Publico + Iva + 35%"

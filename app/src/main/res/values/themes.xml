@@ -10,7 +10,8 @@
         <item name="colorSecondaryVariant">@color/black_800</item>
         <item name="colorOnSecondary">@color/orange_100</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+        <item name="android:statusBarColor">@color/immersive_sys_ui</item>
 
         <!--Material type attributes-->
         <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline1</item>
@@ -34,4 +35,5 @@
         <item name="colorSurface">@color/red_600</item>
         <item name="colorOnSurface">@color/white</item>
     </style>
+
 </resources>

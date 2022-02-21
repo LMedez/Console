@@ -10,4 +10,5 @@ interface DomainRepository {
     suspend fun getCalderas(): List<Caldera>
     suspend fun getRepuestos(): List<Repuesto>
     fun getSettings() : Flow<Settings>
+    suspend fun updateSettings(settings: Settings)
 }

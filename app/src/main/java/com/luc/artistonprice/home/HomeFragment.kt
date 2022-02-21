@@ -25,5 +25,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
                 tab.text = it[position].caldera
             }.attach()
         }
+
+        domainViewModel.settings.observe(viewLifecycleOwner) {
+            binding.dolarValue.text = "Dolar: $${it.dolarValue}"
+        }
     }
 }
