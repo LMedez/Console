@@ -32,6 +32,8 @@ dependencies {
     implementation(Deps.AndroidX.Navigation.FRAGMENT_KTX)
     implementation(Deps.AndroidX.Navigation.UI_KTX)
     implementation(Deps.Glide.GLIDE)
+
+
     kapt(Deps.Glide.PROCESSOR)
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 

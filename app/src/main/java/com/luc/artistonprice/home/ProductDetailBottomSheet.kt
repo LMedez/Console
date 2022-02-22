@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.activity.addCallback
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.doOnLayout
@@ -14,6 +13,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.luc.artistonprice.databinding.FragmentProductDetailBottomSheetBinding
 import com.luc.artistonprice.home.adapter.RepuestosInListAdapter
 import com.luc.artistonprice.utils.lerp
+import com.luc.common.NetworkStatus
 import com.luc.common.model.Repuesto
 import com.luc.common.model.Settings
 import com.luc.presentation.viewmodel.DomainViewModel
@@ -25,7 +25,7 @@ class ProductDetailBottomSheet : Fragment() {
     private val domainViewModel: DomainViewModel by sharedViewModel()
     private val repuestosInListAdapter: RepuestosInListAdapter by lazy { RepuestosInListAdapter() }
 
-    private lateinit var behavior: BottomSheetBehavior<LinearLayout>
+    private lateinit var behavior: BottomSheetBehavior<ConstraintLayout>
 
     private var _binding: FragmentProductDetailBottomSheetBinding? = null
 
@@ -57,11 +57,16 @@ class ProductDetailBottomSheet : Fragment() {
                         }
 
                         override fun onSlide(bottomSheet: View, slideOffset: Float) {
+                            binding.arrowUp.rotation = lerp(0f, 180f, 0.2f, 0.8f, slideOffset)
                             recyclerView.alpha = lerp(0f, 1f, 0.2f, 0.8f, slideOffset)
                         }
                     })
                 }
                 behavior.state = BottomSheetBehavior.STATE_HIDDEN
+                arrowUp.setOnClickListener {
+                    behavior.state = if (behavior.state == BottomSheetBehavior.STATE_COLLAPSED)
+                        BottomSheetBehavior.STATE_EXPANDED else BottomSheetBehavior.STATE_COLLAPSED
+                }
             }
 
         return binding.root
@@ -83,17 +88,35 @@ class ProductDetailBottomSheet : Fragment() {
         domainViewModel.settings.observe(viewLifecycleOwner) {
             setDescriptionText(it)
         }
+
+        binding.sendEmail.setOnClickListener {
+            composeEmail(
+                arrayOf("luciano.sisemas.12@gmail.com"),
+                "Email from Ariston"
+            )
+        }
     }
 
     fun setDescriptionText(settings: Settings) {
-        binding.serviceDescripcion.text = if(settings.applyIva) "Service + IVA" else "Service"
-        binding.publicoDescripcion.text = if(settings.applyGain) "Publico + IVA + %${settings.gainValue}" else "Publico + IVA"
+        binding.serviceDescripcion.text = if (settings.applyIva) "Service + IVA" else "Service"
+        binding.publicoDescripcion.text =
+            if (settings.applyGain) "Publico + IVA + %${settings.gainValue}" else "Publico + IVA"
     }
 
     fun setUpView(repuesto: List<Repuesto>) {
         binding.totalPriceService.text = "ARS$${repuesto.sumOf { it.precioServiceInARS }}"
         binding.totalPricePublico.text = "ARS$${repuesto.sumOf { it.precioPublicoInARS }}"
         binding.description.text = repuesto.last().descripcion
+    }
+
+    fun composeEmail(addresses: Array<String>, subject: String) {
+
+        domainViewModel.sendEmail.observe(viewLifecycleOwner) {
+            when (it) {
+                is NetworkStatus.Success -> Log.d("tests", it.data)
+                is NetworkStatus.Error -> Log.d("tests", it.message)
+            }
+        }
     }
 
     override fun onDestroyView() {

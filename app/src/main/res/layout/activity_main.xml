@@ -13,7 +13,8 @@
         tools:openDrawer="start">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            app:marginBottomSystemWindowInsets="@{true}"
+            tools:targetApi="o"
+            android:clipChildren="false"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -49,6 +50,7 @@
             </com.google.android.material.appbar.AppBarLayout>
 
             <androidx.fragment.app.FragmentContainerView
+                app:marginBottomSystemWindowInsets="@{true}"
                 app:marginTopSystemWindowInsets="@{true}"
                 android:id="@+id/sheet"
                 android:name="com.luc.artistonprice.home.ProductDetailBottomSheet"

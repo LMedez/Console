@@ -1,79 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:paddingEnd="@dimen/grid_1_5"
+        android:paddingTop="@dimen/grid_2"
+        android:paddingStart="@dimen/grid_1_5"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.checkbox.MaterialCheckBox
+            android:layout_marginTop="-10dp"
             android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/grid_1_5"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/descripcion"
+        <LinearLayout
+            android:id="@+id/linearLayout6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/grid_1"
-            android:maxLines="3"
-            android:text="@string/app_name"
-            android:textAppearance="?attr/textAppearanceBody2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            android:layout_marginStart="@dimen/grid_1"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
             app:layout_constraintStart_toEndOf="@+id/checkBox"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:paddingEnd="@dimen/grid_1_5"
-            android:id="@+id/linearLayout"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.57">
+            <TextView
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/grid_1"
+                android:layout_marginBottom="@dimen/grid_1"
+                android:maxLines="3"
+                android:text="Intercambiador primario secundario"
+                android:textAppearance="?attr/textAppearanceSubtitle2"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+                app:layout_constraintStart_toEndOf="@+id/checkBox"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/codigo"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:text="@string/app_name"
+                android:layout_marginBottom="@dimen/grid_1_5"
+                android:text="1258489-8565"
                 android:textAppearance="?attr/textAppearanceBody2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/precioPublico"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="@+id/descripcion"
+                app:layout_constraintTop_toBottomOf="@+id/descripcion" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/precioService"
-                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/grid_0_5"
+                android:id="@+id/precioPublicoDescription"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.3"
-                android:text="@string/app_name"
-                android:textAppearance="?attr/textAppearanceBody2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/precioService"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:text="Publico + IVA"
+                android:textAppearance="?attr/textAppearanceCaption" />
 
             <TextView
+                android:textColor="?attr/colorSecondary"
                 android:id="@+id/precioPublico"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1.3"
-                android:gravity="end"
                 android:text="@string/app_name"
-                android:textAppearance="?attr/textAppearanceBody2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:textAppearance="@style/TextAppearance.App.Subtitle3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_marginBottom="@dimen/grid_0_5"
+                android:id="@+id/precioServiceDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service + IVA"
+                android:textAppearance="?attr/textAppearanceCaption" />
+
+            <TextView
+                android:textColor="?attr/colorSecondary"
+                android:id="@+id/precioService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAppearance="@style/TextAppearance.App.Subtitle3" />
         </LinearLayout>
 
         <View
@@ -82,6 +112,17 @@
             android:background="@drawable/divider"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-            app:layout_constraintStart_toEndOf="@+id/checkBox" />
+            app:layout_constraintStart_toStartOf="@+id/linearLayout6" />
+
+        <View
+            android:id="@+id/checkIndicator"
+            android:layout_marginBottom="@dimen/grid_1_5"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="-10dp"
+            android:background="@drawable/divider"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout6"
+            app:layout_constraintStart_toEndOf="@id/checkBox"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

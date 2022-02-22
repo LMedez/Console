@@ -36,9 +36,13 @@ class RepuestosInListAdapter :
             calderaName.text = repuesto.calderaName
             productName.text = repuesto.descripcion.capitalizeFirstChar()
             servicePriceAndUsd.text = "USD$${repuesto._precioService} x ${repuesto.dolarValue}"
-            publicoAndUsd.text = "USD$${repuesto.precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
+            publicoAndUsd.text =
+                if (repuesto.settings?.applyGain != false) "USD$${repuesto.precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
+                else "USD$${repuesto.precioPublico} x ${repuesto.dolarValue}"
             servicePriceArs.text = "ARS$${repuesto.precioServiceInARS}"
             publicoPriceArs.text = "ARS$${repuesto.precioPublicoInARS}"
+            serviceDescripcion.text =
+                if (repuesto.settings?.applyIva != false) "Service + IVA" else "Service"
         }
     }
 

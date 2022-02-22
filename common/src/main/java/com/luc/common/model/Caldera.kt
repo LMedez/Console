@@ -72,6 +72,8 @@ data class Repuesto(
                 else (precioPublico * it.dolarValue).toInt()
             } ?: precioPublico.toInt()
         }
+
+    fun toEmailString() = "Repuesto: ${this.descripcion} - Codigo ${this.codigo} \n"
 }
 
 fun Caldera.asCalderaEntity(): CalderaEntity = CalderaEntity(this.id, this.caldera)

@@ -1,12 +1,16 @@
 package com.luc.artistonprice
 
+import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputFilter
 import android.text.InputType
 import android.util.Log
+import android.view.Gravity
 import android.view.MenuItem
+import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.widget.doOnTextChanged
@@ -93,11 +97,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         editText.doOnTextChanged { text, start, count, after ->
             if (text?.length!! == 3 && text.toString() != settings?.dolarValue.toString()) {
                 settings?.let {
+                    drawerLayout.closeDrawer(Gravity.START)
                     domainViewModel.updateSettings(
                         it.copy(
                             dolarValue = text.toString().toInt()
                         )
                     )
+
+                    Toast.makeText(this, "Dolar actualizado", Toast.LENGTH_LONG).show()
+
+                    // Only runs if there is a view that is currently focused
+                    this.currentFocus?.let { view ->
+                        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager
+                        imm?.hideSoftInputFromWindow(view.windowToken, 0)
+                    }
                 }
             }
         }

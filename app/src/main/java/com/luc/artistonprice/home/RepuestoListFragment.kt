@@ -37,5 +37,4 @@ class ProductListFragment :
             else domainViewModel.removeRepuesto(repuesto)
         }
     }
-
 }

@@ -7,12 +7,15 @@ import com.luc.common.model.Repuesto
 import com.luc.common.model.Settings
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
+import com.luc.domain.usecases.SendEmailUseCase
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class DomainViewModel(
     private val getCalderaUseCase: GetCalderaUseCase,
-    private val getSettingsUseCase: GetSettingsUseCase
+    private val getSettingsUseCase: GetSettingsUseCase,
+    private val sendEmailUseCase: SendEmailUseCase
 ) : ViewModel() {
 
     private val _settings = MutableLiveData<Settings>()
@@ -41,6 +44,10 @@ class DomainViewModel(
     val getCalderas = liveData {
         _calderaList = getCalderaUseCase.getCalderas()
         emit(_calderaList)
+    }
+
+    val sendEmail = liveData(Dispatchers.IO) {
+        emit(sendEmailUseCase.sendEmail(_currentRepuestoList))
     }
 
     init {

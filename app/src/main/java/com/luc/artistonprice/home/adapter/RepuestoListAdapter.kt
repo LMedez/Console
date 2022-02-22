@@ -1,5 +1,6 @@
 package com.luc.artistonprice.home.adapter
 
+import android.graphics.drawable.Drawable
 import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
@@ -11,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.checkbox.MaterialCheckBox
 import com.luc.artistonprice.R
 import com.luc.artistonprice.databinding.RepuestoItemBinding
+import com.luc.artistonprice.utils.getDrawableOrNull
+import com.luc.artistonprice.utils.themeColor
 import com.luc.common.model.Repuesto
 
 class RepuestoListAdapter :
@@ -25,10 +28,10 @@ class RepuestoListAdapter :
     }
 
     var repuestoList: List<Repuesto> = listOf()
-    set(value) {
-        submitList(value)
-        notifyDataSetChanged()
-    }
+        set(value) {
+            submitList(value)
+            notifyDataSetChanged()
+        }
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = RepuestoItemBinding.bind(view)
@@ -36,21 +39,26 @@ class RepuestoListAdapter :
         fun bind(repuesto: Repuesto) = with(binding) {
             descripcion.text = repuesto.descripcion
             codigo.text = repuesto.codigo
+            precioServiceDescription.text = if (repuesto.settings?.applyIva != false) "Service + IVA" else "Service"
             precioService.text = "$${repuesto._precioService}"
             precioPublico.text = "$${repuesto.precioPublico}"
 
             checkBox.setOnClickListener {
                 onCheckBoxClick?.let { click ->
                     if (!itemStateArray.get(adapterPosition, false)) {//checkbox checked
+                        checkIndicator.setBackgroundColor(checkBox.context.themeColor(R.attr.colorSecondary))
                         checkBox.isChecked = true
                         click(repuesto, true)
                         //stores checkbox states and position
                         itemStateArray.put(adapterPosition, true)
                     } else {//checkbox unchecked
+                        checkIndicator.background =
+                            checkBox.context.getDrawableOrNull(R.drawable.divider)
                         checkBox.isChecked = false
                         click(repuesto, false)
                         //stores checkbox states and position.
                         itemStateArray.put(adapterPosition, false)
+
                     }
                 }
             }
@@ -70,6 +78,12 @@ class RepuestoListAdapter :
         holder.bind(repuesto)
         holder.itemView.findViewById<MaterialCheckBox>(R.id.checkBox).isChecked =
             itemStateArray.get(position, false)
+
+        if (itemStateArray.get(position, false))
+            holder.itemView.findViewById<View>(R.id.checkIndicator)
+                .setBackgroundColor(holder.itemView.context.themeColor(R.attr.colorSecondary))
+        else holder.itemView.findViewById<View>(R.id.checkIndicator)
+            .background = holder.itemView.context.getDrawableOrNull(R.drawable.divider)
     }
 
     object CalderaDiffCallback : DiffUtil.ItemCallback<Repuesto>() {
