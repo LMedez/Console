@@ -2,6 +2,7 @@ package com.luc.presentation.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.*
+import com.luc.common.NetworkStatus
 import com.luc.common.model.Caldera
 import com.luc.common.model.Repuesto
 import com.luc.common.model.Settings
@@ -47,6 +48,7 @@ class DomainViewModel(
     }
 
     val sendEmail = liveData(Dispatchers.IO) {
+        emit(NetworkStatus.Loading)
         emit(sendEmailUseCase.sendEmail(_currentRepuestoList))
     }
 

@@ -2,10 +2,13 @@ package com.luc.artistonprice.home
 
 import android.os.Bundle
 import android.util.Log
+import android.util.SparseBooleanArray
 import android.view.View
+import androidx.core.os.bundleOf
 import com.luc.artistonprice.base.BaseFragment
 import com.luc.artistonprice.databinding.FragmentRepuestoListBinding
 import com.luc.artistonprice.home.adapter.RepuestoListAdapter
+import com.luc.artistonprice.utils.SparseBooleanArrayParcelable
 import com.luc.common.model.Caldera
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
@@ -37,4 +40,27 @@ class ProductListFragment :
             else domainViewModel.removeRepuesto(repuesto)
         }
     }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val sparseBooleanArray: SparseBooleanArray? =
+            savedInstanceState?.getBundle(CHECKBOX_BUNDLE)?.getParcelable(
+                CHECKBOX_LIST
+            ) as? SparseBooleanArray
+
+        sparseBooleanArray?.let {
+            repuestoListAdapter.itemStateArray = it
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBundle(
+            CHECKBOX_BUNDLE,
+            bundleOf(CHECKBOX_LIST to SparseBooleanArrayParcelable(repuestoListAdapter.itemStateArray))
+        )
+    }
 }
+
+private const val CHECKBOX_LIST = "checBoxList"
+private const val CHECKBOX_BUNDLE = "checBoxBundle"

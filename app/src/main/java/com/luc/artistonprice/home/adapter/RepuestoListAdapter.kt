@@ -19,7 +19,7 @@ import com.luc.common.model.Repuesto
 class RepuestoListAdapter :
     ListAdapter<Repuesto, RepuestoListAdapter.ViewHolder>(CalderaDiffCallback) {
 
-    val itemStateArray = SparseBooleanArray()
+    var itemStateArray = SparseBooleanArray()
 
     private var onCheckBoxClick: ((Repuesto, Boolean) -> Unit)? = null
 

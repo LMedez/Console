@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.doOnLayout
+import androidx.core.view.postDelayed
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.luc.artistonprice.databinding.FragmentProductDetailBottomSheetBinding
 import com.luc.artistonprice.home.adapter.RepuestosInListAdapter
@@ -90,10 +92,7 @@ class ProductDetailBottomSheet : Fragment() {
         }
 
         binding.sendEmail.setOnClickListener {
-            composeEmail(
-                arrayOf("luciano.sisemas.12@gmail.com"),
-                "Email from Ariston"
-            )
+            composeEmail()
         }
     }
 
@@ -109,12 +108,33 @@ class ProductDetailBottomSheet : Fragment() {
         binding.description.text = repuesto.last().descripcion
     }
 
-    fun composeEmail(addresses: Array<String>, subject: String) {
-
+    fun composeEmail() {
+        binding.progressBar.alpha = 0f
         domainViewModel.sendEmail.observe(viewLifecycleOwner) {
             when (it) {
-                is NetworkStatus.Success -> Log.d("tests", it.data)
-                is NetworkStatus.Error -> Log.d("tests", it.message)
+                is NetworkStatus.Loading -> {
+                    with(binding) {
+                        progressBar.visibility = View.VISIBLE
+                        progressBar.animate().alpha(1f)
+                        sendEmail.alpha = 0.3f
+                        sendEmail.isEnabled = false
+                        clearList.isEnabled = false
+
+                    }
+                }
+                is NetworkStatus.Success -> {
+                    with(binding) {
+                        progressBar.visibility = View.INVISIBLE
+                        sendEmail.isEnabled = true
+                        sendEmail.alpha = 1f
+                        clearList.isEnabled = true
+                    }
+                    Toast.makeText(requireContext(), "Email enviado correctamente", Toast.LENGTH_LONG).show()
+                    view?.postDelayed(1000) {
+                        behavior.state = BottomSheetBehavior.STATE_HIDDEN
+                    }
+                }
+                is NetworkStatus.Error ->{}
             }
         }
     }

@@ -108,7 +108,6 @@
                     android:textColor="?attr/colorSecondary" />
             </LinearLayout>
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -121,8 +120,8 @@
             app:layout_constraintTop_toBottomOf="@+id/constraint"
             tools:listitem="@layout/product_item" />
 
-        <LinearLayout
-            android:orientation="vertical"
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/buttonContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,24 +131,38 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/sendEmail"
-                android:layout_marginStart="@dimen/grid_4"
-                android:layout_marginEnd="@dimen/grid_4"
-                android:layout_marginTop="@dimen/grid_2"
-                android:text="@string/crear_email"
+                style="@style/Widget.App.Button.SecondaryColor"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/grid_4"
+                android:layout_marginTop="@dimen/grid_2"
+                android:layout_marginEnd="@dimen/grid_4"
+                android:text="@string/crear_email"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/clearList"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/Widget.App.TextButton.SecondaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/grid_4"
                 android:layout_marginEnd="@dimen/grid_4"
-                android:layout_marginTop="@dimen/grid_2"
                 android:layout_marginBottom="@dimen/grid_2"
                 android:text="@string/limpiar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+                android:textColor="?attr/colorSecondaryVariant"
+                app:layout_constraintTop_toBottomOf="@id/sendEmail" />
 
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:alpha="0"
+                android:elevation="5dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/sendEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sendEmail" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

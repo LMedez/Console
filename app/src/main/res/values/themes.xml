@@ -37,4 +37,13 @@
         <item name="colorOnSurface">@color/white</item>
     </style>
 
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/black_800</item>
+    </style>
+
+    <style name="ThemeOverlay.App.TextButton" parent="">
+        <item name="colorPrimary">@color/black_800</item>
+    </style>
+
+
 </resources>
