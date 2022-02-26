@@ -5,6 +5,10 @@ import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.View
 import androidx.core.os.bundleOf
+import androidx.core.util.forEach
+import androidx.core.util.isEmpty
+import androidx.core.util.keyIterator
+import androidx.core.util.valueIterator
 import com.luc.artistonprice.base.BaseFragment
 import com.luc.artistonprice.databinding.FragmentRepuestoListBinding
 import com.luc.artistonprice.home.adapter.RepuestoListAdapter
@@ -25,7 +29,7 @@ class ProductListFragment :
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var caldera: Caldera? = null
-
+        binding.recyclerView.itemAnimator = null
         arguments?.takeIf { it.containsKey(ARG_OBJECT) }?.apply {
             caldera = (getParcelable(ARG_OBJECT) as? Caldera)
             binding.recyclerView.adapter = repuestoListAdapter
@@ -38,6 +42,15 @@ class ProductListFragment :
         repuestoListAdapter.setOnCheckBoxClick { repuesto, checked ->
             if (checked) domainViewModel.addRepuesto(repuesto)
             else domainViewModel.removeRepuesto(repuesto)
+        }
+
+        domainViewModel.selectedRepuestoList.observe(viewLifecycleOwner) {
+            if (it.isEmpty()) {
+                repuestoListAdapter.itemStateArray.forEach { key, value ->
+                    repuestoListAdapter.notifyItemChanged(key)
+                }
+                repuestoListAdapter.itemStateArray.clear()
+            }
         }
     }
 

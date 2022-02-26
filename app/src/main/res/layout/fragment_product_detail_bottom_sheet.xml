@@ -1,168 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".home.ProductDetailBottomSheet">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/sheetContainer"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        app:paddingTopSystemWindowInsets="@{true}"
+        app:marginBottomSystemWindowInsets="@{true}"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorSurface"
         android:orientation="vertical"
-        app:behavior_peekHeight="?attr/actionBarSize"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        tools:context=".home.ProductDetailBottomSheet">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraint"
+            android:id="@+id/sheetContainer"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorSecondaryVariant"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            android:background="?attr/colorSurface"
+            android:orientation="vertical"
+            app:behavior_peekHeight="?attr/actionBarSize"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
-            <ImageButton
-                android:id="@+id/arrowUp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/grid_2"
-                android:background="?attr/selectableItemBackground"
-                android:src="@drawable/ic_arrow_up"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="?attr/colorOnSecondary" />
-
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/grid_1_5"
-                android:layout_marginEnd="@dimen/grid_1"
-                android:maxLines="2"
-                android:text="Placa electronica"
-                android:textAppearance="?attr/textAppearanceSubtitle2"
-                android:textColor="?attr/colorOnSecondary"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
-                app:layout_constraintStart_toEndOf="@+id/arrowUp"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <LinearLayout
-                android:id="@+id/linearLayout2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/grid_1_5"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <TextView
-                    android:id="@+id/serviceDescripcion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Service + Iva"
-                    android:textAppearance="?attr/textAppearanceCaption"
-                    android:textColor="?attr/colorOnSecondary" />
-
-                <TextView
-                    android:id="@+id/totalPriceService"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ARS$12.500"
-                    android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="?attr/colorSecondary" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/grid_1_5"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorSecondaryVariant"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/publicoDescripcion"
+                <ImageButton
+                    android:id="@+id/arrowUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Publico + Iva + 35%"
-                    android:textAppearance="?attr/textAppearanceCaption"
-                    android:textColor="?attr/colorOnSecondary" />
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow_up"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="?attr/colorOnSecondary" />
 
                 <TextView
-                    android:id="@+id/totalPricePublico"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="ARS$12.500"
+                    android:layout_marginStart="@dimen/grid_1_5"
+                    android:layout_marginEnd="@dimen/grid_1"
+                    android:maxLines="2"
+                    android:text="Placa electronica"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="?attr/colorSecondary" />
-            </LinearLayout>
+                    android:textColor="?attr/colorOnSecondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintStart_toEndOf="@+id/arrowUp"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/grid_1_5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:alpha="0"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toTopOf="@+id/buttonContainer"
-            app:layout_constraintTop_toBottomOf="@+id/constraint"
-            tools:listitem="@layout/product_item" />
+                    <TextView
+                        android:id="@+id/serviceDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Service + Iva"
+                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textColor="?attr/colorOnSecondary" />
 
+                    <TextView
+                        android:id="@+id/totalPriceService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ARS$12.500"
+                        android:textAppearance="?attr/textAppearanceSubtitle2"
+                        android:textColor="?attr/colorSecondary" />
+                </LinearLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/buttonContainer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/grid_1_5"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/sendEmail"
-                style="@style/Widget.App.Button.SecondaryColor"
+                    <TextView
+                        android:id="@+id/publicoDescripcion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Publico + Iva + 35%"
+                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textColor="?attr/colorOnSecondary" />
+
+                    <TextView
+                        android:id="@+id/totalPricePublico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ARS$12.500"
+                        android:textAppearance="?attr/textAppearanceSubtitle2"
+                        android:textColor="?attr/colorSecondary" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/grid_4"
-                android:layout_marginTop="@dimen/grid_2"
-                android:layout_marginEnd="@dimen/grid_4"
-                android:text="@string/crear_email"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/clearList"
-                style="@style/Widget.App.TextButton.SecondaryColor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/grid_4"
-                android:layout_marginEnd="@dimen/grid_4"
-                android:layout_marginBottom="@dimen/grid_2"
-                android:text="@string/limpiar"
-                android:textColor="?attr/colorSecondaryVariant"
-                app:layout_constraintTop_toBottomOf="@id/sendEmail" />
-
-            <ProgressBar
-                android:id="@+id/progressBar"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_height="0dp"
                 android:alpha="0"
-                android:elevation="5dp"
-                android:visibility="invisible"
-                app:layout_constraintBottom_toBottomOf="@+id/sendEmail"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@+id/buttonContainer"
+                app:layout_constraintTop_toBottomOf="@+id/constraint"
+                tools:listitem="@layout/product_item" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/sendEmail" />
+                app:layout_constraintStart_toStartOf="parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sendEmail"
+                    style="@style/Widget.App.Button.SecondaryColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_4"
+                    android:layout_marginTop="@dimen/grid_2"
+                    android:layout_marginEnd="@dimen/grid_4"
+                    android:text="@string/crear_email"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/clearList"
+                    style="@style/Widget.App.TextButton.SecondaryColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/grid_4"
+                    android:layout_marginEnd="@dimen/grid_4"
+                    android:layout_marginBottom="@dimen/grid_2"
+                    android:text="@string/limpiar"
+                    android:textColor="?attr/colorSecondaryVariant"
+                    app:layout_constraintTop_toBottomOf="@id/sendEmail" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:alpha="0"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@+id/sendEmail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/sendEmail" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

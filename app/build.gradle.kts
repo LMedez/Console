@@ -34,6 +34,22 @@ dependencies {
     implementation(Deps.Glide.GLIDE)
 
 
+    androidTestImplementation(TestDeps.JUnit.JUNIT_EXT)
+    androidTestImplementation(TestDeps.JUnit.JUNIT)
+    androidTestImplementation(TestDeps.Kotlinx.COROUTINES_TEST)
+    androidTestImplementation(TestDeps.Truth.TRUTH)
+    androidTestImplementation(TestDeps.AndroidX.Arch.CORE_TESTING)
+    androidTestImplementation(Deps.AndroidX.Room.ROOM_KTX)
+    androidTestImplementation( "androidx.test.espresso:espresso-core:3.4.0")
+
+    testImplementation(TestDeps.JUnit.JUNIT)
+    testImplementation(TestDeps.Truth.TRUTH)
+    testImplementation(TestDeps.Mockito.CORE)
+    testImplementation(TestDeps.Mockito.MOCKK)
+    testImplementation(TestDeps.Mockito.KOTLIN)
+    testImplementation(TestDeps.AndroidX.Arch.CORE_TESTING)
+    testImplementation(TestDeps.Kotlinx.COROUTINES_TEST)
+
     kapt(Deps.Glide.PROCESSOR)
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 

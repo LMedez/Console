@@ -7,6 +7,7 @@ import kotlinx.coroutines.test.runBlockingTest
 import org.junit.Before
 import org.junit.Test
 
+@ExperimentalCoroutinesApi
 class GetCalderaUseCaseTest {
 
     private lateinit var getCalderaUseCase: GetCalderaUseCase
@@ -18,14 +19,11 @@ class GetCalderaUseCaseTest {
         getCalderaUseCase = GetCalderaUseCase(fakeDomainRepository)
     }
 
-    @OptIn(ExperimentalCoroutinesApi::class)
     @Test
     fun `precioService should have only two decimals`() {
         runBlockingTest {
-            getCalderaUseCase.getCalderas().forEach { caldera ->
-                caldera.repuestos.forEach {
-                    assertThat(it.precioService.toString().indexOf(".") - 1).isLessThan(3)
-                }
+            getCalderaUseCase.getRepuestos().forEach { repuesto ->
+                assertThat(repuesto.precioService.toString().indexOf(".") - 1).isLessThan(3)
             }
         }
     }

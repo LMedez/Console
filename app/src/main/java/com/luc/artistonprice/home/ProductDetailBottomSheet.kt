@@ -83,7 +83,8 @@ class ProductDetailBottomSheet : Fragment() {
                 behavior.state = BottomSheetBehavior.STATE_HIDDEN
             else {
                 setUpView(it)
-                behavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                if (behavior.state == BottomSheetBehavior.STATE_HIDDEN)
+                    behavior.state = BottomSheetBehavior.STATE_COLLAPSED
             }
         }
 
@@ -92,8 +93,19 @@ class ProductDetailBottomSheet : Fragment() {
         }
 
         binding.sendEmail.setOnClickListener {
-            composeEmail()
+            domainViewModel.sendEmail()
         }
+
+        binding.clearList.setOnClickListener {
+            domainViewModel.clearSelectedRepuestoList()
+        }
+
+        repuestosInListAdapter.setOnAddClick { repuesto ->
+            domainViewModel.addRepuesto(repuesto)
+        }
+
+        composeEmail()
+
     }
 
     fun setDescriptionText(settings: Settings) {
@@ -110,7 +122,7 @@ class ProductDetailBottomSheet : Fragment() {
 
     fun composeEmail() {
         binding.progressBar.alpha = 0f
-        domainViewModel.sendEmail.observe(viewLifecycleOwner) {
+        domainViewModel.email.observe(viewLifecycleOwner) {
             when (it) {
                 is NetworkStatus.Loading -> {
                     with(binding) {
@@ -129,12 +141,17 @@ class ProductDetailBottomSheet : Fragment() {
                         sendEmail.alpha = 1f
                         clearList.isEnabled = true
                     }
-                    Toast.makeText(requireContext(), "Email enviado correctamente", Toast.LENGTH_LONG).show()
+                    Toast.makeText(
+                        requireContext(),
+                        "Email enviado correctamente",
+                        Toast.LENGTH_LONG
+                    ).show()
                     view?.postDelayed(1000) {
                         behavior.state = BottomSheetBehavior.STATE_HIDDEN
+                        domainViewModel.clearSelectedRepuestoList()
                     }
                 }
-                is NetworkStatus.Error ->{}
+                is NetworkStatus.Error -> {}
             }
         }
     }

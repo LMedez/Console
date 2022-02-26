@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.room.Ignore
 import com.luc.common.entities.CalderaEntity
 import com.luc.common.utils.addPercent
+import com.luc.common.utils.round
 import kotlinx.parcelize.IgnoredOnParcel
 import kotlinx.parcelize.Parcelize
 import java.util.*
@@ -24,6 +25,19 @@ data class Repuesto(
     var precioService: Double,
     var precioPublico: Double,
 ) : Parcelable {
+
+    @IgnoredOnParcel
+    var count = 1
+
+    private val precioServiceX: Double
+        get() {
+            return (precioService * count).round()
+        }
+
+    private val precioPublicoX: Double
+        get() {
+            return (precioPublico * count).round()
+        }
 
     @IgnoredOnParcel
     var settings: Settings? = null
@@ -48,9 +62,14 @@ data class Repuesto(
         get() {
             return settings?.let {
                 if (it.applyIva)
-                    addPercent(precioService, 21)
-                else precioService
-            } ?: precioService
+                    addPercent(precioServiceX, 21)
+                else precioServiceX
+            } ?: precioServiceX
+        }
+
+    val _precioPublico: Double
+        get() {
+            return precioPublicoX
         }
 
     @IgnoredOnParcel
@@ -58,9 +77,9 @@ data class Repuesto(
         get() {
             return settings?.let {
                 if (it.applyIva)
-                    addPercent((precioService * it.dolarValue), 21).toInt()
-                else (precioService * it.dolarValue).toInt()
-            } ?: precioService.toInt()
+                    addPercent((precioServiceX * it.dolarValue), 21).toInt()
+                else (precioServiceX * it.dolarValue).toInt()
+            } ?: precioServiceX.toInt()
         }
 
     @IgnoredOnParcel
@@ -68,12 +87,12 @@ data class Repuesto(
         get() {
             return settings?.let {
                 if (it.applyGain)
-                    addPercent((precioPublico * it.dolarValue), it.gainValue).toInt()
-                else (precioPublico * it.dolarValue).toInt()
-            } ?: precioPublico.toInt()
+                    addPercent((precioPublicoX * it.dolarValue), it.gainValue).toInt()
+                else (precioPublicoX * it.dolarValue).toInt()
+            } ?: precioPublicoX.toInt()
         }
 
-    fun toEmailString() = "Repuesto: ${this.descripcion} - Codigo ${this.codigo} \n"
+    fun toEmailString() = "$count ${this.descripcion} - Codigo: ${this.codigo} \n"
 }
 
 fun Caldera.asCalderaEntity(): CalderaEntity = CalderaEntity(this.id, this.caldera)

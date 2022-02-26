@@ -9,4 +9,5 @@
     <string name="closeDrawer">close drawer</string>
     <string name="crear_email">Crear Email</string>
     <string name="limpiar">limpiar</string>
+    <string name="dolar">Dolar $ %1$s</string>
 </resources>

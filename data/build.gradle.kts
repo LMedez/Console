@@ -10,8 +10,7 @@ plugins {
     * */
 }
 
-android {
-}
+android {}
 
 dependencies {
     implementation(project(":domain"))

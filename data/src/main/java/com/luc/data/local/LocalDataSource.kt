@@ -29,8 +29,12 @@ class LocalDataSource(
         } else Settings()
     }
 
-    internal suspend fun updateSettings(settings: Settings) = settingsDao.insertOrUpdate(settings.asSettingsEntity())
+    internal suspend fun updateSettings(settings: Settings) {
+        if (settings.id != 1L) throw IllegalStateException()
+        settingsDao.insertOrUpdate(settings.asSettingsEntity())
+    }
+
 
     internal suspend fun getRepuestos() = repuestoDao.getRepuestos().map { it.asRepuesto() }
-
 }
+

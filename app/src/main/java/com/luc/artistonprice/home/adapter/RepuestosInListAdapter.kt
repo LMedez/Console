@@ -1,6 +1,6 @@
 package com.luc.artistonprice.home.adapter
 
-import android.util.SparseBooleanArray
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,10 +16,10 @@ class RepuestosInListAdapter :
     ListAdapter<Repuesto, RepuestosInListAdapter.ViewHolder>(CalderaDiffCallback) {
 
 
-    private var onCheckBoxClick: ((Repuesto, Boolean) -> Unit)? = null
+    private var onAddClick: ((Repuesto) -> Unit)? = null
 
-    fun setOnCheckBoxClick(listener: (Repuesto, Boolean) -> Unit) {
-        onCheckBoxClick = listener
+    fun setOnAddClick(listener: (Repuesto) -> Unit) {
+        onAddClick = listener
     }
 
     var repuestoList: List<Repuesto> = listOf()
@@ -33,12 +33,19 @@ class RepuestosInListAdapter :
         private val binding = ProductItemBinding.bind(view)
 
         fun bind(repuesto: Repuesto) = with(binding) {
+            addButton.setOnClickListener {
+                onAddClick?.let { click ->
+                    click(repuesto)
+                }
+            }
+            val count = if (repuesto.count != 1) "(${repuesto.count})" else ""
             calderaName.text = repuesto.calderaName
-            productName.text = repuesto.descripcion.capitalizeFirstChar()
+            productName.text =
+                "${repuesto.descripcion.capitalizeFirstChar()} $count"
             servicePriceAndUsd.text = "USD$${repuesto._precioService} x ${repuesto.dolarValue}"
             publicoAndUsd.text =
-                if (repuesto.settings?.applyGain != false) "USD$${repuesto.precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
-                else "USD$${repuesto.precioPublico} x ${repuesto.dolarValue}"
+                if (repuesto.settings?.applyGain != false) "USD$${repuesto._precioPublico} x ${repuesto.dolarValue} + %${repuesto.gainValue}"
+                else "USD$${repuesto._precioPublico} x ${repuesto.dolarValue}"
             servicePriceArs.text = "ARS$${repuesto.precioServiceInARS}"
             publicoPriceArs.text = "ARS$${repuesto.precioPublicoInARS}"
             serviceDescripcion.text =

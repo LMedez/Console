@@ -7,6 +7,8 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 class FakeDomainRepository : DomainRepository {
+
+
     val calderaList = listOf(
         Caldera(id = "123456", caldera = "EGIS"),
         Caldera(id = "7856", caldera = "Class"),
@@ -65,5 +67,9 @@ class FakeDomainRepository : DomainRepository {
 
     override fun getSettings(): Flow<Settings> {
         return flow { Settings() }
+    }
+
+    override suspend fun updateSettings(settings: Settings) {
+
     }
 }

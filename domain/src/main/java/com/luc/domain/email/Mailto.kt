@@ -1,5 +1,6 @@
 package com.luc.domain.email
 
+import android.util.Log
 import com.luc.common.NetworkStatus
 import com.luc.domain.email.Config.EMAIL_RECEIVED
 import com.luc.domain.email.Config.EMAIL_SENDER
@@ -37,6 +38,7 @@ class Mailto {
             //send mail
             Transport.send(mime)
             NetworkStatus.Success("Success")
+
         }
 
     } catch (e: MessagingException) {

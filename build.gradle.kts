@@ -66,6 +66,7 @@ fun AppExtension.applyAppCommons() = apply {
                 arguments += mapOf("room.schemaLocation" to "$projectDir/schemas")
             }
         }
+        testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
     }
 
     buildTypes {
@@ -114,6 +115,8 @@ fun BaseExtension.applyBaseCommons() = apply {
     defaultConfig.apply {
         minSdk = Android.Sdk.MIN
         targetSdk = Android.Sdk.TARGET
+
+
     }
 
     compileOptions.apply {
@@ -134,5 +137,10 @@ fun BaseExtension.applyBaseCommons() = apply {
             dimension = "type"
             //signingConfig = signingConfigs.getByName("release")
         }
+    }
+
+    packagingOptions {
+        resources.excludes += "META-INF/AL2.0"
+        resources.excludes += "META-INF/LGPL2.1"
     }
 }

@@ -1,6 +1,5 @@
 package com.luc.artistonprice.home.adapter
 
-import android.graphics.drawable.Drawable
 import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
@@ -36,29 +35,27 @@ class RepuestoListAdapter :
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val binding = RepuestoItemBinding.bind(view)
 
-        fun bind(repuesto: Repuesto) = with(binding) {
-            descripcion.text = repuesto.descripcion
-            codigo.text = repuesto.codigo
-            precioServiceDescription.text = if (repuesto.settings?.applyIva != false) "Service + IVA" else "Service"
-            precioService.text = "$${repuesto._precioService}"
-            precioPublico.text = "$${repuesto.precioPublico}"
+        fun bind(_repuesto: Repuesto) = with(binding) {
+            repuesto = _repuesto
+            contentContainer.setOnClickListener {
+                checkBox.performClick()
+            }
 
             checkBox.setOnClickListener {
                 onCheckBoxClick?.let { click ->
                     if (!itemStateArray.get(adapterPosition, false)) {//checkbox checked
                         checkIndicator.setBackgroundColor(checkBox.context.themeColor(R.attr.colorSecondary))
                         checkBox.isChecked = true
-                        click(repuesto, true)
+                        click(_repuesto, true)
                         //stores checkbox states and position
                         itemStateArray.put(adapterPosition, true)
                     } else {//checkbox unchecked
                         checkIndicator.background =
                             checkBox.context.getDrawableOrNull(R.drawable.divider)
                         checkBox.isChecked = false
-                        click(repuesto, false)
+                        click(_repuesto, false)
                         //stores checkbox states and position.
                         itemStateArray.put(adapterPosition, false)
-
                     }
                 }
             }
@@ -84,11 +81,12 @@ class RepuestoListAdapter :
                 .setBackgroundColor(holder.itemView.context.themeColor(R.attr.colorSecondary))
         else holder.itemView.findViewById<View>(R.id.checkIndicator)
             .background = holder.itemView.context.getDrawableOrNull(R.drawable.divider)
+
     }
 
     object CalderaDiffCallback : DiffUtil.ItemCallback<Repuesto>() {
         override fun areItemsTheSame(oldItem: Repuesto, newItem: Repuesto): Boolean {
-            return oldItem.id == newItem.id
+            return oldItem == newItem
         }
 
         override fun areContentsTheSame(oldItem: Repuesto, newItem: Repuesto): Boolean {

@@ -9,25 +9,6 @@
         android:orientation="vertical"
         tools:context=".home.HomeFragment">
 
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:textColor="?attr/colorOnPrimarySurface"
-                android:layout_marginStart="@dimen/grid_2"
-                android:id="@+id/dolarValue"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|start"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
-        </FrameLayout>
-
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"
             style="@style/Widget.App.TabLayout"
@@ -35,7 +16,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
             app:tabMode="scrollable" />
 
         <androidx.viewpager2.widget.ViewPager2

@@ -2,6 +2,7 @@ object TestDeps {
     object JUnit {
         private const val VERSION = "4.12"
         const val JUNIT = "junit:junit:$VERSION"
+        const val JUNIT_EXT = "androidx.test.ext:junit-ktx:1.1.3"
     }
 
     object Kotlinx {

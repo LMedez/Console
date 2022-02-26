@@ -3,7 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="repuesto"
+            type="com.luc.common.model.Repuesto" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentContainer"
         android:paddingEnd="@dimen/grid_1_5"
         android:paddingTop="@dimen/grid_2"
         android:paddingStart="@dimen/grid_1_5"
@@ -29,13 +36,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+
                 android:id="@+id/descripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/grid_1"
                 android:layout_marginBottom="@dimen/grid_1"
                 android:maxLines="3"
-                android:text="Intercambiador primario secundario"
+                android:text="@{repuesto.descripcion}"
                 android:textAppearance="?attr/textAppearanceSubtitle2"
                 app:layout_constraintEnd_toStartOf="@+id/linearLayout"
                 app:layout_constraintStart_toEndOf="@+id/checkBox"
@@ -46,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/grid_1_5"
-                android:text="1258489-8565"
+                android:text="@{repuesto.codigo}"
                 android:textAppearance="?attr/textAppearanceBody2"
                 app:layout_constraintStart_toStartOf="@+id/descripcion"
                 app:layout_constraintTop_toBottomOf="@+id/descripcion" />
@@ -75,7 +83,7 @@
                 android:id="@+id/precioPublico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
+                android:text="@{String.format(`$`+repuesto.precioPublico)}"
                 android:textAppearance="@style/TextAppearance.App.Subtitle3" />
         </LinearLayout>
 
@@ -94,7 +102,7 @@
                 android:id="@+id/precioServiceDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Service + IVA"
+                android:text="@{repuesto.settings.applyIva ? `Service + IVA` : `Service`}"
                 android:textAppearance="?attr/textAppearanceCaption" />
 
             <TextView
@@ -102,7 +110,7 @@
                 android:id="@+id/precioService"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
+                android:text="@{String.format(`$`+repuesto._precioService)}"
                 android:textAppearance="@style/TextAppearance.App.Subtitle3" />
         </LinearLayout>
 

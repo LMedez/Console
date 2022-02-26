@@ -40,6 +40,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.lifecycleOwner = this
+        binding.domainViewModel = domainViewModel
+
         val toolbar: MaterialToolbar = binding.topAppBar
         setSupportActionBar(toolbar)
 
@@ -64,7 +67,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         /* Load image of header drawer*/
         val headerView = binding.navigationView.getHeaderView(0)
         DrawerHeaderBinding.bind(headerView).imageUrl =
-            "https://pngimage.net/wp-content/uploads/2018/05/ariston-logo-png-1.png"
+            "https://play-lh.googleusercontent.com/TfjksNHP5flgSukqCRhv_lz0_c-bkEqcRxJKyjZjZIBcwCZ2H9gJm0HlIKp9G7K87k5M"
 
 
         domainViewModel.settings.observe(this) {

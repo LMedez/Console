@@ -8,7 +8,7 @@ import com.luc.artistonprice.home.ProductListFragment
 import com.luc.common.model.Caldera
 
 private const val ARG_OBJECT = "arg"
-class ViewPagerAdapter (fa: FragmentActivity, private val calderaList: List<Caldera>):  FragmentStateAdapter(fa) {
+class ViewPagerAdapter (fa: Fragment, private val calderaList: List<Caldera>):  FragmentStateAdapter(fa) {
     override fun getItemCount() = calderaList.size
 
     override fun createFragment(position: Int): Fragment {
@@ -18,4 +18,6 @@ class ViewPagerAdapter (fa: FragmentActivity, private val calderaList: List<Cald
         }
         return fragment
     }
+
+
 }

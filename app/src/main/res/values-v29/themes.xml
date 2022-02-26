@@ -1,5 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
     <style name="Theme.AndroidPrice" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/red_600</item>
@@ -12,9 +13,8 @@
         <!-- Status bar color. -->
 
         <item name="android:statusBarColor">@color/immersive_sys_ui</item>
-        <!--<item name="android:navigationBarColor">@color/nav_bar</item>-->
 
-        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:forceDarkAllowed">false</item>
 
         <!--Material type attributes-->
         <item name="textAppearanceHeadline1">@style/TextAppearance.App.Headline1</item>
@@ -32,20 +32,4 @@
         <item name="textAppearanceOverline">@style/TextAppearance.App.Overline</item>
 
     </style>
-
-    <style name="ThemeOverlay.App.TabLayout" parent="">
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorSurface">@color/red_600</item>
-        <item name="colorOnSurface">@color/white</item>
-    </style>
-
-    <style name="ThemeOverlay.App.Button" parent="">
-        <item name="colorPrimary">@color/black_800</item>
-    </style>
-
-    <style name="ThemeOverlay.App.TextButton" parent="">
-        <item name="colorPrimary">@color/black_800</item>
-    </style>
-
-
 </resources>

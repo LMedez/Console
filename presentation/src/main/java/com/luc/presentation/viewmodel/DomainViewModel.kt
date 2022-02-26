@@ -1,6 +1,5 @@
 package com.luc.presentation.viewmodel
 
-import android.util.Log
 import androidx.lifecycle.*
 import com.luc.common.NetworkStatus
 import com.luc.common.model.Caldera
@@ -22,7 +21,10 @@ class DomainViewModel(
     private val _settings = MutableLiveData<Settings>()
     val settings: LiveData<Settings> = _settings
 
-    val _repuestoList = MutableLiveData<List<Repuesto>>()
+    private val _email = MutableLiveData<NetworkStatus<String>>()
+    val email: LiveData<NetworkStatus<String>> = _email
+
+    private val _repuestoList = MutableLiveData<List<Repuesto>>()
     private var _calderaList = listOf<Caldera>()
 
     private val _currentRepuestoList: MutableList<Repuesto> = mutableListOf()
@@ -30,11 +32,21 @@ class DomainViewModel(
     private val _selectedRepuestoList = MutableLiveData<List<Repuesto>>()
     val selectedRepuestoList: LiveData<List<Repuesto>> =
         Transformations.map(_selectedRepuestoList) { list ->
-            list.map { repuesto ->
+            val calderaNameMapped = list.map { repuesto ->
                 repuesto.calderaName =
                     _calderaList.find { it.id == repuesto.calderaId }?.caldera ?: ""
+                repuesto
             }
-            list
+
+            calderaNameMapped.groupBy { it.id }.filter { it.value.size > 1 }.forEach { map ->
+                calderaNameMapped.map {
+                    if (it.id == map.key) {
+                        it.count = map.value.size
+                    }
+                }
+            }
+            calderaNameMapped.distinct()
+
         }
 
     fun repuestoList(calderaId: String): LiveData<List<Repuesto>> =
@@ -47,9 +59,10 @@ class DomainViewModel(
         emit(_calderaList)
     }
 
-    val sendEmail = liveData(Dispatchers.IO) {
-        emit(NetworkStatus.Loading)
-        emit(sendEmailUseCase.sendEmail(_currentRepuestoList))
+    fun sendEmail() = viewModelScope.launch(Dispatchers.IO) {
+        _email.postValue(NetworkStatus.Loading)
+        val result = sendEmailUseCase.sendEmail(_currentRepuestoList)
+        _email.postValue(result)
     }
 
     init {
@@ -63,9 +76,14 @@ class DomainViewModel(
                 })
                 _selectedRepuestoList.postValue(_selectedRepuestoList.value?.map {
                     it.settings = settings; it
-                }?: listOf())
+                } ?: listOf())
             }
         }
+    }
+
+    fun clearSelectedRepuestoList() {
+        _currentRepuestoList.clear()
+        _selectedRepuestoList.postValue(_currentRepuestoList)
     }
 
     fun removeRepuesto(repuesto: Repuesto) {
@@ -74,6 +92,7 @@ class DomainViewModel(
     }
 
     fun addRepuesto(repuesto: Repuesto) {
+        repuesto.count = 1
         _currentRepuestoList.add(repuesto)
         _selectedRepuestoList.postValue(_currentRepuestoList)
     }
@@ -83,5 +102,4 @@ class DomainViewModel(
             getSettingsUseCase.updateSettings(settings)
         }
     }
-
 }

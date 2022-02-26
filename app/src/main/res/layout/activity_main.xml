@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="domainViewModel"
+            type="com.luc.presentation.viewmodel.DomainViewModel" />
+    </data>
+
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
@@ -13,12 +19,13 @@
         tools:openDrawer="start">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            tools:targetApi="o"
-            android:clipChildren="false"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:marginLeftSystemWindowInsets="@{true}"
+            app:marginRightSystemWindowInsets="@{true}">
 
             <androidx.fragment.app.FragmentContainerView
+
                 android:id="@+id/nav_host_fragment"
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="match_parent"
@@ -31,27 +38,26 @@
                 app:navGraph="@navigation/nav_graph" />
 
             <com.google.android.material.appbar.AppBarLayout
-                app:paddingTopSystemWindowInsets="@{true}"
                 android:id="@+id/appBarLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:elevation="0dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:paddingTopSystemWindowInsets="@{true}">
 
                 <com.google.android.material.appbar.MaterialToolbar
                     android:id="@+id/topAppBar"
                     style="@style/Widget.MaterialComponents.Toolbar.Primary"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
+                    app:subtitle="@{@string/dolar(domainViewModel.settings.dolarValue)}"
                     app:title="@string/app_name" />
 
             </com.google.android.material.appbar.AppBarLayout>
 
             <androidx.fragment.app.FragmentContainerView
-                app:marginBottomSystemWindowInsets="@{true}"
-                app:marginTopSystemWindowInsets="@{true}"
                 android:id="@+id/sheet"
                 android:name="com.luc.artistonprice.home.ProductDetailBottomSheet"
                 android:layout_width="match_parent"
@@ -70,6 +76,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             app:headerLayout="@layout/drawer_header"
+            app:marginLeftSystemWindowInsets="@{true}"
+            app:marginRightSystemWindowInsets="@{true}"
             app:menu="@menu/navigation_drawer" />
 
     </androidx.drawerlayout.widget.DrawerLayout>
