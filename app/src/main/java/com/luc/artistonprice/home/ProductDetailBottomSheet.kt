@@ -43,6 +43,7 @@ class ProductDetailBottomSheet : Fragment() {
         _binding =
             FragmentProductDetailBottomSheetBinding.inflate(inflater, container, false).apply {
                 behavior = BottomSheetBehavior.from(sheetContainer)
+                behavior.isGestureInsetBottomIgnored = true
                 behavior.isHideable = true
                 val backCallback =
                     requireActivity().onBackPressedDispatcher.addCallback(
