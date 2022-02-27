@@ -1,12 +1,13 @@
 package com.luc.data.di
 
 import android.app.Application
-import android.util.Log
+import androidx.annotation.Keep
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.Gson
+import com.google.gson.annotations.SerializedName
 import com.luc.common.entities.RepuestoEntity
 import com.luc.common.entities.SettingsEntity
 import com.luc.common.model.Caldera
@@ -14,6 +15,7 @@ import com.luc.common.model.Repuesto
 import com.luc.common.model.asCalderaEntity
 import com.luc.common.utils.round
 import com.luc.data.DomainRepositoryImpl
+import com.luc.data.R
 import com.luc.data.di.DataModule.Companion.getInstance
 import com.luc.data.local.LocalDataSource
 import com.luc.data.local.LocalDatabase
@@ -52,7 +54,7 @@ class DataModule {
                         // convert ariston.json file into data class with Gson
                         val gson = Gson()
                         val jsonString =
-                            application.assets.open("ariston.json").bufferedReader()
+                            application.resources.openRawResource(R.raw.ariston).bufferedReader()
                                 .use { it.readText() }
 
                         val jsonData: Array<SimuledCaldera> =
@@ -96,7 +98,6 @@ class DataModule {
         }
     }
 }
-
 data class SimuledCaldera(
     val id: String = UUID.randomUUID().toString(),
     val caldera: String,

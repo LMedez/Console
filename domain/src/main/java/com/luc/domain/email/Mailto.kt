@@ -42,6 +42,7 @@ class Mailto {
         }
 
     } catch (e: MessagingException) {
+        e.printStackTrace()
         NetworkStatus.Error(e, e.message ?: "no message")
     }
 }

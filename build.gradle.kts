@@ -18,8 +18,6 @@ buildscript {
         classpath(BuildPlugins.SAFE_ARGS)
         classpath(kotlin(module = BuildPlugins.Kotlin.ID, version = BuildPlugins.Kotlin.VERSION))
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
-
-
     }
 }
 
@@ -115,8 +113,6 @@ fun BaseExtension.applyBaseCommons() = apply {
     defaultConfig.apply {
         minSdk = Android.Sdk.MIN
         targetSdk = Android.Sdk.TARGET
-
-
     }
 
     compileOptions.apply {
@@ -135,7 +131,7 @@ fun BaseExtension.applyBaseCommons() = apply {
 
         create("prod") {
             dimension = "type"
-            //signingConfig = signingConfigs.getByName("release")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 

@@ -67,6 +67,12 @@ object Deps {
             private const val VERSION = "2.8.5"
             const val GSON = "com.google.code.gson:gson:$VERSION"
         }
+
+        object PlayCore {
+            private const val VERSION = "1.10.3"
+            const val CORE = "com.google.android.play:core:$VERSION"
+            const val KTX = "com.google.android.play:core-ktx:1.8.1"
+        }
     }
 
     object Kotlinx {

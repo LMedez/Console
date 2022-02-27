@@ -152,7 +152,13 @@ class ProductDetailBottomSheet : Fragment() {
                         domainViewModel.clearSelectedRepuestoList()
                     }
                 }
-                is NetworkStatus.Error -> {}
+                is NetworkStatus.Error -> {
+                    Toast.makeText(
+                        requireContext(),
+                        "Error: ${it.message}",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
             }
         }
     }
