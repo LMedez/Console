@@ -14,7 +14,6 @@ android {
     if (allFilesFromDir != null) {
         val keystoreFile = allFilesFromDir.first()
         keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
-        print(keystoreFile.path)
     }
 
     viewBinding {
