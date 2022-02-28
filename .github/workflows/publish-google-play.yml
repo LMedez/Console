@@ -25,7 +25,7 @@ jobs:
         uses: timheuer/base64-to-file@v1.1
         with:
           fileDir: './secrets'
-          fileName: 'console-app-keystore.jks'
+          fileName: 'console-app-keystore.keystore'
           encodedString: ${{ secrets.KEYSTORE_FILE }}
 
       # Decode the Google Play api key file

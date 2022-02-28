@@ -113,8 +113,6 @@ fun BaseExtension.applyBaseCommons() = apply {
         }
     }
 
-
-
     compileSdkVersion(Android.Sdk.COMPILE)
     defaultConfig.apply {
         minSdk = Android.Sdk.MIN
