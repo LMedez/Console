@@ -25,7 +25,7 @@ jobs:
         uses: timheuer/base64-to-file@v1.1
         with:
           fileDir: './secrets'
-          fileName: '1gravity.keystore'
+          fileName: 'console-app-keystore.jks'
           encodedString: ${{ secrets.KEYSTORE_FILE }}
 
       # Decode the Google Play api key file
@@ -42,8 +42,8 @@ jobs:
         run: ./gradlew
           -PBUILD_NUMBER="${{ env.BUILD_NUMBER }}"
           -PgooglePlayApiKey="../${{ steps.decode_api_key.outputs.filePath }}"
-          -PONEGRAVITY_KEYSTORE_FILE="../${{ steps.decode_keystore.outputs.filePath }}"
-          -PONEGRAVITY_KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}
-          -PONEGRAVITY_OPENSOURCE_KEY_ALIAS=${{ secrets.KEY_ALIAS }}
-          -PONEGRAVITY_OPENSOURCE_KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}
+          -PstoreFile="../${{ steps.decode_keystore.outputs.filePath }}"
+          -PkeyPassword=${{ secrets.KEYSTORE_PASSWORD }}
+          -Palias=${{ secrets.KEY_ALIAS }}
+          -Ppassword=${{ secrets.KEY_PASSWORD }}
           publishProdReleaseBundle --max-workers 1 --stacktrace
