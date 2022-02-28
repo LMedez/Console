@@ -11,11 +11,11 @@ android {
     val tmpFilePath = System.getProperty("user.home") + "/work/_temp/"
     val allFilesFromDir = File(tmpFilePath).listFiles()
 
-    print(tmpFilePath)
+    print((allFilesFromDir == null).toString())
 
     if (allFilesFromDir != null) {
-        print(tmpFilePath)
         val keystoreFile = allFilesFromDir.first()
+        print(allFilesFromDir.first().path)
         keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
     }
 
