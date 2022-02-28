@@ -104,7 +104,7 @@ fun BaseExtension.applyBaseCommons() = apply {
     // Load your keystore.properties file into the keystoreProperties object.
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
-    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
+    val tmpFilePath = System.getProperty("user.home") + "/keystore/"
     val allFilesFromDir = File(tmpFilePath).listFiles()
 
     if (allFilesFromDir != null) {
