@@ -17,7 +17,7 @@ jobs:
           cache: gradle
           
       - name: build APK
-        run: ./gradlew :assembleProdRelease
+        run: ./gradlew :app:assembleProdRelease
       - name: Sign Android release
         uses: r0adkll/sign-android-release@v1
         with:
