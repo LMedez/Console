@@ -10,3 +10,6 @@
 local.properties
 # Project exclude paths
 /buildSrc/build/
+
+/keystore
+/keystore.properties
