@@ -1,4 +1,3 @@
-import com.github.triplet.gradle.androidpublisher.ReleaseStatus.*
 import java.io.FileInputStream
 import java.util.*
 
@@ -32,6 +31,7 @@ play {
 
     // Load your keystore.properties file into the keystoreProperties object.
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+
     // Overrides defaults
     val apiKey = keystoreProperties.getProperty("apiKeyFile")
     serviceAccountCredentials.set(file(apiKey))
