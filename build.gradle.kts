@@ -107,7 +107,9 @@ fun BaseExtension.applyBaseCommons() = apply {
     val tmpFilePath = System.getProperty("user.home") + "/home/runner/work/_temp/"
     val allFilesFromDir = File(tmpFilePath).listFiles()
 
+        print(tmpFilePath)
     if (allFilesFromDir != null) {
+
         val keystoreFile = allFilesFromDir.first()
         keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
     }

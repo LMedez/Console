@@ -1,6 +1,3 @@
-import java.io.FileInputStream
-import java.util.*
-
 plugins {
     id(ModulePlugins.ANDROID_APPLICATION)
     kotlin("android")
