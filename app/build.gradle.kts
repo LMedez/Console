@@ -8,15 +8,13 @@ plugins {
 
 android {
 
-    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/"
+    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore"
     val allFilesFromDir = File(tmpFilePath).listFiles()
-
-    print((allFilesFromDir == null).toString())
 
     if (allFilesFromDir != null) {
         val keystoreFile = allFilesFromDir.first()
-        print(allFilesFromDir.first().path)
         keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
+        print(allFilesFromDir.first().path)
     }
 
     viewBinding {
