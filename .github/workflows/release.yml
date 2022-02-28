@@ -20,7 +20,7 @@ jobs:
       - name: Add secrets
         run: |
           cat > keystore.properties << ENDOFFILE
-            storeFile=${{secrets.KEYSTORE_FILE}}
+            storeFile=${{secrets.KEYSTORE_FILE_PATH}}
           ENDOFFILE
           
       - name: build APK
