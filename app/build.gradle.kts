@@ -8,7 +8,7 @@ plugins {
 
 android {
 
-    val tmpFilePath = System.getProperty("user.home") + "/home/runner/work/_temp/"
+    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/"
     val allFilesFromDir = File(tmpFilePath).listFiles()
 
     print(tmpFilePath)
