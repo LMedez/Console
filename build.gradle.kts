@@ -104,21 +104,10 @@ fun BaseExtension.applyBaseCommons() = apply {
     // Load your keystore.properties file into the keystoreProperties object.
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
-    val tmpFilePath = "/work/_temp/"
-    val allFilesFromDir = File(tmpFilePath).listFiles()
-
-    print(tmpFilePath)
-    if (allFilesFromDir != null) {
-        print(tmpFilePath + "enetered here")
-
-        val keystoreFile = allFilesFromDir.first()
-        keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
-    }
-
     signingConfigs {
         create("release") {
-            storeFile = file("/home/runner/work/_temp/keystore/console-app-keystore.jks")
-            keyAlias = keystoreProperties.getProperty("keyAlias")
+            storeFile = file("keystore/console-app-keystore.jks")
+            keyAlias =  keystoreProperties.getProperty("keyAlias")
             keyPassword = keystoreProperties.getProperty("keyPassword")
             storePassword = keystoreProperties.getProperty("password")
         }
