@@ -3,20 +3,12 @@ name: CI/CD Google Play 2
 on: workflow_dispatch
 
 jobs:
-  unitTest:
-    name: Run Unit Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Unit tests
-        run: bash ./gradlew test
 
   buildApk:
-    needs: unitTest
     runs-on: ubuntu-latest
     steps:
       - name: build APK
-        run: bash ./gradlew :app:assembleProdRelease
+        run: bash ./gradlew app:assembleProdRelease
       - name: Sign Android release
         uses: r0adkll/sign-android-release@v1
         with:
