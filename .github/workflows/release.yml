@@ -16,7 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build APK
-      run: bash ./gradlew :app:assembleProdRelease
+        run: bash ./gradlew :app:assembleProdRelease
+
       - name: Sign Android release
         uses: r0adkll/sign-android-release@v1
         with:
