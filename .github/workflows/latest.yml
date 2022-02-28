@@ -11,7 +11,6 @@ jobs:
         uses: timheuer/base64-to-file@v1.1
         with:
           fileName: 'keystore/console-app-keystore.jks'
-          fileDir: '/home/runner/work/Console/Console'
           encodedString: ${{ secrets.KEYSTORE_FILE }}
       - uses: actions/checkout@v2
       - name: Set up JDK
