@@ -21,7 +21,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: build prod
-        run: ./gradlew :validateSigningProdRelease --stacktrace
+        run: ./gradlew :app:validateSigningProdRelease --stacktrace
       - name: Upload
         uses: actions/upload-artifact@v2
         with:
