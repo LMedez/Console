@@ -46,4 +46,4 @@ jobs:
           -PONEGRAVITY_KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}
           -PONEGRAVITY_OPENSOURCE_KEY_ALIAS=${{ secrets.KEY_ALIAS }}
           -PONEGRAVITY_OPENSOURCE_KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}
-          publishBundle --max-workers 1 --stacktrace
+          publishProdReleaseBundle --max-workers 1 --stacktrace
