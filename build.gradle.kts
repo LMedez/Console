@@ -104,11 +104,19 @@ fun BaseExtension.applyBaseCommons() = apply {
     // Load your keystore.properties file into the keystoreProperties object.
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
+    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore/"
+    val allFilesFromDir = File(tmpFilePath).listFiles()
+
+    if (allFilesFromDir != null) {
+        val keystoreFile = allFilesFromDir.first()
+        keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
+    }
+
     signingConfigs {
         create("release") {
+            storeFile = file("keystore/console-app-keystore.jks")
             keyAlias =  keystoreProperties.getProperty("keyAlias")
             keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = file(keystoreProperties.getProperty("storeFile"))
             storePassword = keystoreProperties.getProperty("password")
         }
     }
