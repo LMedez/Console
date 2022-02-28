@@ -1,10 +1,9 @@
-package com.luc.artistonprice.home.adapter
+package com.luc.console.home.adapter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.luc.artistonprice.home.ProductListFragment
+import com.luc.console.home.ProductListFragment
 import com.luc.common.model.Caldera
 
 private const val ARG_OBJECT = "arg"

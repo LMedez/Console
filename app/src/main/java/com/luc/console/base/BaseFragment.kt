@@ -1,4 +1,4 @@
-package com.luc.artistonprice.base
+package com.luc.console.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

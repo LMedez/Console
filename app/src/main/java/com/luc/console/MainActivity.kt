@@ -1,12 +1,12 @@
-package com.luc.artistonprice
+package com.luc.console
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.InputFilter
 import android.text.InputType
-import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.inputmethod.InputMethodManager
@@ -18,8 +18,8 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.switchmaterial.SwitchMaterial
-import com.luc.artistonprice.databinding.ActivityMainBinding
-import com.luc.artistonprice.databinding.DrawerHeaderBinding
+import com.luc.console.databinding.ActivityMainBinding
+import com.luc.console.databinding.DrawerHeaderBinding
 import com.luc.common.model.Settings
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -89,6 +89,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    @SuppressLint("WrongConstant")
     fun setUpMenuEditText() {
         val editText =
             binding.navigationView.menu.findItem(R.id.dolarValue).actionView as AppCompatEditText
@@ -97,7 +98,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         editText.filters += InputFilter.LengthFilter(3)
         editText.setText(settings?.dolarValue.toString())
 
-        editText.doOnTextChanged { text, start, count, after ->
+        editText.doOnTextChanged { text, _, _, _ ->
             if (text?.length!! == 3 && text.toString() != settings?.dolarValue.toString()) {
                 settings?.let {
                     drawerLayout.closeDrawer(Gravity.START)

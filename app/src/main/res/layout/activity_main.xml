@@ -59,7 +59,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/sheet"
-                android:name="com.luc.artistonprice.home.ProductDetailBottomSheet"
+                android:name="com.luc.console.home.ProductDetailBottomSheet"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_constraintBottom_toBottomOf="parent"

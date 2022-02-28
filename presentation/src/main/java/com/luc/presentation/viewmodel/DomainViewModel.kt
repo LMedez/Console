@@ -24,7 +24,7 @@ class DomainViewModel(
     private val _email = MutableLiveData<NetworkStatus<String>>()
     val email: LiveData<NetworkStatus<String>> = _email
 
-    private val _repuestoList = MutableLiveData<List<Repuesto>>()
+    val _repuestoList = MutableLiveData<List<Repuesto>>()
     private var _calderaList = listOf<Caldera>()
 
     private val _currentRepuestoList: MutableList<Repuesto> = mutableListOf()
@@ -67,7 +67,7 @@ class DomainViewModel(
 
     init {
         viewModelScope.launch {
-            _repuestoList.postValue(getCalderaUseCase.getRepuestos())
+            _repuestoList.postValue(getCalderaUseCase.getRepuestos()?:return@launch)
             getSettingsUseCase.getSettings().collect { settings ->
                 _settings.postValue(settings)
                 _repuestoList.postValue(_repuestoList.value?.map {

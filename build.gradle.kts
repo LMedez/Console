@@ -4,6 +4,8 @@ import com.android.build.gradle.AppExtension
 import com.android.build.gradle.AppPlugin
 import com.android.build.gradle.BaseExtension
 import com.android.build.gradle.LibraryPlugin
+import java.io.FileInputStream
+import java.util.*
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
@@ -16,6 +18,7 @@ buildscript {
         classpath(BuildPlugins.ANDROID)
         classpath(BuildPlugins.GMS)
         classpath(BuildPlugins.SAFE_ARGS)
+        classpath(BuildPlugins.GRADLE_PUBLISHER)
         classpath(kotlin(module = BuildPlugins.Kotlin.ID, version = BuildPlugins.Kotlin.VERSION))
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
     }
@@ -65,6 +68,7 @@ fun AppExtension.applyAppCommons() = apply {
             }
         }
         testInstrumentationRunner("androidx.test.runner.AndroidJUnitRunner")
+
     }
 
     buildTypes {
@@ -95,10 +99,10 @@ fun BaseExtension.applyBaseCommons() = apply {
     val keystorePropertiesFile = rootProject.file("keystore.properties")
 
     // Initialize a new Properties() object called keystoreProperties.
-    val keystoreProperties = java.util.Properties()
+    val keystoreProperties = Properties()
 
     // Load your keystore.properties file into the keystoreProperties object.
-    keystoreProperties.load(java.io.FileInputStream(keystorePropertiesFile))
+    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
     signingConfigs {
         create("release") {
@@ -108,6 +112,8 @@ fun BaseExtension.applyBaseCommons() = apply {
             storePassword = keystoreProperties.getProperty("password")
         }
     }
+
+
 
     compileSdkVersion(Android.Sdk.COMPILE)
     defaultConfig.apply {

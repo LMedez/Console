@@ -67,4 +67,8 @@ class FakeDomainRepository : DomainRepository {
     override fun getSettings(): Flow<Settings> {
         return flow { Settings() }
     }
+
+    override suspend fun updateSettings(settings: Settings) {
+
+    }
 }

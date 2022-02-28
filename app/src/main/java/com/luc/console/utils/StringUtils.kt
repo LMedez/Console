@@ -1,4 +1,4 @@
-package com.luc.artistonprice.utils
+package com.luc.console.utils
 
 import java.util.*
 

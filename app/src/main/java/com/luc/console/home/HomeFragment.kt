@@ -1,11 +1,11 @@
-package com.luc.artistonprice.home
+package com.luc.console.home
 
 import android.os.Bundle
 import android.view.View
 import com.google.android.material.tabs.TabLayoutMediator
-import com.luc.artistonprice.base.BaseFragment
-import com.luc.artistonprice.databinding.FragmentHomeBinding
-import com.luc.artistonprice.home.adapter.ViewPagerAdapter
+import com.luc.console.base.BaseFragment
+import com.luc.console.databinding.FragmentHomeBinding
+import com.luc.console.home.adapter.ViewPagerAdapter
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 

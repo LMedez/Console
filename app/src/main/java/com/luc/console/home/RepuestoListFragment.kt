@@ -1,18 +1,14 @@
-package com.luc.artistonprice.home
+package com.luc.console.home
 
 import android.os.Bundle
-import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.View
 import androidx.core.os.bundleOf
 import androidx.core.util.forEach
-import androidx.core.util.isEmpty
-import androidx.core.util.keyIterator
-import androidx.core.util.valueIterator
-import com.luc.artistonprice.base.BaseFragment
-import com.luc.artistonprice.databinding.FragmentRepuestoListBinding
-import com.luc.artistonprice.home.adapter.RepuestoListAdapter
-import com.luc.artistonprice.utils.SparseBooleanArrayParcelable
+import com.luc.console.base.BaseFragment
+import com.luc.console.databinding.FragmentRepuestoListBinding
+import com.luc.console.home.adapter.RepuestoListAdapter
+import com.luc.console.utils.SparseBooleanArrayParcelable
 import com.luc.common.model.Caldera
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
@@ -46,7 +42,7 @@ class ProductListFragment :
 
         domainViewModel.selectedRepuestoList.observe(viewLifecycleOwner) {
             if (it.isEmpty()) {
-                repuestoListAdapter.itemStateArray.forEach { key, value ->
+                repuestoListAdapter.itemStateArray.forEach { key, _ ->
                     repuestoListAdapter.notifyItemChanged(key)
                 }
                 repuestoListAdapter.itemStateArray.clear()

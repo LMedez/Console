@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.luc.artistonprice.utils
+package com.luc.console.utils
 
 import androidx.annotation.ColorInt
 import androidx.annotation.FloatRange

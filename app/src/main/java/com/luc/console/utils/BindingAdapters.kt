@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.luc.artistonprice.utils
+package com.luc.console.utils
 
 import android.graphics.drawable.Drawable
 import android.view.View

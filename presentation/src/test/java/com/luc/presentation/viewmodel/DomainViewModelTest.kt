@@ -3,8 +3,10 @@ package com.luc.presentation.viewmodel
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.google.common.truth.Truth.assertThat
 import com.luc.common.model.Settings
+import com.luc.domain.email.Mailto
 import com.luc.domain.usecases.GetCalderaUseCase
 import com.luc.domain.usecases.GetSettingsUseCase
+import com.luc.domain.usecases.SendEmailUseCase
 import com.luc.presentation.FakeDomainRepository
 import com.luc.presentation.MainCoroutineRule
 import com.luc.presentation.getOrAwaitValue
@@ -31,6 +33,7 @@ class DomainViewModelTest {
     lateinit var domainViewModel: DomainViewModel
     lateinit var getCalderaUseCase: GetCalderaUseCase
     lateinit var getSettingsUseCase: GetSettingsUseCase
+    lateinit var sendEmailUseCase: SendEmailUseCase
     lateinit var fakeDomainRepository: FakeDomainRepository
 
     @Before
@@ -38,7 +41,8 @@ class DomainViewModelTest {
         fakeDomainRepository = FakeDomainRepository()
         getCalderaUseCase = GetCalderaUseCase(fakeDomainRepository)
         getSettingsUseCase = GetSettingsUseCase(fakeDomainRepository)
-        domainViewModel = DomainViewModel(getCalderaUseCase, getSettingsUseCase)
+        sendEmailUseCase = SendEmailUseCase(Mailto())
+        domainViewModel = DomainViewModel(getCalderaUseCase, getSettingsUseCase,sendEmailUseCase)
     }
 
     @ExperimentalCoroutinesApi

@@ -1,7 +1,6 @@
-package com.luc.artistonprice.home
+package com.luc.console.home
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +11,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.doOnLayout
 import androidx.core.view.postDelayed
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.luc.artistonprice.databinding.FragmentProductDetailBottomSheetBinding
-import com.luc.artistonprice.home.adapter.RepuestosInListAdapter
-import com.luc.artistonprice.utils.lerp
+import com.luc.console.databinding.FragmentProductDetailBottomSheetBinding
+import com.luc.console.home.adapter.RepuestosInListAdapter
+import com.luc.console.utils.lerp
 import com.luc.common.NetworkStatus
 import com.luc.common.model.Repuesto
 import com.luc.common.model.Settings

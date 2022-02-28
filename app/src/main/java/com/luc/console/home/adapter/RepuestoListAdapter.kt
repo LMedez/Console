@@ -1,6 +1,5 @@
-package com.luc.artistonprice.home.adapter
+package com.luc.console.home.adapter
 
-import android.util.Log
 import android.util.SparseBooleanArray
 import android.view.LayoutInflater
 import android.view.View
@@ -9,10 +8,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.checkbox.MaterialCheckBox
-import com.luc.artistonprice.R
-import com.luc.artistonprice.databinding.RepuestoItemBinding
-import com.luc.artistonprice.utils.getDrawableOrNull
-import com.luc.artistonprice.utils.themeColor
+import com.luc.console.R
+import com.luc.console.databinding.RepuestoItemBinding
+import com.luc.console.utils.getDrawableOrNull
+import com.luc.console.utils.themeColor
 import com.luc.common.model.Repuesto
 
 class RepuestoListAdapter :

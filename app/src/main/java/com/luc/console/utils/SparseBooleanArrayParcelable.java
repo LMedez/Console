@@ -1,4 +1,4 @@
-package com.luc.artistonprice.utils;
+package com.luc.console.utils;
 
 import android.os.Parcel;
 import android.os.Parcelable;

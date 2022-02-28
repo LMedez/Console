@@ -1,15 +1,14 @@
-package com.luc.artistonprice.home.adapter
+package com.luc.console.home.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.luc.artistonprice.R
-import com.luc.artistonprice.databinding.ProductItemBinding
-import com.luc.artistonprice.utils.capitalizeFirstChar
+import com.luc.console.R
+import com.luc.console.databinding.ProductItemBinding
+import com.luc.console.utils.capitalizeFirstChar
 import com.luc.common.model.Repuesto
 
 class RepuestosInListAdapter :
