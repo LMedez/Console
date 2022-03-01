@@ -36,6 +36,11 @@ jobs:
           fileDir: './secrets'
           fileName: 'google-play-api-key.json'
           encodedString: ${{ secrets.GOOGLE_PLAY_API_KEY }}
+      - name: add secret
+        run: |
+          cat > keystore.properties << ENDOFFILE
+          KEYSTORE_FILE=${{steps.decode_keystore.outputs.filePath}}
+          ENDOFFILE
 
       # Build bundle and publish to Google Play
       - name: Build & publish to Google Play
