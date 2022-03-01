@@ -13,6 +13,8 @@ android {
         val apiKeyFile = project.property("googlePlayApiKey").toString()
         serviceAccountCredentials.set(file(apiKeyFile))
         track.set("internal")
+
+        defaultToAppBundles.set(true)
     }
 
     viewBinding {

@@ -7,7 +7,7 @@ object Android {
 
     object Client {
         const val APP_ID = "com.luc.console"
-        const val VERSION_CODE = 1
+        const val VERSION_CODE = 2
         const val VERSION_NAME = "0.1.0-alpha"
     }
 }
