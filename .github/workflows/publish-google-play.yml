@@ -40,7 +40,7 @@ jobs:
         run: |
           cat > keystore.properties << ENDOFFILE
           KEYSTORE_FILE=${{steps.decode_keystore.outputs.filePath}}
-          GOOGLE_PLAY_API_KEY=${{steps.decode_api_key.outputs.filePath}}
+          GOOGLE_PLAY_API_KEY=../${{steps.decode_api_key.outputs.filePath}}
           KEY_ALIAS=${{secrets.KEY_ALIAS}}
           KEY_PASSWORD=${{secrets.KEY_PASSWORD}}
           KEYSTORE_PASSWORD=${{secrets.KEYSTORE_PASSWORD}}
