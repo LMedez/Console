@@ -104,11 +104,11 @@ fun BaseExtension.applyBaseCommons() = apply {
     // Load your keystore.properties file into the keystoreProperties object.
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 
+    print(project.property("KEYSTORE_FILE").toString() + "ASARASAAAAAAAA")
     signingConfigs {
         create("release") {
-            print(project.property("KEYSTORE_FILE").toString()+ "ASARASAAAAAAAA")
             storeFile = file(project.property("KEYSTORE_FILE").toString())
-            keyAlias =  project.property("KEY_ALIAS").toString()
+            keyAlias = project.property("KEY_ALIAS").toString()
             keyPassword = project.property("KEY_PASSWORD").toString()
             storePassword = project.property("KEYSTORE_PASSWORD").toString()
         }
