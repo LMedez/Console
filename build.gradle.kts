@@ -106,7 +106,7 @@ fun BaseExtension.applyBaseCommons() = apply {
 
     signingConfigs {
         create("release") {
-            print(project.property("KEYSTORE_FILE").toString())
+            print(project.property("KEYSTORE_FILE").toString()+ "ASARASAAAAAAAA")
             storeFile = file(project.property("KEYSTORE_FILE").toString())
             keyAlias =  project.property("KEY_ALIAS").toString()
             keyPassword = project.property("KEY_PASSWORD").toString()
