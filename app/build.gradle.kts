@@ -1,3 +1,5 @@
+import com.github.triplet.gradle.androidpublisher.ReleaseStatus
+
 plugins {
     id(ModulePlugins.ANDROID_APPLICATION)
     kotlin("android")
@@ -13,7 +15,7 @@ android {
         val apiKeyFile = project.property("googlePlayApiKey").toString()
         serviceAccountCredentials.set(file(apiKeyFile))
         track.set("internal")
-
+        releaseStatus.set(ReleaseStatus.DRAFT)
         defaultToAppBundles.set(true)
     }
 
