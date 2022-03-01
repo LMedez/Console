@@ -12,8 +12,8 @@ android {
 
 
     play {
-        val apiKeyFile = project.property("googlePlayApiKey").toString()
-        serviceAccountCredentials.set(file(apiKeyFile))
+        //val apiKeyFile = project.property("googlePlayApiKey").toString()
+        //serviceAccountCredentials.set(file(apiKeyFile))
         track.set("internal")
         releaseStatus.set(ReleaseStatus.DRAFT)
         defaultToAppBundles.set(true)

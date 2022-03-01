@@ -24,7 +24,7 @@ jobs:
         id: decode_keystore
         uses: timheuer/base64-to-file@v1.1
         with:
-          fileDir: '/secrets'
+          fileDir: './secrets'
           fileName: 'console-app-keystore.jks'
           encodedString: ${{ secrets.KEYSTORE_FILE }}
 
