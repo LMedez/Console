@@ -41,7 +41,7 @@ jobs:
       - name: Build & publish to Google Play
         run: ./gradlew
           -PBUILD_NUMBER="${{ env.BUILD_NUMBER }}"
-          -PKEYSTORE_FILE="${{ steps.decode_keystore.outputs.filePath }}"
+          -PKEYSTORE_FILE="../${{ steps.decode_keystore.outputs.filePath }}"
           -PKEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}
           -PKEY_ALIAS=${{ secrets.KEY_ALIAS }}
           -PKEY_PASSWORD=${{ secrets.KEY_PASSWORD }}

@@ -8,13 +8,12 @@ plugins {
 
 android {
 
-//    val tmpFilePath = System.getProperty("user.home") + "/work/_temp/keystore"
-//    val allFilesFromDir = File(tmpFilePath).listFiles()
-//
-//    if (allFilesFromDir != null) {
-//        val keystoreFile = allFilesFromDir.first()
-//        keystoreFile.renameTo(File("keystore/console-app-keystore.jks"))
-//    }
+
+    play {
+        val apiKeyFile = project.property("googlePlayApiKey").toString()
+        serviceAccountCredentials.set(file(apiKeyFile))
+        track.set("internal")
+    }
 
     viewBinding {
         isEnabled = true
