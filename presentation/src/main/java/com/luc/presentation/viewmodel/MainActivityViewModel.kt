@@ -43,7 +43,6 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
     }
 
     init {
-
         appUpdateManager.registerListener(listener)
         viewModelScope.launch {
             appUpdateManager.requestUpdateFlow().collect {
@@ -56,7 +55,7 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
                             _isDownloaded.postValue(true)
 
                         appUpdateInfo?.let { appUpdate ->
-                            if (appUpdate.updatePriority() <= 3
+                            if (appUpdate.updatePriority() < 3
                                 && appUpdate.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)
                             ) {
                                 updateType = AppUpdateType.FLEXIBLE
@@ -73,7 +72,9 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
                         _isDownloaded.postValue(true)
                     }
 
-                    is AppUpdateResult.NotAvailable -> return@collect
+                    is AppUpdateResult.NotAvailable -> {
+                        _updateAvailable.postValue(false)
+                    }
                 }
             }
         }

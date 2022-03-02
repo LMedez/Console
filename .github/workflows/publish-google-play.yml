@@ -1,11 +1,13 @@
 name: CI/CD Google Play
 
-on: workflow_dispatch
+on:
+  push:
+    tags:
+      - '*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: set up JDK 11

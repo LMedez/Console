@@ -51,5 +51,5 @@ jobs:
           ENDOFFILE
 
       - name: Build Project
-        run: ./gradlew preProdReleaseBuild
+        run: ./gradlew build
 

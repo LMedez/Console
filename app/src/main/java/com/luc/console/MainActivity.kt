@@ -128,7 +128,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         resultLauncher
     }
 
-
     @SuppressLint("WrongConstant")
     fun setUpMenuEditText() {
         val editText =
@@ -180,12 +179,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.download) {
-            Toast.makeText(this, "clicked", Toast.LENGTH_SHORT).show()
             mainActivityViewModel.startUpdate(this)
         }
         return true
     }
-
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
@@ -212,5 +209,4 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     Log.e("MY_APP", "Update flow failed! Result code: ${result.resultCode}")
                 }
         }
-
 }
