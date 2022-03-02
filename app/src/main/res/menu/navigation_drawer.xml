@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="single">
         <item
-            android:checked="true"
             android:id="@+id/home"
+            android:checked="true"
             android:icon="@drawable/ic_home"
-            android:title="@string/home"/>
+            android:title="@string/home" />
 
         <item
             android:id="@+id/iva"
@@ -25,6 +25,12 @@
             android:icon="@drawable/ic_dolar_value"
             android:title="@string/dolar_value"
             app:actionViewClass="androidx.appcompat.widget.AppCompatEditText" />
+
+        <item
+            android:id="@+id/download"
+            android:icon="@drawable/ic_download"
+            android:title="@string/download"
+            app:actionViewClass="com.google.android.material.textview.MaterialTextView" />
     </group>
 
 </menu>

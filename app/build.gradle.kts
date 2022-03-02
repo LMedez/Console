@@ -27,6 +27,7 @@ android {
         serviceAccountCredentials.set(file(apiKeyFile))
         track.set("internal")
         releaseStatus.set(ReleaseStatus.DRAFT)
+        updatePriority.set(2)
         defaultToAppBundles.set(true)
     }
 
@@ -57,8 +58,6 @@ dependencies {
     implementation(Deps.AndroidX.Navigation.FRAGMENT_KTX)
     implementation(Deps.AndroidX.Navigation.UI_KTX)
     implementation(Deps.Glide.GLIDE)
-    implementation(Deps.Google.PlayCore.CORE)
-    implementation(Deps.Google.PlayCore.KTX)
 
 
     androidTestImplementation(TestDeps.JUnit.JUNIT_EXT)
