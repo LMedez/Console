@@ -180,6 +180,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.download) {
+            Toast.makeText(this, "clicked", Toast.LENGTH_SHORT).show()
             mainActivityViewModel.startUpdate(this)
         }
         return true

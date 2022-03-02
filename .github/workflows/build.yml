@@ -19,6 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
       - name: Decode Keystore
         id: decode_keystore
         uses: timheuer/base64-to-file@v1.1
@@ -45,12 +50,6 @@ jobs:
           KEYSTORE_PASSWORD=${{secrets.KEYSTORE_PASSWORD}}
           ENDOFFILE
 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 11
       - name: Build Project
         run: ./gradlew preProdReleaseBuild
 
