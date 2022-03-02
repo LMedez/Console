@@ -119,8 +119,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             binding.navigationView.run {
                 val menuItem = menu.findItem(R.id.download)
                 val textView = menuItem.actionView as MaterialTextView
+                textView.gravity = Gravity.CENTER or Gravity.CENTER_VERTICAL
                 textView.text = "(${BuildConfig.VERSION_NAME})"
-                menuItem.isEnabled = it
+                menuItem.isVisible = it
             }
         }
 

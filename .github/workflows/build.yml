@@ -19,11 +19,37 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Decode Keystore
+        id: decode_keystore
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileDir: './secrets'
+          fileName: 'console-app-keystore.jks'
+          encodedString: ${{ secrets.KEYSTORE_FILE }}
+
+      # Decode the Google Play api key file
+      - name: Decode Google Play API key
+        id: decode_api_key
+        uses: timheuer/base64-to-file@v1.1
+        with:
+          fileDir: './secrets'
+          fileName: 'google-play-api-key.json'
+          encodedString: ${{ secrets.GOOGLE_PLAY_API_KEY }}
+      - name: add secret
+        run: |
+          cat > keystore.properties << ENDOFFILE
+          KEYSTORE_FILE=${{steps.decode_keystore.outputs.filePath}}
+          GOOGLE_PLAY_API_KEY=../${{steps.decode_api_key.outputs.filePath}}
+          KEY_ALIAS=${{secrets.KEY_ALIAS}}
+          KEY_PASSWORD=${{secrets.KEY_PASSWORD}}
+          KEYSTORE_PASSWORD=${{secrets.KEYSTORE_PASSWORD}}
+          ENDOFFILE
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Set up JDK
         uses: actions/setup-java@v1
-        with: 
+        with:
           java-version: 11
       - name: Build Project
         run: ./gradlew preProdReleaseBuild
