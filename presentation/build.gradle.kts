@@ -4,7 +4,6 @@ plugins {
 }
 
 android {
-
 }
 
 dependencies {
@@ -14,9 +13,9 @@ dependencies {
     implementation(Deps.Kotlinx.Coroutines.CORE)
     implementation(Deps.AndroidX.Lifecycle.VIEWMODEL_KTX)
     implementation(Deps.AndroidX.Lifecycle.LIVEDATA_KTX)
-    implementation(Deps.Google.PlayCore.CORE)
-    implementation(Deps.Google.PlayCore.KTX)
 
+    prodImplementation(Deps.Google.PlayCore.CORE)
+    prodImplementation(Deps.Google.PlayCore.KTX)
 
     testImplementation(TestDeps.JUnit.JUNIT)
     testImplementation(TestDeps.Truth.TRUTH)

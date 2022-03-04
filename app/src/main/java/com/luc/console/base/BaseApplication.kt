@@ -4,11 +4,11 @@ import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
 import com.luc.data.di.dataModule
 import com.luc.domain.di.domainModule
-import com.luc.presentation.di.presentationModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
+import com.luc.presentation.di.presentationModule
 
 class BaseApplication : Application() {
 

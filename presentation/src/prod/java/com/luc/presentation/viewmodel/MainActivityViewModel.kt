@@ -101,7 +101,6 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
     override fun onCleared() {
         super.onCleared()
         appUpdateManager.unregisterListener(listener)
-
     }
 }
 
