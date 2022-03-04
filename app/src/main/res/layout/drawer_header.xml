@@ -9,7 +9,7 @@
             type="String" />
     </data>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         app:marginTopSystemWindowInsets="@{true}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,16 +19,34 @@
         tools:context=".MainActivity">
 
         <ImageView
-            android:layout_margin="@dimen/grid_2"
-            android:scaleType="centerCrop"
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_margin="@dimen/grid_2"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcUrl="@{imageUrl}" />
 
         <View
-            android:background="@drawable/divider"
+            android:id="@+id/view2"
             android:layout_width="match_parent"
-            android:layout_height="1dp"/>
+            android:layout_height="1dp"
+            android:background="@drawable/divider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/versionName"
+            android:textAppearance="?attr/textAppearanceOverline"
+            android:layout_marginBottom="@dimen/grid_1"
+            tools:text="V0.1.1"
+            android:layout_marginEnd="@dimen/grid_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -26,6 +26,7 @@ import com.google.android.material.textview.MaterialTextView
 import com.luc.console.databinding.ActivityMainBinding
 import com.luc.console.databinding.DrawerHeaderBinding
 import com.luc.common.model.Settings
+import com.luc.console.utils.lerp
 import com.luc.presentation.viewmodel.DomainViewModel
 import com.luc.presentation.viewmodel.MainActivityViewModel
 import com.luc.presentation.viewmodel.UPDATE_REQUEST_CODE
@@ -43,6 +44,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private val mainActivityViewModel: MainActivityViewModel by viewModel { parametersOf(this) }
 
     private var settings: Settings? = null
+
+    private var updateTotalBytes: Int? = null
 
     override fun onResume() {
         super.onResume()
@@ -85,8 +88,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         /* Load image of header drawer*/
         val headerView = binding.navigationView.getHeaderView(0)
-        DrawerHeaderBinding.bind(headerView).imageUrl =
+        val drawer = DrawerHeaderBinding.bind(headerView)
+        drawer.imageUrl =
             "https://play-lh.googleusercontent.com/TfjksNHP5flgSukqCRhv_lz0_c-bkEqcRxJKyjZjZIBcwCZ2H9gJm0HlIKp9G7K87k5M"
+        drawer.versionName.text = "V${BuildConfig.VERSION_NAME}"
 
         domainViewModel.settings.observe(this) {
             settings = it
@@ -108,7 +113,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         mainActivityViewModel.isDownloaded.observe(this) {
-            if (it) popupSnackbarForCompleteUpdate()
+            if (it) {
+                binding.updateProgress.hide()
+                popupSnackbarForCompleteUpdate()
+            }
         }
 
         mainActivityViewModel.updateAvailable.observe(this) {
@@ -118,6 +126,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 textView.gravity = Gravity.CENTER or Gravity.CENTER_VERTICAL
                 textView.text = "(${BuildConfig.VERSION_NAME})"
                 menuItem.isVisible = it
+            }
+        }
+
+        mainActivityViewModel.totalBytesToDownload.observe(this) {
+            updateTotalBytes = it.toInt()
+            if (!binding.updateProgress.isShown)
+                binding.updateProgress.show()
+        }
+
+        mainActivityViewModel.bytesDownloaded.observe(this) {
+            updateTotalBytes?.let { updateTotalBytes ->
+                val progress = lerp(0, updateTotalBytes, 0f, 1f, it.toFloat())
+                binding.updateProgress.progress = progress
             }
         }
 
@@ -165,10 +186,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     fun popupSnackbarForCompleteUpdate() {
         Snackbar.make(
             findViewById(R.id.contentContainer),
-            "An update has just been downloaded.",
+            getString(R.string.update_ready),
             Snackbar.LENGTH_INDEFINITE
         ).apply {
-            setAction("RESTART") { mainActivityViewModel.completeUpdate() }
+            setAction("INSTALAR") { mainActivityViewModel.completeUpdate() }
+            anchorView = binding.sheet
             show()
         }
     }

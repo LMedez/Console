@@ -67,8 +67,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         /* Load image of header drawer*/
         val headerView = binding.navigationView.getHeaderView(0)
-        DrawerHeaderBinding.bind(headerView).imageUrl =
+        val drawer = DrawerHeaderBinding.bind(headerView)
+        drawer.imageUrl =
             "https://play-lh.googleusercontent.com/TfjksNHP5flgSukqCRhv_lz0_c-bkEqcRxJKyjZjZIBcwCZ2H9gJm0HlIKp9G7K87k5M"
+        drawer.versionName.text = "V${BuildConfig.VERSION_NAME}"
+
 
         domainViewModel.settings.observe(this) {
             settings = it
@@ -86,8 +89,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 domainViewModel.updateSettings(it.copy(applyGain = isChecked))
             }
             setUpMenuEditText()
-
         }
+
     }
 
     @SuppressLint("WrongConstant")

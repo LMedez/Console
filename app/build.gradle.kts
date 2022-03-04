@@ -37,13 +37,7 @@ android {
     dataBinding {
         isEnabled = true
     }
-
-
 }
-
-
-
-
 
 dependencies {
     implementation(project(":domain"))

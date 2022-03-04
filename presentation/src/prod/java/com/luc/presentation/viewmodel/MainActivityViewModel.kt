@@ -37,8 +37,8 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
 
     val listener = InstallStateUpdatedListener { state ->
         if (state.installStatus() == InstallStatus.DOWNLOADING) {
-            _bytesDownloaded.postValue(state.bytesDownloaded)
             _totalBytesToDownload.postValue(state.totalBytesToDownload)
+            _bytesDownloaded.postValue(state.bytesDownloaded)
         }
     }
 
