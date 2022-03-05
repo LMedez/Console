@@ -120,7 +120,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         mainActivityViewModel.updateAvailable.observe(this) {
-            binding.newVersion.visibility = View.VISIBLE
+            if (it) binding.newVersion.visibility = View.VISIBLE
+            else binding.newVersion.visibility = View.INVISIBLE
+
         }
 
         mainActivityViewModel.totalBytesToDownload.observe(this) {
