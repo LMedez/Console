@@ -11,6 +11,7 @@ import android.text.InputType
 import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -109,7 +110,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 domainViewModel.updateSettings(it.copy(applyGain = isChecked))
             }
             setUpMenuEditText()
-
         }
 
         mainActivityViewModel.isDownloaded.observe(this) {
@@ -120,25 +120,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
         mainActivityViewModel.updateAvailable.observe(this) {
-            binding.navigationView.run {
-                val menuItem = menu.findItem(R.id.download)
-                val textView = menuItem.actionView as MaterialTextView
-                textView.gravity = Gravity.CENTER or Gravity.CENTER_VERTICAL
-                textView.text = "(${BuildConfig.VERSION_NAME})"
-                menuItem.isVisible = it
-            }
+            binding.newVersion.visibility = View.VISIBLE
         }
 
         mainActivityViewModel.totalBytesToDownload.observe(this) {
             updateTotalBytes = it.toInt()
-            if (!binding.updateProgress.isShown)
+            if (!binding.updateProgress.isShown) {
+                binding.updateProgress.isIndeterminate = true
                 binding.updateProgress.show()
+
+            }
         }
 
         mainActivityViewModel.bytesDownloaded.observe(this) {
             updateTotalBytes?.let { updateTotalBytes ->
-                val progress = lerp(0, updateTotalBytes, 0f, 1f, it.toFloat())
-                binding.updateProgress.progress = progress
+                binding.updateProgress.isIndeterminate = false
+                val progress = (it.toFloat() / updateTotalBytes.toFloat()) * 100
+                binding.updateProgress.progress = progress.toInt()
             }
         }
 
@@ -190,7 +188,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             Snackbar.LENGTH_INDEFINITE
         ).apply {
             setAction("INSTALAR") { mainActivityViewModel.completeUpdate() }
-            anchorView = binding.sheet
+            anchorView = binding.anchorView
             show()
         }
     }

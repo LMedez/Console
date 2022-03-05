@@ -9,28 +9,31 @@
             android:title="@string/home" />
 
         <item
+            android:checkable="false"
             android:id="@+id/iva"
             android:icon="@drawable/ic_taxes"
             android:title="@string/iva"
             app:actionViewClass="com.google.android.material.switchmaterial.SwitchMaterial" />
 
         <item
+            android:checkable="false"
             android:id="@+id/gainValue"
             android:icon="@drawable/ic_currency"
             android:title="@string/gain_value"
             app:actionViewClass="com.google.android.material.switchmaterial.SwitchMaterial" />
 
         <item
+            android:checkable="false"
             android:id="@+id/dolarValue"
             android:icon="@drawable/ic_dolar_value"
             android:title="@string/dolar_value"
             app:actionViewClass="androidx.appcompat.widget.AppCompatEditText" />
 
         <item
+            android:checkable="false"
             android:visible="false"
             android:id="@+id/download"
             android:icon="@drawable/ic_download"
-            android:title="@string/download"
-            app:actionViewClass="com.google.android.material.textview.MaterialTextView" />
+            android:title="@string/download" />
     </group>
 </menu>

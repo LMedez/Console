@@ -6,8 +6,11 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.text.InputFilter
 import android.text.InputType
+import android.util.Half.toFloat
+import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -17,10 +20,12 @@ import androidx.core.widget.doOnTextChanged
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.switchmaterial.SwitchMaterial
 import com.luc.common.model.Settings
 import com.luc.console.databinding.ActivityMainBinding
 import com.luc.console.databinding.DrawerHeaderBinding
+import com.luc.console.utils.lerp
 import com.luc.presentation.viewmodel.DomainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

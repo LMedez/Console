@@ -9,6 +9,7 @@
         <item name="colorSecondary">@color/orange_300</item>
         <item name="colorSecondaryVariant">@color/black_800</item>
         <item name="colorOnSecondary">@color/orange_100</item>
+
         <!-- Status bar color. -->
 
         <item name="android:statusBarColor">@color/immersive_sys_ui</item>
@@ -45,6 +46,10 @@
 
     <style name="ThemeOverlay.App.TextButton" parent="">
         <item name="colorPrimary">@color/black_800</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CircularProgressIndicator" parent="">
+        <item name="colorPrimary">@color/green_300</item>
     </style>
 
 
