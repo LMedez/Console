@@ -17,6 +17,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.AppCompatEditText
+import androidx.core.view.isVisible
 import androidx.core.widget.doOnTextChanged
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
@@ -142,6 +143,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
         }
 
+        mainActivityViewModel.updateInProgress.observe(this) {
+            if (it && binding.newVersion.isEnabled) binding.newVersion.isEnabled = false
+        }
+
+        binding.newVersion.setOnClickListener { mainActivityViewModel.startUpdate(this) }
+
         resultLauncher
     }
 
@@ -196,9 +203,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.download) {
-            mainActivityViewModel.startUpdate(this)
-        }
         return true
     }
 

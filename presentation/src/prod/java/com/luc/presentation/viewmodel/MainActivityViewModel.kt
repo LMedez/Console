@@ -29,6 +29,9 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
     private val _isDownloaded = MutableLiveData<Boolean>()
     val isDownloaded: LiveData<Boolean> = _isDownloaded
 
+    private val _updateInProgress = MutableLiveData<Boolean>()
+    val updateInProgress: LiveData<Boolean> = _updateInProgress
+
     private val _bytesDownloaded = MutableLiveData<Long>()
     val bytesDownloaded: LiveData<Long> = _bytesDownloaded
 
@@ -66,7 +69,9 @@ class MainActivityViewModel(application: Application) : AndroidViewModel(applica
                         }
                     }
 
-                    is AppUpdateResult.InProgress -> {}
+                    is AppUpdateResult.InProgress -> {
+                        _updateInProgress.postValue(true)
+                    }
 
                     is AppUpdateResult.Downloaded -> {
                         _isDownloaded.postValue(true)
