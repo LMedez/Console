@@ -94,7 +94,6 @@ fun View.applySystemWindowInsetsPadding(
         val top = if (applyTop) systemBars.top else 0
         val right = if (applyRight) systemBars.right else 0
         val bottom = if (applyBottom) systemBars.bottom else 0
-
         view.setPadding(
             padding.left + left,
             padding.top + top,
